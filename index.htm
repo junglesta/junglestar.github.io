@@ -42,6 +42,7 @@
 			html { font-size: 16px; }
 
 			body {
+				overflow: hidden;
 				margin: 0;
 				font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 				font-weight: 200;
@@ -73,32 +74,26 @@
 				color: #ddd;
 				padding: 10px;
 			}
-			.striked { text-decoration: line-through; }
-			.goodbye{
-				text-align: center;
-				width:100%;
-			}
-			.goodbye-head {
-				font-size: 1.5rem;
-				margin-bottom: 0;
-			}
-			.goodbye-sub {
-				font-size: 0.875rem;
-				margin: 0 0 20px;
-			}
-			.pad{padding:1rem 0; margin: 1rem 0 ;}
+
 
 			@media all and (orientation:portrait) {
 				/* Portrait  */
-				.jeistar{ height:80vw; }
-				.goodbye{
-					position: fixed;
-					bottom: 0;
-				}
+				.jeistar{ height:70vw; }
+				.jeistar.second{ height:100vw; }
 			}
 			@media all and (orientation:landscape) {
 			  /* Landscape */
-				.jeistar{ height:35vw; }
+				.jeistar{ height:30vw; }
+				.jeistar.second{ height:100vw; }
+			}
+
+			.white{
+				fill:none;
+				stroke:rgba(255, 255, 255, 1);
+				stroke-width:3;
+				stroke-linecap:round;
+				stroke-linejoin:round;
+				stroke-miterlimit:10;
 			}
 		</style>
 
@@ -113,88 +108,121 @@
 
 		<!-- Hi-there -->
 		<div class="bloc">
+
+
 			<svg class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="javascript:location.href='http://revealing.junglestar.org'">
 
 				<path
-				class="circlej red"
-				data-async
-				data-start="1"
-				data-duration="80"
-				fill="none" stroke="orange"
-				stroke-width="11"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-miterlimit="10"
-				d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"/>
+					class="circlej red"
+					data-async
+					data-start="1"
+					data-duration="80"
+					fill="none" stroke="orange"
+					stroke-width="11"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-miterlimit="10"
+					d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"
+				/>
 
 				<path
-				class="circlej #fff"
-				data-async
-				data-start="1"
-				data-duration="80"
-				fill="none"
-				stroke="#fff"
-				stroke-width="11"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-miterlimit="10"
-				d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"/>
+					class="circlej #fff"
+					data-async
+					data-start="1"
+					data-duration="80"
+					fill="none"
+					stroke="#fff"
+					stroke-width="11"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-miterlimit="10"
+					d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"
+				/>
 
 				<polygon
-				class="star red"
-				data-async
-				data-start="1"
-				data-delay="20"
-				data-duration="50"
-				fill="none"
-				stroke="red"
-				stroke-width="11"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-miterlimit="10"
-				points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "/>
+					class="star red"
+					data-async
+					data-start="1"
+					data-delay="20"
+					data-duration="50"
+					fill="none"
+					stroke="red"
+					stroke-width="11"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-miterlimit="10"
+					points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "
+				/>
 
 				<polygon
-				class="star #ff0"
-				data-async
-				data-start="1"
-				data-delay="20"
-				data-duration="50"
-				fill="none"
-				stroke="#ff0"
-				stroke-width="11"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-miterlimit="10"
-				points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "/>
+					class="star #ff0"
+					data-async
+					data-start="1"
+					data-delay="20"
+					data-duration="50"
+					fill="none"
+					stroke="#ff0"
+					stroke-width="11"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-miterlimit="10"
+					points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "
+				/>
+
 			</svg>
-		</div>
 
-		<!-- Goodbye
-		<div class="goodbye">
-			<p class="goodbye-sub">
-				<a href="http://junglestar.org" target="_blank" >Revealing</a>
-			</p>
-		</div>
--->
 
+			<svg class="jeistar second" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="-10 -10 1020 1020" id="junglestar" onclick="javascript:location.href='http://revealing.junglestar.org'">
+
+
+				<path
+					data-async
+					data-start="1"
+					data-delay="400"
+					data-duration="200"
+					class="white"
+					d="M117.8 51.5c4.3 10.1 8.2 19.9 11.7 29.5 1.5 4 2.9 8.2 4.2 12.5 1.4 4.3 2.6 8.5 3.7 12.7 1.1 4.1 2 8.1 2.7 11.9.7 3.8 1 7.1 1 10 0 5.9-1.3 10.7-4 14.6-2.7 3.8-6 6.9-9.9 9.1-4 2.2-8.3 3.8-13.1 4.7-4.8.9-9.2 1.4-13.3 1.4-3.6 0-7.5-.6-11.5-1.7s-8.2-3.1-12.5-5.9c-4.3-2.8-8.7-6.5-13.1-11.2s-8.7-10.4-12.9-17.3l29.4-10.5c5.3 8.5 10.2 14.8 14.7 19 4.5 4.2 9.4 6.3 14.7 6.3 1 0 1.4-1.3 1.1-3.9-.3-2.6-1-6-2-10.2-1.1-4.2-2.5-8.9-4.2-14.1-1.7-5.2-3.5-10.5-5.4-15.9-1.9-5.4-3.8-10.6-5.7-15.5-1.9-4.9-3.5-9.2-4.8-12.7l29.2-12.8zM230.5 47.7c1.5 5.2 2.8 10.8 3.9 16.9.9 5.3 1.7 11.4 2.4 18.3s.9 14.4.7 22.3c-.2 7.2-1.1 14.2-2.6 20.9-1.5 6.7-3.9 12.6-7.2 17.7-3.3 5.1-7.7 9.1-13.1 12.1s-12.2 4.3-20.4 4c-8.3-.3-15.4-2-21.5-5s-11.2-7-15.3-12c-4.1-5-7.5-10.7-10-17.2-2.6-6.5-4.5-13.3-5.9-20.5-1.4-7.2-2.2-14.6-2.5-22.1-.3-7.6-.3-14.9-.1-22l35.9-1.2c0 14.7.6 26.6 1.8 35.8 1.2 9.2 2.6 16.4 4.3 21.5s3.5 8.7 5.5 10.6c2 1.9 3.8 2.8 5.5 2.8 3.4.1 5.8-2.1 7.2-6.5 1.4-4.5 2.3-11.2 2.6-20.2.2-5.6-.1-11.3-.9-17.1-.8-5.7-1.6-11-2.6-15.7-1.1-5.5-2.4-10.8-3.7-15.8l36-7.6zM339.9 157.8h-33.2l-31.5-36.9 1.4 36.9h-31.5c-.3-12.7-.8-25-1.4-36.7-.2-4.9-.5-10-.9-15.3-.3-5.3-.7-10.4-1.1-15.3-.4-4.9-.9-9.6-1.4-14-.5-4.4-1-8.2-1.6-11.4l27.5-4.8 40 53.4c-.7-6.1-1.4-12.3-2.2-18.8-.7-5.5-1.5-11.7-2.4-18.4-.9-6.8-1.9-13.5-2.9-20.3l34.9-5c.8 5.6 1.5 11.5 2 17.6.6 6.1 1 12.1 1.4 18.2.4 6 .7 12 1 17.8.3 5.9.5 11.4.8 16.7.7 12.2.9 24.4 1.1 36.3zM440 87.2v78.7l-33.7 12.9v-19.5c-2.5 0-5.8-.2-10-.7-4.2-.5-8.7-1.3-13.5-2.7-4.8-1.3-9.7-3.2-14.6-5.7s-9.4-5.7-13.3-9.8c-4-4.1-7.2-9.1-9.8-15-2.6-5.9-3.8-13-3.8-21.3 0-8.4 1.6-15.9 4.9-22.6 3.3-6.7 7.7-12.4 13.1-17 5.4-4.6 11.6-8 18.5-10.2 6.9-2.2 13.9-3.1 21.1-2.6 7.1.5 14.1 2.6 20.9 6.2 6.8 3.6 12.9 8.9 18.2 15.9l-33.5 14.8c-1.2-2.2-2.8-4.2-4.8-6-1.6-1.6-3.6-3-6-4.3-2.4-1.3-5.2-1.9-8.3-1.9-3.2 0-5.6.8-7.3 2.4-1.7 1.6-2.9 3.5-3.7 5.6-.8 2.1-1.2 4.3-1.4 6.5-.1 2.2-.2 3.8-.2 4.8 0 11.5 2.8 20.7 8.4 27.6 5.6 6.9 14 11 25.1 12.4v-18.7h-16.8l8.5-14.6 42-15.2zM477.4 55.7c1.6 11.1 2.8 21.4 3.7 30.9s1.5 17.8 2 24.9c.5 8.3.8 15.9 1 22.9l39.8-1 15 24.5-67.7 4.8-24-16.5c1.1-14.4 1.2-29.5.2-45.6-1-16-2.5-31.8-4.4-47.3 4.8.5 9.4.9 13.8 1.2 3.7.3 7.5.6 11.4.9 3.7.1 6.8.3 9.2.3zM604.7 132.3l-6.3 25.5-11.1-.9c-3.3-.2-7-.4-11.2-.6-4.2-.2-8.4-.3-12.6-.3-2.2 0-5 .1-8.4.3-3.5.2-6.9.4-10.3.6-4 .3-8.1.6-12.4.9 0-14.9-1.2-30.1-3.7-45.5-2.5-15.4-6.9-30.1-13.1-44.1l23.8-17.1 63.2 11.7-21.1 18.3-27.4-2.1c.5 1.1.9 2.5 1.4 4.1.8 2.8 1.8 7.1 3.1 12.9h33.4l-8.3 19.1h-22.3c.2 2.3.5 4.7.7 7.1.2 2.4.4 5.1.5 7.9l42.1 2.2zM608.8 118.4c3.7 2.8 7.5 5.2 11.2 7.2 3.2 1.8 6.5 3.5 9.9 5 3.5 1.5 6.6 2.2 9.4 2.2 2.2 0 3.8-.6 4.8-1.7 1.1-1.1 1.6-2.2 1.6-3.3 0-1.1-.8-2.2-2.4-3.2-1.6-1-3.7-2.1-6.5-3.4-2.7-1.3-5.9-2.9-9.4-4.7-3.6-1.8-7.3-4-11.3-6.8-3.3-2.1-5.9-4.1-7.8-6.1-1.9-2-3.4-4.1-4.5-6.2-1.1-2.1-1.8-4.4-2.1-6.8-.3-2.4-.5-5.1-.5-7.9 0-3.6.8-7.1 2.4-10.7 1.6-3.6 3.9-6.8 7.1-9.6 3.1-2.9 7-5.2 11.6-7 4.6-1.8 10-2.7 16-2.7 5.6 0 10.7.9 15.5 2.6 4.8 1.7 9 3.6 12.6 5.5 4.2 2.4 8 5.1 11.6 8.1l-12.8 21.7c-3.2-1.8-6.3-3.5-9.4-5-2.6-1.3-5.4-2.4-8.2-3.5-2.9-1.1-5.4-1.6-7.6-1.6-2.3 0-3.9.5-5 1.6s-1.6 2.2-1.6 3.2c0 2.3 1.7 4.5 5 6.6 3.3 2.1 8 4.5 14 7.1 8.2 3.4 14.3 7.6 18.4 12.6 4.1 4.9 6.1 11 6.1 18.1 0 5.2-.9 9.6-2.7 13.2-1.8 3.6-4.4 6.5-7.7 8.8-3.3 2.2-7.2 3.9-11.8 4.9-4.6 1-9.6 1.6-15 1.6-5 0-9.7-.6-14.2-1.7s-8.7-2.6-12.6-4.2c-3.9-1.7-7.4-3.5-10.5-5.4-3.1-2-5.8-3.7-8.1-5.3l14.5-23.2zM761.5 80.3l-34 7.1c0 2.4.1 5.2.4 8.4.3 3.2.7 6.5 1.2 10.1.5 3.6 1 7.2 1.6 11 .6 3.8 1.2 7.5 1.9 11 1.5 8.4 3.2 17.1 5.1 26l-32.5 6.5c-1.9-6.9-3.6-14.2-5-22-1.4-7.8-2.6-15-3.7-21.7-1.2-7.8-2.3-15.4-3.2-22.9l-29.8 5 2-25 95.9-19.8v26.3zM812.1 167.6c-.6-2.1-1.2-4.5-2-7.2-.7-2.3-1.5-5.1-2.4-8.4-.9-3.3-1.9-6.9-3.1-10.9l-21.1 2.9c-.9 3-1.8 5.7-2.6 8.1-.9 2.4-1.6 4.2-2.1 5.5h-29.4c4.2-10.6 7.9-20.9 11.1-31 3.2-10.1 5.8-19.5 7.9-28.1 2.1-8.6 3.7-16.2 4.7-22.8 1-6.6 1.5-11.8 1.5-15.6l24.7-10.5c6 11.5 11.8 23.4 17.3 35.8 2.4 5.3 4.8 11 7.3 17.1 2.5 6.1 4.9 12.3 7.3 18.8 2.4 6.4 4.6 13 6.7 19.7 2.1 6.7 3.9 13.4 5.5 20.1l-31.3 6.5zm-13.4-45.1c-.9-2.4-1.8-4.7-2.7-7l-2.7-6.6c-.3 1.4-.7 2.9-1.2 4.5-.3 1.4-.7 3-1.2 4.8-.5 1.8-1 3.8-1.5 5.9l9.3-1.6zM909.9 159.5l-31.8-33.1c.5 2.8.9 5.6 1.3 8.5.4 2.9.7 5.6.9 8 .3 2.9.6 5.6.7 8.1l-33.8 9c-1.1-8.5-2.3-17.2-3.5-26.2-1.2-9-2.5-17.7-4.1-26.3-1.5-8.6-3.3-16.7-5.4-24.5-2-7.8-4.5-14.9-7.3-21.2l27-16c3.7 2 7.9 3.8 12.6 5.6 4.6 1.8 9.4 3.6 14.1 5.6 4.8 2 9.4 4.1 13.9 6.4 4.5 2.3 8.6 4.9 12.1 7.8 3.5 2.9 6.3 6.3 8.5 10.2 2.2 3.8 3.2 8.2 3.2 13.2 0 5.3-1 9.5-3 12.7-2 3.2-4.6 6-7.9 8.3l41.5 42-39 1.9zm-20.2-63.2c0-3.4-1.3-6.3-3.8-8.6-2.6-2.3-5.4-4.2-8.4-5.7-3.6-1.7-7.7-3.1-12.1-4.1.8 2.1 1.6 4.1 2.3 6.1.7 2 1.4 4.1 2.1 6.2.7 2.1 1.4 4.4 2 6.9.7 2.5 1.4 5.2 2 8.2 1.7.1 3.5.1 5.3 0 1.8-.1 3.5-.5 5.1-1 1.6-.6 2.9-1.5 3.9-2.8 1.1-1.3 1.6-3 1.6-5.2z"
+				/>
+
+			</svg>
+
+
+		</div>
 
 
 		<!-- Le scripts -->
 		<script>
-		/**
-		 * vivus - JavaScript library to make drawing animation on SVG
-		 * @version v0.2.3
-		 * @link https://github.com/maxwellito/vivus
-		 * @license MIT
-		 */
-		"use strict";!function(t,e){function r(r){if("undefined"==typeof r)throw new Error('Pathformer [constructor]: "element" parameter is required');if(r.constructor===String&&(r=e.getElementById(r),!r))throw new Error('Pathformer [constructor]: "element" parameter is not related to an existing ID');if(!(r.constructor instanceof t.SVGElement||/^svg$/i.test(r.nodeName)))throw new Error('Pathformer [constructor]: "element" parameter must be a string or a SVGelement');this.el=r,this.scan(r)}function n(t,e,r){this.isReady=!1,this.setElement(t,e),this.setOptions(e),this.setCallback(r),this.isReady&&this.init()}r.prototype.TYPES=["line","ellipse","circle","polygon","polyline","rect"],r.prototype.ATTR_WATCH=["cx","cy","points","r","rx","ry","x","x1","x2","y","y1","y2"],r.prototype.scan=function(t){for(var e,r,n,i,a=t.querySelectorAll(this.TYPES.join(",")),o=0;o<a.length;o++)r=a[o],e=this[r.tagName.toLowerCase()+"ToPath"],n=e(this.parseAttr(r.attributes)),i=this.pathMaker(r,n),r.parentNode.replaceChild(i,r)},r.prototype.lineToPath=function(t){var e={};return e.d="M"+t.x1+","+t.y1+"L"+t.x2+","+t.y2,e},r.prototype.rectToPath=function(t){var e={},r=parseFloat(t.x)||0,n=parseFloat(t.y)||0,i=parseFloat(t.width)||0,a=parseFloat(t.height)||0;return e.d="M"+r+" "+n+" ",e.d+="L"+(r+i)+" "+n+" ",e.d+="L"+(r+i)+" "+(n+a)+" ",e.d+="L"+r+" "+(n+a)+" Z",e},r.prototype.polylineToPath=function(t){var e,r,n={},i=t.points.trim().split(" ");if(-1===t.points.indexOf(",")){var a=[];for(e=0;e<i.length;e+=2)a.push(i[e]+","+i[e+1]);i=a}for(r="M"+i[0],e=1;e<i.length;e++)-1!==i[e].indexOf(",")&&(r+="L"+i[e]);return n.d=r,n},r.prototype.polygonToPath=function(t){var e=r.prototype.polylineToPath(t);return e.d+="Z",e},r.prototype.ellipseToPath=function(t){var e=t.cx-t.rx,r=t.cy,n=parseFloat(t.cx)+parseFloat(t.rx),i=t.cy,a={};return a.d="M"+e+","+r+"A"+t.rx+","+t.ry+" 0,1,1 "+n+","+i+"A"+t.rx+","+t.ry+" 0,1,1 "+e+","+i,a},r.prototype.circleToPath=function(t){var e={},r=t.cx-t.r,n=t.cy,i=parseFloat(t.cx)+parseFloat(t.r),a=t.cy;return e.d="M"+r+","+n+"A"+t.r+","+t.r+" 0,1,1 "+i+","+a+"A"+t.r+","+t.r+" 0,1,1 "+r+","+a,e},r.prototype.pathMaker=function(t,r){var n,i,a=e.createElementNS("http://www.w3.org/2000/svg","path");for(n=0;n<t.attributes.length;n++)i=t.attributes[n],-1===this.ATTR_WATCH.indexOf(i.name)&&a.setAttribute(i.name,i.value);for(n in r)a.setAttribute(n,r[n]);return a},r.prototype.parseAttr=function(t){for(var e,r={},n=0;n<t.length;n++){if(e=t[n],-1!==this.ATTR_WATCH.indexOf(e.name)&&-1!==e.value.indexOf("%"))throw new Error("Pathformer [parseAttr]: a SVG shape got values in percentage. This cannot be transformed into 'path' tags. Please use 'viewBox'.");r[e.name]=e.value}return r};var i,a,o;n.LINEAR=function(t){return t},n.EASE=function(t){return-Math.cos(t*Math.PI)/2+.5},n.EASE_OUT=function(t){return 1-Math.pow(1-t,3)},n.EASE_IN=function(t){return Math.pow(t,3)},n.EASE_OUT_BOUNCE=function(t){var e=-Math.cos(.5*t*Math.PI)+1,r=Math.pow(e,1.5),n=Math.pow(1-t,2),i=-Math.abs(Math.cos(2.5*r*Math.PI))+1;return 1-n+i*n},n.prototype.setElement=function(r,n){if("undefined"==typeof r)throw new Error('Vivus [constructor]: "element" parameter is required');if(r.constructor===String&&(r=e.getElementById(r),!r))throw new Error('Vivus [constructor]: "element" parameter is not related to an existing ID');if(this.parentEl=r,n&&n.file){var i=e.createElement("object");i.setAttribute("type","image/svg+xml"),i.setAttribute("data",n.file),i.setAttribute("width","100%"),i.setAttribute("height","100%"),r.appendChild(i),r=i}switch(r.constructor){case t.SVGSVGElement:case t.SVGElement:this.el=r,this.isReady=!0;break;case t.HTMLObjectElement:if(this.el=r.contentDocument&&r.contentDocument.querySelector("svg"),this.el)return this.isReady=!0,void 0;var a=this;r.addEventListener("load",function(){if(a.el=r.contentDocument&&r.contentDocument.querySelector("svg"),!a.el)throw new Error("Vivus [constructor]: object loaded does not contain any SVG");a.isReady=!0,a.init()});break;default:throw new Error('Vivus [constructor]: "element" parameter is not valid (or miss the "file" attribute)')}},n.prototype.setOptions=function(e){var r=["delayed","async","oneByOne","scenario","scenario-sync"],i=["inViewport","manual","autostart"];if(void 0!==e&&e.constructor!==Object)throw new Error('Vivus [constructor]: "options" parameter must be an object');if(e=e||{},e.type&&-1===r.indexOf(e.type))throw new Error("Vivus [constructor]: "+e.type+" is not an existing animation `type`");if(this.type=e.type||r[0],e.start&&-1===i.indexOf(e.start))throw new Error("Vivus [constructor]: "+e.start+" is not an existing `start` option");if(this.start=e.start||i[0],this.isIE=-1!==t.navigator.userAgent.indexOf("MSIE")||-1!==t.navigator.userAgent.indexOf("Trident/")||-1!==t.navigator.userAgent.indexOf("Edge/"),this.duration=o(e.duration,120),this.delay=o(e.delay,null),this.dashGap=o(e.dashGap,2),this.forceRender=e.hasOwnProperty("forceRender")?!!e.forceRender:this.isIE,this.selfDestroy=!!e.selfDestroy,this.onReady=e.onReady,this.ignoreInvisible=e.hasOwnProperty("ignoreInvisible")?!!e.ignoreInvisible:!1,this.animTimingFunction=e.animTimingFunction||n.LINEAR,this.pathTimingFunction=e.pathTimingFunction||n.LINEAR,this.delay>=this.duration)throw new Error("Vivus [constructor]: delay must be shorter than duration")},n.prototype.setCallback=function(t){if(t&&t.constructor!==Function)throw new Error('Vivus [constructor]: "callback" parameter must be a function');this.callback=t||function(){}},n.prototype.mapping=function(){var e,r,n,i,a,s,h,u;for(u=s=h=0,r=this.el.querySelectorAll("path"),e=0;e<r.length;e++)n=r[e],this.isInvisible(n)||(a={el:n,length:Math.ceil(n.getTotalLength())},isNaN(a.length)?t.console&&console.warn&&console.warn("Vivus [mapping]: cannot retrieve a path element length",n):(s+=a.length,this.map.push(a),n.style.strokeDasharray=a.length+" "+(a.length+this.dashGap),n.style.strokeDashoffset=a.length,this.isIE&&(a.length+=this.dashGap),this.renderPath(e)));for(s=0===s?1:s,this.delay=null===this.delay?this.duration/3:this.delay,this.delayUnit=this.delay/(r.length>1?r.length-1:1),e=0;e<this.map.length;e++){switch(a=this.map[e],this.type){case"delayed":a.startAt=this.delayUnit*e,a.duration=this.duration-this.delay;break;case"oneByOne":a.startAt=h/s*this.duration,a.duration=a.length/s*this.duration;break;case"async":a.startAt=0,a.duration=this.duration;break;case"scenario-sync":n=r[e],i=this.parseAttr(n),a.startAt=u+(o(i["data-delay"],this.delayUnit)||0),a.duration=o(i["data-duration"],this.duration),u=void 0!==i["data-async"]?a.startAt:a.startAt+a.duration,this.frameLength=Math.max(this.frameLength,a.startAt+a.duration);break;case"scenario":n=r[e],i=this.parseAttr(n),a.startAt=o(i["data-start"],this.delayUnit)||0,a.duration=o(i["data-duration"],this.duration),this.frameLength=Math.max(this.frameLength,a.startAt+a.duration)}h+=a.length,this.frameLength=this.frameLength||this.duration}},n.prototype.drawer=function(){var t=this;this.currentFrame+=this.speed,this.currentFrame<=0?(this.stop(),this.reset(),this.callback(this)):this.currentFrame>=this.frameLength?(this.stop(),this.currentFrame=this.frameLength,this.trace(),this.selfDestroy&&this.destroy(),this.callback(this)):(this.trace(),this.handle=i(function(){t.drawer()}))},n.prototype.trace=function(){var t,e,r,n;for(n=this.animTimingFunction(this.currentFrame/this.frameLength)*this.frameLength,t=0;t<this.map.length;t++)r=this.map[t],e=(n-r.startAt)/r.duration,e=this.pathTimingFunction(Math.max(0,Math.min(1,e))),r.progress!==e&&(r.progress=e,r.el.style.strokeDashoffset=Math.floor(r.length*(1-e)),this.renderPath(t))},n.prototype.renderPath=function(t){if(this.forceRender&&this.map&&this.map[t]){var e=this.map[t],r=e.el.cloneNode(!0);e.el.parentNode.replaceChild(r,e.el),e.el=r}},n.prototype.init=function(){this.frameLength=0,this.currentFrame=0,this.map=[],new r(this.el),this.mapping(),this.starter(),this.onReady&&this.onReady(this)},n.prototype.starter=function(){switch(this.start){case"manual":return;case"autostart":this.play();break;case"inViewport":var e=this,r=function(){e.isInViewport(e.parentEl,1)&&(e.play(),t.removeEventListener("scroll",r))};t.addEventListener("scroll",r),r()}},n.prototype.getStatus=function(){return 0===this.currentFrame?"start":this.currentFrame===this.frameLength?"end":"progress"},n.prototype.reset=function(){return this.setFrameProgress(0)},n.prototype.finish=function(){return this.setFrameProgress(1)},n.prototype.setFrameProgress=function(t){return t=Math.min(1,Math.max(0,t)),this.currentFrame=Math.round(this.frameLength*t),this.trace(),this},n.prototype.play=function(t){if(t&&"number"!=typeof t)throw new Error("Vivus [play]: invalid speed");return this.speed=t||1,this.handle||this.drawer(),this},n.prototype.stop=function(){return this.handle&&(a(this.handle),delete this.handle),this},n.prototype.destroy=function(){var t,e;for(t=0;t<this.map.length;t++)e=this.map[t],e.el.style.strokeDashoffset=null,e.el.style.strokeDasharray=null,this.renderPath(t)},n.prototype.isInvisible=function(t){var e,r=t.getAttribute("data-ignore");return null!==r?"false"!==r:this.ignoreInvisible?(e=t.getBoundingClientRect(),!e.width&&!e.height):!1},n.prototype.parseAttr=function(t){var e,r={};if(t&&t.attributes)for(var n=0;n<t.attributes.length;n++)e=t.attributes[n],r[e.name]=e.value;return r},n.prototype.isInViewport=function(t,e){var r=this.scrollY(),n=r+this.getViewportH(),i=t.getBoundingClientRect(),a=i.height,o=r+i.top,s=o+a;return e=e||0,n>=o+a*e&&s>=r},n.prototype.docElem=t.document.documentElement,n.prototype.getViewportH=function(){var e=this.docElem.clientHeight,r=t.innerHeight;return r>e?r:e},n.prototype.scrollY=function(){return t.pageYOffset||this.docElem.scrollTop},i=function(){return t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||t.oRequestAnimationFrame||t.msRequestAnimationFrame||function(e){return t.setTimeout(e,1e3/60)}}(),a=function(){return t.cancelAnimationFrame||t.webkitCancelAnimationFrame||t.mozCancelAnimationFrame||t.oCancelAnimationFrame||t.msCancelAnimationFrame||function(e){return t.clearTimeout(e)}}(),o=function(t,e){var r=parseInt(t,10);return r>=0?r:e},"function"==typeof define&&define.amd?define([],function(){return n}):"object"==typeof exports?module.exports=n:t.Vivus=n}(window,document);
+			/**
+			 * vivus - JavaScript library to make drawing animation on SVG
+			 * @version v0.2.3
+			 * @link https://github.com/maxwellito/vivus
+			 * @license MIT
+			 */
+			"use strict";!function(t,e){function r(r){if("undefined"==typeof r)throw new Error('Pathformer [constructor]: "element" parameter is required');if(r.constructor===String&&(r=e.getElementById(r),!r))throw new Error('Pathformer [constructor]: "element" parameter is not related to an existing ID');if(!(r.constructor instanceof t.SVGElement||/^svg$/i.test(r.nodeName)))throw new Error('Pathformer [constructor]: "element" parameter must be a string or a SVGelement');this.el=r,this.scan(r)}function n(t,e,r){this.isReady=!1,this.setElement(t,e),this.setOptions(e),this.setCallback(r),this.isReady&&this.init()}r.prototype.TYPES=["line","ellipse","circle","polygon","polyline","rect"],r.prototype.ATTR_WATCH=["cx","cy","points","r","rx","ry","x","x1","x2","y","y1","y2"],r.prototype.scan=function(t){for(var e,r,n,i,a=t.querySelectorAll(this.TYPES.join(",")),o=0;o<a.length;o++)r=a[o],e=this[r.tagName.toLowerCase()+"ToPath"],n=e(this.parseAttr(r.attributes)),i=this.pathMaker(r,n),r.parentNode.replaceChild(i,r)},r.prototype.lineToPath=function(t){var e={};return e.d="M"+t.x1+","+t.y1+"L"+t.x2+","+t.y2,e},r.prototype.rectToPath=function(t){var e={},r=parseFloat(t.x)||0,n=parseFloat(t.y)||0,i=parseFloat(t.width)||0,a=parseFloat(t.height)||0;return e.d="M"+r+" "+n+" ",e.d+="L"+(r+i)+" "+n+" ",e.d+="L"+(r+i)+" "+(n+a)+" ",e.d+="L"+r+" "+(n+a)+" Z",e},r.prototype.polylineToPath=function(t){var e,r,n={},i=t.points.trim().split(" ");if(-1===t.points.indexOf(",")){var a=[];for(e=0;e<i.length;e+=2)a.push(i[e]+","+i[e+1]);i=a}for(r="M"+i[0],e=1;e<i.length;e++)-1!==i[e].indexOf(",")&&(r+="L"+i[e]);return n.d=r,n},r.prototype.polygonToPath=function(t){var e=r.prototype.polylineToPath(t);return e.d+="Z",e},r.prototype.ellipseToPath=function(t){var e=t.cx-t.rx,r=t.cy,n=parseFloat(t.cx)+parseFloat(t.rx),i=t.cy,a={};return a.d="M"+e+","+r+"A"+t.rx+","+t.ry+" 0,1,1 "+n+","+i+"A"+t.rx+","+t.ry+" 0,1,1 "+e+","+i,a},r.prototype.circleToPath=function(t){var e={},r=t.cx-t.r,n=t.cy,i=parseFloat(t.cx)+parseFloat(t.r),a=t.cy;return e.d="M"+r+","+n+"A"+t.r+","+t.r+" 0,1,1 "+i+","+a+"A"+t.r+","+t.r+" 0,1,1 "+r+","+a,e},r.prototype.pathMaker=function(t,r){var n,i,a=e.createElementNS("http://www.w3.org/2000/svg","path");for(n=0;n<t.attributes.length;n++)i=t.attributes[n],-1===this.ATTR_WATCH.indexOf(i.name)&&a.setAttribute(i.name,i.value);for(n in r)a.setAttribute(n,r[n]);return a},r.prototype.parseAttr=function(t){for(var e,r={},n=0;n<t.length;n++){if(e=t[n],-1!==this.ATTR_WATCH.indexOf(e.name)&&-1!==e.value.indexOf("%"))throw new Error("Pathformer [parseAttr]: a SVG shape got values in percentage. This cannot be transformed into 'path' tags. Please use 'viewBox'.");r[e.name]=e.value}return r};var i,a,o;n.LINEAR=function(t){return t},n.EASE=function(t){return-Math.cos(t*Math.PI)/2+.5},n.EASE_OUT=function(t){return 1-Math.pow(1-t,3)},n.EASE_IN=function(t){return Math.pow(t,3)},n.EASE_OUT_BOUNCE=function(t){var e=-Math.cos(.5*t*Math.PI)+1,r=Math.pow(e,1.5),n=Math.pow(1-t,2),i=-Math.abs(Math.cos(2.5*r*Math.PI))+1;return 1-n+i*n},n.prototype.setElement=function(r,n){if("undefined"==typeof r)throw new Error('Vivus [constructor]: "element" parameter is required');if(r.constructor===String&&(r=e.getElementById(r),!r))throw new Error('Vivus [constructor]: "element" parameter is not related to an existing ID');if(this.parentEl=r,n&&n.file){var i=e.createElement("object");i.setAttribute("type","image/svg+xml"),i.setAttribute("data",n.file),i.setAttribute("width","100%"),i.setAttribute("height","100%"),r.appendChild(i),r=i}switch(r.constructor){case t.SVGSVGElement:case t.SVGElement:this.el=r,this.isReady=!0;break;case t.HTMLObjectElement:if(this.el=r.contentDocument&&r.contentDocument.querySelector("svg"),this.el)return this.isReady=!0,void 0;var a=this;r.addEventListener("load",function(){if(a.el=r.contentDocument&&r.contentDocument.querySelector("svg"),!a.el)throw new Error("Vivus [constructor]: object loaded does not contain any SVG");a.isReady=!0,a.init()});break;default:throw new Error('Vivus [constructor]: "element" parameter is not valid (or miss the "file" attribute)')}},n.prototype.setOptions=function(e){var r=["delayed","async","oneByOne","scenario","scenario-sync"],i=["inViewport","manual","autostart"];if(void 0!==e&&e.constructor!==Object)throw new Error('Vivus [constructor]: "options" parameter must be an object');if(e=e||{},e.type&&-1===r.indexOf(e.type))throw new Error("Vivus [constructor]: "+e.type+" is not an existing animation `type`");if(this.type=e.type||r[0],e.start&&-1===i.indexOf(e.start))throw new Error("Vivus [constructor]: "+e.start+" is not an existing `start` option");if(this.start=e.start||i[0],this.isIE=-1!==t.navigator.userAgent.indexOf("MSIE")||-1!==t.navigator.userAgent.indexOf("Trident/")||-1!==t.navigator.userAgent.indexOf("Edge/"),this.duration=o(e.duration,120),this.delay=o(e.delay,null),this.dashGap=o(e.dashGap,2),this.forceRender=e.hasOwnProperty("forceRender")?!!e.forceRender:this.isIE,this.selfDestroy=!!e.selfDestroy,this.onReady=e.onReady,this.ignoreInvisible=e.hasOwnProperty("ignoreInvisible")?!!e.ignoreInvisible:!1,this.animTimingFunction=e.animTimingFunction||n.LINEAR,this.pathTimingFunction=e.pathTimingFunction||n.LINEAR,this.delay>=this.duration)throw new Error("Vivus [constructor]: delay must be shorter than duration")},n.prototype.setCallback=function(t){if(t&&t.constructor!==Function)throw new Error('Vivus [constructor]: "callback" parameter must be a function');this.callback=t||function(){}},n.prototype.mapping=function(){var e,r,n,i,a,s,h,u;for(u=s=h=0,r=this.el.querySelectorAll("path"),e=0;e<r.length;e++)n=r[e],this.isInvisible(n)||(a={el:n,length:Math.ceil(n.getTotalLength())},isNaN(a.length)?t.console&&console.warn&&console.warn("Vivus [mapping]: cannot retrieve a path element length",n):(s+=a.length,this.map.push(a),n.style.strokeDasharray=a.length+" "+(a.length+this.dashGap),n.style.strokeDashoffset=a.length,this.isIE&&(a.length+=this.dashGap),this.renderPath(e)));for(s=0===s?1:s,this.delay=null===this.delay?this.duration/3:this.delay,this.delayUnit=this.delay/(r.length>1?r.length-1:1),e=0;e<this.map.length;e++){switch(a=this.map[e],this.type){case"delayed":a.startAt=this.delayUnit*e,a.duration=this.duration-this.delay;break;case"oneByOne":a.startAt=h/s*this.duration,a.duration=a.length/s*this.duration;break;case"async":a.startAt=0,a.duration=this.duration;break;case"scenario-sync":n=r[e],i=this.parseAttr(n),a.startAt=u+(o(i["data-delay"],this.delayUnit)||0),a.duration=o(i["data-duration"],this.duration),u=void 0!==i["data-async"]?a.startAt:a.startAt+a.duration,this.frameLength=Math.max(this.frameLength,a.startAt+a.duration);break;case"scenario":n=r[e],i=this.parseAttr(n),a.startAt=o(i["data-start"],this.delayUnit)||0,a.duration=o(i["data-duration"],this.duration),this.frameLength=Math.max(this.frameLength,a.startAt+a.duration)}h+=a.length,this.frameLength=this.frameLength||this.duration}},n.prototype.drawer=function(){var t=this;this.currentFrame+=this.speed,this.currentFrame<=0?(this.stop(),this.reset(),this.callback(this)):this.currentFrame>=this.frameLength?(this.stop(),this.currentFrame=this.frameLength,this.trace(),this.selfDestroy&&this.destroy(),this.callback(this)):(this.trace(),this.handle=i(function(){t.drawer()}))},n.prototype.trace=function(){var t,e,r,n;for(n=this.animTimingFunction(this.currentFrame/this.frameLength)*this.frameLength,t=0;t<this.map.length;t++)r=this.map[t],e=(n-r.startAt)/r.duration,e=this.pathTimingFunction(Math.max(0,Math.min(1,e))),r.progress!==e&&(r.progress=e,r.el.style.strokeDashoffset=Math.floor(r.length*(1-e)),this.renderPath(t))},n.prototype.renderPath=function(t){if(this.forceRender&&this.map&&this.map[t]){var e=this.map[t],r=e.el.cloneNode(!0);e.el.parentNode.replaceChild(r,e.el),e.el=r}},n.prototype.init=function(){this.frameLength=0,this.currentFrame=0,this.map=[],new r(this.el),this.mapping(),this.starter(),this.onReady&&this.onReady(this)},n.prototype.starter=function(){switch(this.start){case"manual":return;case"autostart":this.play();break;case"inViewport":var e=this,r=function(){e.isInViewport(e.parentEl,1)&&(e.play(),t.removeEventListener("scroll",r))};t.addEventListener("scroll",r),r()}},n.prototype.getStatus=function(){return 0===this.currentFrame?"start":this.currentFrame===this.frameLength?"end":"progress"},n.prototype.reset=function(){return this.setFrameProgress(0)},n.prototype.finish=function(){return this.setFrameProgress(1)},n.prototype.setFrameProgress=function(t){return t=Math.min(1,Math.max(0,t)),this.currentFrame=Math.round(this.frameLength*t),this.trace(),this},n.prototype.play=function(t){if(t&&"number"!=typeof t)throw new Error("Vivus [play]: invalid speed");return this.speed=t||1,this.handle||this.drawer(),this},n.prototype.stop=function(){return this.handle&&(a(this.handle),delete this.handle),this},n.prototype.destroy=function(){var t,e;for(t=0;t<this.map.length;t++)e=this.map[t],e.el.style.strokeDashoffset=null,e.el.style.strokeDasharray=null,this.renderPath(t)},n.prototype.isInvisible=function(t){var e,r=t.getAttribute("data-ignore");return null!==r?"false"!==r:this.ignoreInvisible?(e=t.getBoundingClientRect(),!e.width&&!e.height):!1},n.prototype.parseAttr=function(t){var e,r={};if(t&&t.attributes)for(var n=0;n<t.attributes.length;n++)e=t.attributes[n],r[e.name]=e.value;return r},n.prototype.isInViewport=function(t,e){var r=this.scrollY(),n=r+this.getViewportH(),i=t.getBoundingClientRect(),a=i.height,o=r+i.top,s=o+a;return e=e||0,n>=o+a*e&&s>=r},n.prototype.docElem=t.document.documentElement,n.prototype.getViewportH=function(){var e=this.docElem.clientHeight,r=t.innerHeight;return r>e?r:e},n.prototype.scrollY=function(){return t.pageYOffset||this.docElem.scrollTop},i=function(){return t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||t.oRequestAnimationFrame||t.msRequestAnimationFrame||function(e){return t.setTimeout(e,1e3/60)}}(),a=function(){return t.cancelAnimationFrame||t.webkitCancelAnimationFrame||t.mozCancelAnimationFrame||t.oCancelAnimationFrame||t.msCancelAnimationFrame||function(e){return t.clearTimeout(e)}}(),o=function(t,e){var r=parseInt(t,10);return r>=0?r:e},"function"==typeof define&&define.amd?define([],function(){return n}):"object"==typeof exports?module.exports=n:t.Vivus=n}(window,document);
 		</script>
 
 		<script>
 		  var hi = new Vivus('hi-there', {
 				type: 'scenario-sync',
-				duration: 800,
+				duration: 600,
+				start: 'autostart',
+				animTimingFunction: Vivus.EASE_OUT_BOUNCE,
+				pathTimingFunction: Vivus.EASE_IN
+			},
+				function () {
+					if (window.console) {
+						console.log('Program finished. You can go now... [go outdoor and wash your eyes]');
+						// The property 'map' contain all the SVG mapping
+						console.table(hi.map);
+					}
+				});
+
+		</script>
+
+		<script>
+		  var hi = new Vivus('junglestar', {
+				type: 'scenario-sync',
+				duration: 200,
 				start: 'autostart',
 				animTimingFunction: Vivus.EASE_OUT_BOUNCE,
 				pathTimingFunction: Vivus.EASE_IN
