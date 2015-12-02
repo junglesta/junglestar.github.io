@@ -1,7 +1,6 @@
 'use strict';
 // simple GULP 2 process sass and enable browsersync
 
-
 // w/watch function now... and it works!!!!!
 var gulp         = require('gulp');
 var sass         = require('gulp-ruby-sass');
@@ -14,13 +13,13 @@ var reload       = browserSync.reload;
 gulp.task('serve', ['sass'], function() {
 
     browserSync({
-        proxy: "dev.project"
+        proxy: "junglestar.dev"
     });
 
     gulp.watch("scss/*.scss", ['sass']);
     gulp.watch("*.css").on('change', reload);
     // here can add any watch task as needed
-    gulp.watch("*.php").on('change', reload);
+    gulp.watch("*.htm").on('change', reload);
 });
 
 
