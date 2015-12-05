@@ -1,0 +1,100 @@
+
+svg * { fill: none; }
+
+html { font-size: 16px; }
+
+body {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
+	color: #ccc;
+	background-color: #000;
+	// word-break: break-word;
+	// font-size: 50px;
+	// line-height: 1.4;
+
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+.wrap {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a, a:visited, a:hover, a:link {
+	color: inherit;
+	outline: 0;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+	padding: 0 2px;
+}
+a:hover{
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+}
+
+small { font-weight: 100; }
+
+.junglestar_circle_logo{ width: 100%; }
+.junglestar_circle_logo:hover{ cursor: pointer;}
+
+
+/* Paths  */
+
+/*default*/
+.line{
+	fill:none;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+	stroke-width:5px;
+}
+.a{
+	stroke-width:4px;
+}
+.b{
+	stroke-width:3px;
+}
+.c{
+	stroke-width:2px;
+}
+
+
+/*variants*/
+.white{
+	stroke:rgba(255,255,255,1);
+}
+.black{
+	stroke:rgba(0,0,0,1);
+}
+.orange{
+	stroke:rgba(255,129,0,1);
+}
+.yellow{
+	stroke:rgba(255,227,0,1);
+}
+.red{
+	stroke:rgba(255,38,0,1);
+}
+.blue{
+	stroke:rgba(0,70,204,1);
+}
+.green{
+	stroke:rgba(146,204,20,1);
+}
+.turquoise{
+	stroke:rgba(64,255,251,1);
+}
+
+/*@media all and (orientation:portrait) {
+	.junglestar_circle_logo{ max-height:90vw; }
+
+}
+@media all and (orientation:landscape) {
+	.junglestar_circle_logo{ max-height:90vh; }
+}*/

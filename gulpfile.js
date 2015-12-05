@@ -1,34 +1,40 @@
 'use strict';
-// simple GULP 2 process sass and enable browsersync
-
-// w/watch function now... and it works!!!!!
+// code that SPEAKs
+// GULP here just enable browsersync
+// WHY: K.I.S.S. just serve jekyll on lan
+// HOW: just works... almost everywhere!
+// WHAT: BroSync across lan. Let's call it SIP cos u not gulp expressos, lah!
+// SCSS?: woory not, let Jekyll handle it.
 var gulp         = require('gulp');
-var sass         = require('gulp-ruby-sass');
-var filter       = require('gulp-filter');
 var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', function() {
+  browserSync({
+    // • JEKYLL GITHUB USER|ORGANIZATION PAGES (user.github.io)
+    // ```jekyll serve --incremental``` uses "127.0.0.1:4000" so use it 4 brosync too.
+    // using jekyll (3.0.0.) w/ Incremental build!
+    proxy: "http://127.0.0.1:4000"
 
-    browserSync({
-        proxy: "junglestar.dev"
-    });
+    // • JEKYLL GITHUB PROJECT PAGES (user.github.io/user)
+    // ```bundle exec jekyll serve --baseurl ''```
+    // uses "0.0.0.0:4000/baseurl"
+    // using jekyll (2.4.0)
+    // proxy: "0.0.0.0:4000/junglestar"
+  });
 
-    gulp.watch("scss/*.scss", ['sass']);
-    gulp.watch("*.css").on('change', reload);
-    // here can add any watch task as needed
-    gulp.watch("*.htm").on('change', reload);
+  gulp.watch("_site/*.css").on('change', reload);
+  gulp.watch("_site/*.html").on('change', reload);
 });
 
-
-gulp.task('sass', function () {
-    return gulp.src('scss/**/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('assets/css'))// Write the CSS & Source maps
-        .pipe(filter('**/*.css')) // Filtering stream to only css files
-        .pipe(browserSync.reload({stream:true}));
-});
 
 gulp.task('default', ['serve']);
+
+// QUICKSTART:
+// 0. open 2 terminal windows:
+// 1. ```jekyll serve --incremental --trace``` to run jekyll (cos this repo uses jekyll 3.0.0)
+// 2. ```gulp``` to process styles + new terminal window
+// optional
+// A. ```gulp svg``` to clean SVGs...
