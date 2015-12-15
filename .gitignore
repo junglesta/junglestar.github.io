@@ -1,12 +1,6 @@
-*.zip
 
 
-.sass-cache
-*.css.map
 
-.DS_Store
-.svn
-log/*.log
 tmp/**
 .sass-cache
 
@@ -31,6 +25,19 @@ node_modules
 **/.Trashes
 **/ehthumbs.db
 **/Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
 
 # Packages #
 # it's better to unpack these files and commit the raw source
