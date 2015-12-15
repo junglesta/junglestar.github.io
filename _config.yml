@@ -24,7 +24,7 @@ color:
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Rokma
   pic: 1
   position: Lead Designer
   social:
@@ -35,7 +35,7 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
+- name: Frank Pelikan
   pic: 2
   position: Lead Marketer
   social:
@@ -46,13 +46,13 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
+- name: Toi Breker
   pic: 3
   position: Lead Developer
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: github
       url: #
     - title: google-plus
       url: #
