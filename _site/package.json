@@ -1,0 +1,19 @@
+{
+  "name": "junglestar.github.io",
+  "version": "0.9.7",
+  "description": "gulp + browsersync = Bum!",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "junglestar"
+  ],
+  "author": "rokma",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.7.2",
+    "gulp": "^3.8.10",
+  }
+}

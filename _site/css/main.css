@@ -270,6 +270,9 @@ code {
   -o-background-size: cover;
   background-size: cover; }
 
+.post {
+  background: #161616; }
+
 .clock {
   position: relative; }
   .clock div {
