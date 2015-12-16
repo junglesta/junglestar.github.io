@@ -3,21 +3,23 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="home">
 
     <div class="cover">
-      <div class="clock">
-        <div class='hours'></div>
-        <div class='seconds'></div>
-        <div class='minutes'></div>
-      </div>
-      <div class="site-name">
-        <div class="site-name__inner">
-          <div class="name">{{ site.title }}</div>
-          <div class="desc">{{site.description}}</div>
-          <div class="btn">Know more</div>
+      <div class="cover__clock">
+        <div class="clockwrap">
+          <div class='hours'></div>
+          <div class='seconds'></div>
+          <div class='minutes'></div>
         </div>
       </div>
+
+      <div class="cover__title">
+        <div class="name"><h1>{{ site.title }}</h1></div>
+        <div class="desc">{{site.description}}</div>
+        <div class="btn">Know more</div>
+      </div>
+
     </div>
 
     <header class="site-header">
@@ -71,7 +73,7 @@
   var header = document.getElementsByTagName('header')[0];
 
   btnSel.addEventListener("click", function() {
-    header.scrollIntoView();
+    header.scrollIntoView({behavior: "smooth"});
   }, false);
 
 </script>

@@ -3,51 +3,41 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
+// typog
 $base-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
+//util
 $spacing-unit:     30px;
-
+//colors
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$link-color:       #000;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    600px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+//bg
+$top_color: hsla(46, 100%, 54%, .5);
+$bot_color: hsla(209, 100%, 30%, 1); //blue;
 
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+//// Predefined Break-points (for _cmq.scss)
+$mediaMinWidth: 600px;
+$mediaBp1Width: 960px;
+$mediaMaxWidth: 1260px;
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "cmq",
         "base",
         "layout",
+        "cover",
         "home",
         "post",
         "clock",

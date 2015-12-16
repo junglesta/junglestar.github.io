@@ -1,3 +1,10 @@
+/**
+* Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
+* The problem this mixin solves is explained there
+* http://css-tricks.com/conditional-media-query-mixins/
+* https://github.com/dsheiko
+* MIT license: http://www.opensource.org/licenses/mit-license.php
+*/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -15,6 +22,15 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
+  @media only screen and (min-width: 601px) {
+    body {
+      font-size: 19.2px; } }
+  @media only screen and (min-width: 961px) {
+    body {
+      font-size: 22.4px; } }
+  @media only screen and (min-width: 1261px) {
+    body {
+      font-size: 25.6px; } }
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -39,10 +55,10 @@ li > ol {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 100; }
 
 a {
-  color: #e33;
+  color: #000;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -71,7 +87,7 @@ pre {
   display: block;
   font-size: 0.875em;
   font-family: Consolas;
-  color: #333;
+  color: #424242;
   line-height: 1.3em;
   margin: 0px auto;
   padding: 0 10px; }
@@ -92,7 +108,7 @@ code {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box; }
+  box-sizing: border-box; }
 
 .site-header {
   min-height: 56px;
@@ -114,13 +130,14 @@ code {
   color: white; }
 
 .site-nav {
+  font-size: 24px;
   float: right;
   line-height: 2; }
   .site-nav .page-link {
     color: #828282; }
   .site-nav .page-link {
     display: block;
-    padding: 5px 10px; }
+    padding: 15px; }
 
 .page-content {
   padding: 30px 0; }
@@ -150,10 +167,10 @@ code {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
+  @media only screen and (min-width: 1261px) {
     .post-title {
       font-size: 3rem; } }
 
@@ -167,32 +184,32 @@ code {
     line-height: 1.5;
     margin-bottom: 20px; }
   .post-content h2 {
-    font-size: 3rem;
-    max-width: 540px;
-    padding: 0px 10px;
-    margin: 0 auto;
-    margin-bottom: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 2rem; } }
-  .post-content h3 {
     font-size: 2rem;
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 1.75rem; } }
-  .post-content h4 {
+    @media only screen and (min-width: 1261px) {
+      .post-content h2 {
+        font-size: 3rem; } }
+  .post-content h3 {
     font-size: 1.75rem;
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: 20px; }
-    @media screen and (max-width: 800px) {
+    @media only screen and (min-width: 1261px) {
+      .post-content h3 {
+        font-size: 2rem; } }
+  .post-content h4 {
+    font-size: 1.5rem;
+    max-width: 540px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 1261px) {
       .post-content h4 {
-        font-size: 1.5rem; } }
+        font-size: 1.75rem; } }
   .post-content .highlight {
     color: #333;
     z-index: -1;
@@ -212,91 +229,99 @@ code {
     margin: 0 auto;
     margin-bottom: 20px; }
 
-.site-name {
-  max-width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-  text-align: right;
-  position: relative;
-  height: 100%; }
-
-.site-name__inner {
-  position: absolute;
-  bottom: 20px;
-  width: calc(100% - 20px);
-  right: 20px;
-  color: white; }
-  .site-name__inner .name {
-    font-size: 7rem; }
-    @media screen and (max-width: 800px) {
-      .site-name__inner .name {
-        font-size: 5rem; } }
-  .site-name__inner .desc {
-    font-size: 20px; }
-  .site-name__inner .btn {
-    padding: 10px 30px;
-    border: 1px solid #fff;
-    display: inline-block;
-    margin-top: 50px;
-    border-radius: 3px;
-    cursor: pointer; }
-
-.home {
-  max-width: 540px;
-  margin: 0 auto;
-  padding: 0 10px; }
-  .home a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-    color: #444;
-    padding: 10px; }
-    .home a:hover {
-      background: #fafafd;
-      outline: 1px solid #004f99; }
-  .home a::before {
-    width: 0; }
-  .home .post-meta {
-    text-align: right; }
-
 .cover {
   color: rgba(255, 200, 20, 0.5);
   height: 100%;
-  background-color: rgba(255, 200, 20, 0.5);
-  background-image: linear-gradient(rgba(255, 200, 20, 0.5), #004f99);
   background: rgba(255, 200, 20, 0.5);
   background: linear-gradient(rgba(255, 200, 20, 0.5), #004f99);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .cover > * {
+    padding: 20px;
+    flex: 1 auto; }
+
+.cover__title {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  color: white;
+  width: 100%;
+  text-align: right; }
+  .cover__title .name h1 {
+    font-size: 18vw;
+    line-height: 1.25;
+    margin: 0; }
+    @media only screen and (min-width: 1261px) {
+      .cover__title .name h1 {
+        font-size: 7rem; } }
+  .cover__title .desc {
+    font-size: 20px; }
+  .cover__title .btn {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-top: .5rem;
+    border-radius: 3px;
+    cursor: pointer; }
+
+.home_content {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 10px; }
+  .home_content a {
+    font-size: 28px;
+    padding: 10px; }
+    .home_content a:hover {
+      background: #fafafd;
+      outline: 1px solid #004f99; }
+  .home_content a::before {
+    width: 0; }
+  .home_content .post-meta {
+    text-align: right; }
 
 .post {
   background: #161616; }
 
-.clock {
-  position: relative; }
-  .clock div {
+.clockwrap {
+  position: relative;
+  left: -130px;
+  top: -130px;
+  z-index: 1;
+  zoom: .85; }
+  @media only screen and (min-width: 601px) {
+    .clockwrap {
+      zoom: 1; } }
+  @media only screen and (orientation: landscape) {
+    .clockwrap {
+      z-index: 10;
+      zoom: .35; } }
+  .clockwrap div {
     text-align: center;
-    border-radius: 50%; }
+    border-radius: 50%;
+    position: absolute; }
 
 .seconds {
   width: 40px;
   height: 40px;
-  top: 170px;
-  left: 170px;
-  position: absolute;
+  top: 280px;
+  left: 280px;
   z-index: 3;
   line-height: 40px;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   background-color: rgba(245, 0, 0, 0.75);
-  color: rgba(255, 255, 255, 0.85); }
+  color: white; }
 
 .minutes {
   width: 100px;
   height: 100px;
-  top: 140px;
-  left: 140px;
-  position: absolute;
+  top: 250px;
+  left: 250px;
   z-index: 2;
   line-height: 100px;
   font-size: 3.5rem;
@@ -306,14 +331,14 @@ code {
 .hours {
   width: 300px;
   height: 300px;
-  top: 40px;
-  left: 40px;
+  top: 150px;
+  left: 150px;
   z-index: 1;
-  position: absolute;
   line-height: 1.5;
   font-size: 12rem;
-  background-color: rgba(230, 172, 0, 0.85);
-  color: rgba(255, 255, 255, 0.35); }
+  font-weight: 100;
+  background-color: rgba(255, 204, 51, 0.85);
+  color: rgba(255, 255, 255, 0.5); }
 
 /**
  * Syntax highlighting styles

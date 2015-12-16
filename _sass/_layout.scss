@@ -24,12 +24,13 @@
 }
 
 .site-nav {
+  font-size: $base-font-size*1.5;
   float: right;
   line-height: 2;
   .page-link { color: $grey-color; }
   .page-link {
     display: block;
-    padding: 5px 10px;
+    padding: 15px;
   }
 }
 
@@ -64,10 +65,10 @@
 }
 
 .post-title {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   line-height: 1;
-  @include media-query($on-laptop) { font-size: 3rem; }
+  @include media( "screen", ">maxWidth") {font-size: 3rem;}
 }
 
 .post-content {
@@ -83,8 +84,8 @@
   }
 
   h2 {
-    font-size: 3rem;
-    @include media-query($on-laptop) {font-size: 2rem;}
+    font-size: 2rem;
+    @include media( "screen", ">maxWidth") {font-size: 3rem;}
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -92,8 +93,8 @@
   }
 
   h3 {
-    font-size: 2rem;
-    @include media-query($on-laptop) {font-size: 1.75rem;}
+    font-size: 1.75rem;
+    @include media( "screen", ">maxWidth") {font-size: 2rem;}
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -101,8 +102,8 @@
   }
 
   h4 {
-    font-size: 1.75rem;
-    @include media-query($on-laptop) { font-size: 1.5rem; }
+    font-size: 1.5rem;
+    @include media( "screen", ">maxWidth") {font-size: 1.75rem;}
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -130,35 +131,5 @@
     padding-left: 40px;
     margin: 0 auto;
     margin-bottom: 20px;
-  }
-}
-
-.site-name {
-  max-width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-  text-align: right;
-  position: relative;
-  height: 100%;
-}
-
-.site-name__inner {
-  position: absolute;
-  bottom: 20px;
-  width: calc(100% - 20px);
-  right: 20px;
-  color: white;
-  .name {
-    font-size: 7rem;
-    @include media-query($on-laptop) {font-size: 5rem;}
-  }
-  .desc { font-size: 20px; }
-  .btn {
-    padding: 10px 30px;
-    border: 1px solid #fff;
-    display: inline-block;
-    margin-top: 50px;
-    border-radius: 3px;
-    cursor: pointer;
   }
 }

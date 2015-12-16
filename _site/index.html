@@ -9,29 +9,31 @@
   <title>Junglestar</title>
   <meta name="description" content="It's a jungle out there. DIY is not enough. How customers get to know you?
 ">
-<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://junglestar.org/">
   <link rel="alternate" type="application/rss+xml" title="Junglestar" href="http://junglestar.org/feed.xml" />
 </head>
 
 
-  <body>
+  <body class="home">
 
     <div class="cover">
-      <div class="clock">
-        <div class='hours'></div>
-        <div class='seconds'></div>
-        <div class='minutes'></div>
-      </div>
-      <div class="site-name">
-        <div class="site-name__inner">
-          <div class="name">Junglestar</div>
-          <div class="desc">It's a jungle out there. DIY is not enough. How customers get to know you?
-</div>
-          <div class="btn">Know more</div>
+      <div class="cover__clock">
+        <div class="clockwrap">
+          <div class='hours'></div>
+          <div class='seconds'></div>
+          <div class='minutes'></div>
         </div>
       </div>
+
+      <div class="cover__title">
+        <div class="name"><h1>Junglestar</h1></div>
+        <div class="desc">It's a jungle out there. DIY is not enough. How customers get to know you?
+</div>
+        <div class="btn">Know more</div>
+      </div>
+
     </div>
 
     <header class="site-header">
@@ -54,7 +56,7 @@
       </div>
     </header>
     <div class="page-content">
-        <div class="home">
+        <div class="home_content">
   <ul class="post-list">
     
       <li>
@@ -94,27 +96,28 @@
     
       <li>
           <a class="post-link" href="/news/6/">
-            Jungle★Star designs
+            Jungle✩Star designs
             <div class="post-meta">Oct 24, 2015</div>
           </a>
       </li>
     
       <li>
           <a class="post-link" href="/news/7/">
-            Jungle★Star develops
+            Jungle✩Star develops
             <div class="post-meta">Oct 23, 2015</div>
           </a>
       </li>
     
       <li>
           <a class="post-link" href="/news/8/">
-            Jungle★Star produces
+            Jungle✩Star produces
             <div class="post-meta">Oct 22, 2015</div>
           </a>
       </li>
     
   </ul>
 </div>
+
     </div>
 
 <script>
@@ -151,7 +154,7 @@
   var header = document.getElementsByTagName('header')[0];
 
   btnSel.addEventListener("click", function() {
-    header.scrollIntoView();
+    header.scrollIntoView({behavior: "smooth"});
   }, false);
 
 </script>

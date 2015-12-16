@@ -1,0 +1,51 @@
+//cover BEM w/ flexbox
+
+.cover {
+  color: $top_color;
+  height: 100%;
+  // background: url('http://lakto.org/assets/img/cover.jpg') no-repeat center center fixed;
+  background: $top_color;
+  background: linear-gradient($top_color, $bot_color);
+  background-size: cover;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+
+  //inner elements
+  & > * {
+    padding: 20px;
+    flex: 1 auto; //flex: 1 100%;
+  }
+}
+
+.cover__title {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+
+  color: white;
+  width: 100%;
+  text-align: right;
+  .name h1{
+    font-size: 18vw;
+    line-height: 1.25;
+    margin: 0;
+    @include media( "screen", ">maxWidth") {font-size: 7rem;}
+  }
+  .desc { font-size: 20px; }
+  .btn {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-top: .5rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
