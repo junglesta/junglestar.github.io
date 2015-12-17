@@ -8,30 +8,50 @@
   background: linear-gradient($top_color, $bot_color);
   background-size: cover;
 
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  //use one of these:
 
+  //1. skechy w/ droid disappering url bar...
+  height: 100vh;
+
+  //2. old skool...
+  // position: fixed;
+  // top:0;left:0;right:0;bottom:0;
 
   //inner elements
   & > * {
-    padding: 20px;
-    flex: 1 auto; //flex: 1 100%;
+    // padding: 20px;
+    // flex-basis: auto;
+    //flex: 1 auto; //flex: 1 100%;
+
+  .parent{
+  	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media( "screen", ">maxWidth") {width: 50%;}
+    background-color: rbga(0,0,0,.5);
+  }
+
+
+
   }
 }
-
+.cover__clock {
+ background-color: hsla(76, 100%, 54%, .25);
+}
 .cover__title {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  // -webkit-align-self: flex-end;
+  // -ms-flex-item-align: end;
+  // align-self: flex-end;
 
   color: white;
-  width: 100%;
-  text-align: right;
+  //width: 100%;
+  //text-align: right;
   .name h1{
     font-size: 18vw;
     line-height: 1.25;

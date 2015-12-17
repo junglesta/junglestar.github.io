@@ -12,13 +12,13 @@ $sec_radius: 40px;
   z-index: 1;
 
   zoom: .85;
-  @include media( "screen", ">minWidth") {
-    zoom: 1;
-  }
-  @media only screen and ( orientation: landscape) {
-    z-index: 10;
-    zoom: .35;
-  }
+  // @include media( "screen", ">minWidth") {
+  //   zoom: 1;
+  // }
+  // @media only screen and (orientation: landscape) {
+  //   z-index: 10;
+  //   zoom: .35;
+  // }
 
   div{
     text-align: center;

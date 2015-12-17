@@ -22,13 +22,13 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 481px) {
     body {
       font-size: 19.2px; } }
-  @media only screen and (min-width: 961px) {
+  @media only screen and (min-width: 601px) {
     body {
       font-size: 22.4px; } }
-  @media only screen and (min-width: 1261px) {
+  @media only screen and (min-width: 961px) {
     body {
       font-size: 25.6px; } }
 
@@ -170,7 +170,7 @@ code {
   font-size: 2rem;
   letter-spacing: -1px;
   line-height: 1; }
-  @media only screen and (min-width: 1261px) {
+  @media only screen and (min-width: 961px) {
     .post-title {
       font-size: 3rem; } }
 
@@ -189,7 +189,7 @@ code {
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: 20px; }
-    @media only screen and (min-width: 1261px) {
+    @media only screen and (min-width: 961px) {
       .post-content h2 {
         font-size: 3rem; } }
   .post-content h3 {
@@ -198,7 +198,7 @@ code {
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: 20px; }
-    @media only screen and (min-width: 1261px) {
+    @media only screen and (min-width: 961px) {
       .post-content h3 {
         font-size: 2rem; } }
   .post-content h4 {
@@ -207,7 +207,7 @@ code {
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: 20px; }
-    @media only screen and (min-width: 1261px) {
+    @media only screen and (min-width: 961px) {
       .post-content h4 {
         font-size: 1.75rem; } }
   .post-content .highlight {
@@ -230,33 +230,36 @@ code {
     margin-bottom: 20px; }
 
 .cover {
-  color: rgba(255, 200, 20, 0.5);
+  color: #fdfdfd;
   height: 100%;
-  background: rgba(255, 200, 20, 0.5);
-  background: linear-gradient(rgba(255, 200, 20, 0.5), #004f99);
+  background: #fdfdfd;
+  background: linear-gradient(#fdfdfd, #004f99);
   background-size: cover;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .cover > * {
-    padding: 20px;
-    flex: 1 auto; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh; }
+  .cover > * .parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rbga(0, 0, 0, 0.5); }
+    @media only screen and (min-width: 961px) {
+      .cover > * .parent {
+        width: 50%; } }
+
+.cover__clock {
+  background-color: rgba(192, 255, 20, 0.25); }
 
 .cover__title {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  color: white;
-  width: 100%;
-  text-align: right; }
+  color: white; }
   .cover__title .name h1 {
     font-size: 18vw;
     line-height: 1.25;
     margin: 0; }
-    @media only screen and (min-width: 1261px) {
+    @media only screen and (min-width: 961px) {
       .cover__title .name h1 {
         font-size: 7rem; } }
   .cover__title .desc {
@@ -294,13 +297,6 @@ code {
   top: -130px;
   z-index: 1;
   zoom: .85; }
-  @media only screen and (min-width: 601px) {
-    .clockwrap {
-      zoom: 1; } }
-  @media only screen and (orientation: landscape) {
-    .clockwrap {
-      z-index: 10;
-      zoom: .35; } }
   .clockwrap div {
     text-align: center;
     border-radius: 50%;
