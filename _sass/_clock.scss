@@ -7,18 +7,15 @@ $sec_radius: 40px;
 .clockwrap {
   //flexbox item
   position: relative; //necessary for inner absolute positioned elements
-  left: -130px;
-  top: -130px;
+  left: -$min_radius;
+  top: -$min_radius;
   z-index: 1;
+  font-weight:bold;
+  zoom: .35;
+  @include media( "screen", ">minWidth") {zoom: .5; font-weight:100;}
+  @include media( "screen", ">bp1Width") {zoom: .7;}
+  @include media( "screen", ">maxWidth") {zoom: .9;}
 
-  zoom: .85;
-  // @include media( "screen", ">minWidth") {
-  //   zoom: 1;
-  // }
-  // @media only screen and (orientation: landscape) {
-  //   z-index: 10;
-  //   zoom: .35;
-  // }
 
   div{
     text-align: center;
@@ -65,7 +62,7 @@ $sec_radius: 40px;
 
   line-height: 1.5;
   font-size: 12rem;
-  font-weight: 100;
+  // font-weight: 100;
   background-color: hsla(45, 100%, 60%, .85);
   color: hsla(50, 100%, 100%, .5);
 }

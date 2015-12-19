@@ -24,12 +24,13 @@
 }
 
 .site-nav {
-  font-size: $base-font-size*1.5;
+  font-size: $base-font-size*1.25;
   float: right;
   line-height: 2;
   .page-link { color: $grey-color; }
   .page-link {
-    display: block;
+    display: inline-block;
+    width: auto;
     padding: 15px;
   }
 }
@@ -132,4 +133,30 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+}
+
+$action-color:rgba(255,255,0,.75);
+
+//make a button of each mailto link
+a[href^="mailto"] {
+  border: 2px solid $action-color;
+  padding: 10px;
+  color: $action-color;
+  font-weight: bold;
+  &:hover{
+    background-color: $action-color;
+    color: black;
+    text-decoration: none;
+    outline: 0 none;
+    margin: 0;
+  }
+}
+
+//styling hr
+hr {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.25);
 }

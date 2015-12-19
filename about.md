@@ -1,11 +1,18 @@
 ---
 layout: page
-title: About
+title: About Jungle★Star
 permalink: /about/
 ---
+###New idea?
 
-Jungle★Star
+Got a new idea you **haven't yet find time** to develop?
 
-Your Brand has been procrastinating this for long?
+###Internet presence?
 
-Let's Jungle Start a new phase together. Fresh and up-to-date!
+Been procrastinating planning a **proper internet presence** for long?
+
+###Helping hand?
+We have been **helping** small companies for years.
+**Let's start** a new phase together. Fresh and up-to-date!
+
+[know more](mailto:rokmabox@gmail.com)
