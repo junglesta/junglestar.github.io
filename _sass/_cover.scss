@@ -41,6 +41,8 @@
   }
   .child{
     padding: 1rem;
+    @include media( "screen", ">minWidth") {padding: 1rem 2rem;}
+    @include media( "screen", ">maxWidth") {padding: 2rem 3rem;}
     width:100%;//width:50vw;
     height:50vh;// height:200px;
   }
