@@ -6,8 +6,8 @@
 </description>
     <link>http://junglestar.org/</link>
     <atom:link href="http://junglestar.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Dec 2015 23:37:46 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2015 23:37:46 +0100</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2015 00:00:55 +0100</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2015 00:00:55 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -30,11 +30,11 @@ Try is not enough
 DIY is not enough&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Oct 2015 00:00:00 +0100</pubDate>
-        <link>http://junglestar.org/portfolio/2/</link>
-        <guid isPermaLink="true">http://junglestar.org/portfolio/2/</guid>
+        <link>http://junglestar.org/news/2/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/2/</guid>
         
         
-        <category>portfolio</category>
+        <category>news</category>
         
       </item>
     
