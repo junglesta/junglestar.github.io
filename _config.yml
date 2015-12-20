@@ -26,8 +26,8 @@ exclude:
   - rakefile
 
 
-# The current release of Fumes Project website
-version: v0.0.1
+# The current release
+version: v0.1.0
 
 owner:
   name: Junglestar
