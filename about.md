@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Jungle★Star
+title: About
 permalink: /about/
 ---
 ###New idea?

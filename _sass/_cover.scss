@@ -74,7 +74,8 @@
     border: 1px solid #fff;
     display: inline-block;
     margin-top: .5rem;
-    border-radius: 3px;
+    border-radius: 30px;
     cursor: pointer;
+    &:hover{background-color: rgba(0,0,0,.25)}
   }
 }

@@ -8,7 +8,7 @@ $sec_radius: 40px;
   //flexbox item
   position: relative; //necessary for inner absolute positioned elements
   left: -$min_radius;
-  top: -$min_radius;
+  top: -$min_radius*0.8;
   z-index: 1;
   font-weight:bold;
   zoom: .35;
