@@ -55,7 +55,10 @@ li > ol {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100; }
+  font-weight: 300; }
+  @media only screen and (min-width: 321px) {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 100; } }
 
 a {
   color: #004f99;
@@ -351,7 +354,7 @@ a[href^="mailto"] {
   left: -100px;
   top: -80px;
   z-index: 1;
-  font-weight: bold;
+  font-weight: 300;
   zoom: .35; }
   @media only screen and (min-width: 321px) {
     .clockwrap {

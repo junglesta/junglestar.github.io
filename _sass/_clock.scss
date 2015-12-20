@@ -10,7 +10,7 @@ $sec_radius: 40px;
   left: -$min_radius;
   top: -$min_radius*0.8;
   z-index: 1;
-  font-weight:bold;
+  font-weight:300;
   zoom: .35;
   @include media( "screen", ">minWidth") {zoom: .5; font-weight:100;}
   @include media( "screen", ">bp1Width") {zoom: .7;}
