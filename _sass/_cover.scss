@@ -1,0 +1,83 @@
+//cover
+.cover {
+  height: 100vh;//position: fixed; top:0;left:0;right:0;bottom:0;
+
+  color: $top_color;
+  height: 100%;
+  // background: url('http://lakto.org/assets/img/cover.jpg') no-repeat center center fixed;
+  background: $top_color;
+  background-image:
+  //linear-gradient($bot_color, $top_color, $bot_color);
+
+  linear-gradient(
+      to top,
+      $bot_color 55%,
+      $top_color 35%,
+      $bot_color
+    );
+
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .parent{
+  	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media( "screen", ">maxWidth") {width: 50%;}
+    &.top{
+      display: flex;
+      justify-content: flex-start;
+    }
+    &.bottom{
+      z-index:10;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .child{
+    padding: 1rem;
+    @include media( "screen", ">minWidth") {padding: 1rem 2rem;}
+    @include media( "screen", ">maxWidth") {padding: 2rem 3rem;}
+    width:100%;//width:50vw;
+    height:50vh;// height:200px;
+  }
+}
+
+.cover__clock {}
+
+.cover__title {
+  color: white;
+  text-align: right;
+  .name h1{
+    margin: 0;
+    margin-top: -1.5rem;
+    text-shadow: -1px -1px 40px $bot_color;
+    font-size: 14vw;
+    line-height: 1.25;
+    @include media( "screen", ">minWidth") {
+      font-size: 10vw;
+      margin-top: -2rem;
+    }
+    @include media( "screen", ">bp1Width") {font-size: 8vw;}
+    @include media( "screen", ">maxWidth") {font-size: 7rem;}
+  }
+  .desc {
+    max-width: 400px;
+    margin: 0 0 0 auto;
+    @include media( "screen", "<minWidth") {display: none;}
+  }
+  .btn {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-top: .5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover{background-color: rgba(0,0,0,.25)}
+  }
+}

@@ -1,0 +1,20 @@
+// Home
+
+.home_content {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 10px;
+  a {
+    font-size: $base-font-size*1.75;
+    padding: 10px 30px;
+    border:  2px solid transparent;
+    &:hover {
+      background: #fafafd;
+      border:  2px solid $bot_color;
+      border-radius:30px;
+    }
+  }
+  a::before {
+      width: 0;
+  }
+}

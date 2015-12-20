@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if page.title %}{{ page.title }}{% endif %} post{% if page.is_home %} home{% endif %}">
+
+    {% include header.html %}
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+  </body>
+
+</html>

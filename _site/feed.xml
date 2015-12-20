@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junglestar</title>
+    <description>It&#39;s a jungle out there. DIY is not enough. How customers get to know you?
+</description>
+    <link>http://junglestar.org/</link>
+    <atom:link href="http://junglestar.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Dec 2015 13:37:25 +0100</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2015 13:37:25 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>It&#39;s a jungle out there</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://revealing.junglestar.org/&quot;&gt;It’s a jungle out there&lt;/a&gt; has no title attribute.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://junglestar.org/news/1/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/1/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>DIY is not enough</title>
+        <description>&lt;p&gt;Luck is not enough
+Try is not enough
+DIY is not enough&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://junglestar.org/portfolio/2/</link>
+        <guid isPermaLink="true">http://junglestar.org/portfolio/2/</guid>
+        
+        
+        <category>portfolio</category>
+        
+      </item>
+    
+      <item>
+        <title>How customers reach you?</title>
+        <description>&lt;p&gt;How customers get to know you&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://junglestar.org/news/3/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/3/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Planning Communication</title>
+        <description>&lt;p&gt;Planning
+Communication
+Strategy
+will show results!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://junglestar.org/news/4/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/4/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Reputation is everything</title>
+        <description>&lt;p&gt;Plan Communication Strategy!
+Reputation is everything
+Show results time!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://junglestar.org/news/5/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/5/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Jungle✩Star designs, produces &amp; develops</title>
+        <description>&lt;p&gt;@ Jungle✩Star we design, produce &amp;amp; develop well thought user experiences&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Oct 2015 00:00:00 +0200</pubDate>
+        <link>http://junglestar.org/news/6/</link>
+        <guid isPermaLink="true">http://junglestar.org/news/6/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>

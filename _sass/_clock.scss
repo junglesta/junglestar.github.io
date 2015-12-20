@@ -1,0 +1,68 @@
+//clock css
+$hour_radius: 300px;
+$min_radius: 100px;
+$sec_radius: 40px;
+
+
+.clockwrap {
+  //flexbox item
+  position: relative; //necessary for inner absolute positioned elements
+  left: -$min_radius;
+  top: -$min_radius*0.8;
+  z-index: 1;
+  font-weight:bold;
+  zoom: .35;
+  @include media( "screen", ">minWidth") {zoom: .5; font-weight:100;}
+  @include media( "screen", ">bp1Width") {zoom: .7;}
+  @include media( "screen", ">maxWidth") {zoom: .9;}
+
+
+  div{
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+.seconds {
+  width: $sec_radius;
+  height: $sec_radius;
+
+  top: 280px;
+  left: 280px;
+
+  z-index: 3;
+  line-height: 40px;
+  font-size: 1.25rem;
+  background-color: hsla(0, 100%, 48%, .75);
+  color: hsla(50, 100%, 100%, 1);
+}
+
+.minutes {
+  width: $min_radius;
+  height: $min_radius;
+
+  top: 250px;
+  left: 250px;
+
+  z-index: 2;
+  line-height: 100px;
+  font-size: 3.5rem;
+  background-color: hsla(30, 100%, 48%, .75);
+  color: hsla(50, 100%, 100%, .75);
+}
+
+.hours {
+  width: $hour_radius;
+  height: $hour_radius;
+
+  top: $hour_radius/2;
+  left: $hour_radius/2;
+  z-index: 1;
+
+  line-height: 1.5;
+  font-size: 12rem;
+  // font-weight: 100;
+  background-color: hsla(45, 100%, 60%, .85);
+  color: hsla(50, 100%, 100%, .5);
+}
