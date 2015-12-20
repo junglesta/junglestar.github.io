@@ -154,7 +154,14 @@ code {
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #828282;
+  text-align: right;
+  display: none; }
+  .post-link:hover .post-meta {
+    display: inline;
+    float: right;
+    line-height: 42px;
+    padding: 6px 0; }
 
 .post-link {
   display: block;
@@ -253,8 +260,6 @@ hr {
       border-radius: 30px; }
   .home_content a::before {
     width: 0; }
-  .home_content .post-meta {
-    text-align: right; }
 
 .post {
   background: #161616; }
