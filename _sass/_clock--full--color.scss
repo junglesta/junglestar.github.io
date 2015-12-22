@@ -1,16 +1,11 @@
-//EMPTY COLOR clock css
+//clock css
 $hour_radius: 300px;
-$min_radius: 130px;
-$sec_radius: 60px;
+$min_radius: 100px;
+$sec_radius: 40px;
 
-$border_size: 0;
-
-$hours_color: white;
-$minutes_color: $hours_color;
-$seconds_color: $hours_color;
 
 .clockwrap {
-  //in this configuration its a flexbox item!
+  //flexbox item
   position: relative; //necessary for inner absolute positioned elements
   left: -$min_radius;
   top: -$min_radius*0.8;
@@ -21,16 +16,15 @@ $seconds_color: $hours_color;
   @include media( "screen", ">bp1Width") {zoom: .7;}
   @include media( "screen", ">maxWidth") {zoom: .9;}
 
+
   div{
     text-align: center;
     border-radius: 50%;
     position: absolute;
-
   }
 }
 
 .seconds {
-  text-shadow: 1px -1px 5px $bot_color;
   width: $sec_radius;
   height: $sec_radius;
 
@@ -38,13 +32,13 @@ $seconds_color: $hours_color;
   left: 280px;
 
   z-index: 3;
-  font-size: 2rem;
-  color: $seconds_color;
-  border: $border_size solid $seconds_color;
+  line-height: 40px;
+  font-size: 1.25rem;
+  background-color: hsla(0, 100%, 48%, .75);
+  color: hsla(50, 100%, 100%, 1);
 }
 
 .minutes {
-  text-shadow: 1px -1px 10px $bot_color;
   width: $min_radius;
   height: $min_radius;
 
@@ -52,14 +46,13 @@ $seconds_color: $hours_color;
   left: 250px;
 
   z-index: 2;
-  font-size: 5rem;
-  color: $minutes_color;
-  border: $border_size solid  $minutes_color;
+  line-height: 100px;
+  font-size: 3.5rem;
+  background-color: hsla(30, 100%, 48%, .75);
+  color: hsla(50, 100%, 100%, .75);
 }
 
 .hours {
-  //background: url("data:image/svg+xml;charset=UTF-8,<svg></svg>");
-  text-shadow: 1px -1px 20px $bot_color;
   width: $hour_radius;
   height: $hour_radius;
 
@@ -67,8 +60,9 @@ $seconds_color: $hours_color;
   left: $hour_radius/2;
   z-index: 1;
 
+  line-height: 1.5;
   font-size: 12rem;
   // font-weight: 100;
-  color: $hours_color;
-  border: $border_size solid $hours_color;
+  background-color: hsla(45, 100%, 60%, .85);
+  color: hsla(50, 100%, 100%, .5);
 }

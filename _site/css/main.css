@@ -369,8 +369,8 @@ a[href^="mailto"] {
 
 .clockwrap {
   position: relative;
-  left: -100px;
-  top: -80px;
+  left: -130px;
+  top: -104px;
   z-index: 1;
   font-weight: 300;
   zoom: .35; }
@@ -390,37 +390,37 @@ a[href^="mailto"] {
     position: absolute; }
 
 .seconds {
-  width: 40px;
-  height: 40px;
+  text-shadow: 1px -1px 5px #004f99;
+  width: 60px;
+  height: 60px;
   top: 280px;
   left: 280px;
   z-index: 3;
-  line-height: 40px;
-  font-size: 1.25rem;
-  background-color: rgba(245, 0, 0, 0.75);
-  color: white; }
+  font-size: 2rem;
+  color: white;
+  border: 0 solid white; }
 
 .minutes {
-  width: 100px;
-  height: 100px;
+  text-shadow: 1px -1px 10px #004f99;
+  width: 130px;
+  height: 130px;
   top: 250px;
   left: 250px;
   z-index: 2;
-  line-height: 100px;
-  font-size: 3.5rem;
-  background-color: rgba(245, 122, 0, 0.75);
-  color: rgba(255, 255, 255, 0.75); }
+  font-size: 5rem;
+  color: white;
+  border: 0 solid white; }
 
 .hours {
+  text-shadow: 1px -1px 20px #004f99;
   width: 300px;
   height: 300px;
   top: 150px;
   left: 150px;
   z-index: 1;
-  line-height: 1.5;
   font-size: 12rem;
-  background-color: rgba(255, 204, 51, 0.85);
-  color: rgba(255, 255, 255, 0.5); }
+  color: white;
+  border: 0 solid white; }
 
 /**
  * Syntax highlighting styles
