@@ -27,7 +27,7 @@ exclude:
 
 
 # The current release
-version: v0.1.0
+version: v0.1.1
 
 owner:
   name: Junglestar

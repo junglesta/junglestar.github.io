@@ -1,5 +1,5 @@
 {
-	"name": "http:\/\/junglestar.org",
+	"name": "junglestar",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -39,5 +39,7 @@
 		}
 	],
 	"start_url": "http:\/\/junglestar.org",
+	"background_color": "$brand-color",
+	"theme_color": "#000",
 	"display": "standalone"
 }
