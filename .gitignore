@@ -1,22 +1,25 @@
-# base:
+#-base(notworking damn):
 _site
 **/_site
 _site/**
+
+
+#-caches
 tmp/**
 .sass-cache
 
-# Logs
+#-Logs
 logs
 *.log
 
 
-# Dependency directory
+#-Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
 
 
-# OS generated files #
+#-OS generated files #
 **/.Trashes
 **/Icon
 **/.DS_Store
