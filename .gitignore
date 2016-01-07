@@ -1,4 +1,5 @@
-#
+# base:
+_site
 **/_site
 _site/**
 tmp/**
