@@ -12,6 +12,7 @@ github_username: toybreaker
 markdown: kramdown
 permalink: /:categories/:title/
 
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
@@ -27,7 +28,7 @@ exclude:
 
 
 # The current release
-version: v0.1.1
+version: v0.1.2
 
 owner:
   name: Junglestar
