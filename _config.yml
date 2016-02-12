@@ -2,7 +2,7 @@
 title: Junglestar
 email: me@rokma.com
 description: > # this means to ignore newlines until "baseurl:"
-  It's a jungle out there. DIY is not enough. How customers get to know you?
+ It's a jungle out there. DIY is not enough. How customers get to know you?
 baseurl: "" #"/clean" # the subpath of your site, e.g. /blog/
 url: "http://junglestar.org" # the base hostname & protocol for your site
 twitter_username: rokmatwit
@@ -15,31 +15,31 @@ permalink: /:categories/:title/
 
 # Exclude these files from your production _site
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - gulpfile.js
-  - package.json
-  - DS_Store
-  - Icon
-  - node_modules
-  - uploads
-  - rakefile
+ - Gemfile
+ - Gemfile.lock
+ - LICENSE
+ - gulpfile.js
+ - package.json
+ - DS_Store
+ - Icon
+ - node_modules
+ - uploads
+ - rakefile
 
 
 # The current release
 version: v0.1.2
 
 owner:
-  name: Junglestar
-  avatar_url: #
-  email: rokmabox@gmail.com
-  link: http://junglestar.org
-  disqus-shortname:
-  twitter: #
-  facebook: #
-  github: junglesta
-  google:
-    plus: #username
-    analytics: UA-49653244-1
-    verify: google32e66f1a5601ec40
+ name: Junglestar
+ avatar_url: #
+ email: rokmabox@gmail.com
+ link: http://junglestar.org
+ disqus-shortname:
+ twitter: #
+ facebook: #
+ github: junglesta
+ google:
+  plus: #username
+  analytics: UA-49653244-1
+  verify: google32e66f1a5601ec40
