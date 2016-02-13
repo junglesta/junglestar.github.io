@@ -1,9 +1,7 @@
 ---
 layout: redirect
-title:  "Reputation is everything"
+title:  "Reputation?"
 categories: news
 redir: http://revealing.junglestar.org/#/8
 ---
-Plan Communication Strategy!
 Reputation is everything
-Show results time!
