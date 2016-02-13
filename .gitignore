@@ -1,5 +1,5 @@
 #-base(notworking damn):
-_site
+_site/
 **/_site
 _site/**
 
