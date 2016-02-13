@@ -24,8 +24,9 @@
 }
 
 .site-nav {
+  text-align: center;
   font-size: $base-font-size*1.25;
-  float: right;
+  // float: right;
   line-height: 2;
   .page-link { color: $grey-color; }
   .page-link {
