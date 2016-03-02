@@ -1,20 +1,31 @@
 // Home
 
 .home_content {
-  max-width: 540px;
   margin: 0 auto;
-  padding: 0 10px;
+  width: 100%;
+  @include media( "screen", ">bp1Width") { width: 90%; }
+  @include media( "screen", ">maxWidth") { width: 80%; }
   a {
-    font-size: $base-font-size*1.75;
+    font-size: $base-font-size*1.25;
+    @include media( "screen", ">bp1Width") {
+      font-size: $base-font-size*1.75;
+    }
     padding: 10px 30px;
-    border:  2px solid transparent;
+    border:  1px solid transparent;
     &:hover {
-      background: #fafafd;
-      border:  2px solid $bot_color;
-      border-radius:30px;
+      color: black;
+      border-right:  1px solid black;
     }
   }
   a::before {
       width: 0;
+  }
+  .ico{
+    width: 50px;
+    @include media( "screen", ">minWidth") { width: 60px; }
+    @include media( "screen", ">bp1Width") { width: 80px; }
+    @include media( "screen", ">maxWidth") { width:100px; }
+    height: auto;
+    padding-right: 10px;
   }
 }

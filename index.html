@@ -7,6 +7,9 @@ layout: home
     {% for post in site.posts %}
       <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {% if post.ico_url %}
+            <img class="ico" src="{{post.ico_url}}" alt="{{post.title}}" />
+            {% endif %}
             {{ post.title }}
             <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
           </a>

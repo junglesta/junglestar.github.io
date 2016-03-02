@@ -3,6 +3,23 @@
   background: #161616;
 }
 
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  text-align: right;
+  display: none;
+  .post-link:hover & {
+    display: inline;
+    float: right;
+    line-height: 42px;
+    padding: 6px 0;
+  }
+}
+
+.post-link {
+  display: block;
+  font-size: 1.75rem;
+}
 
 
 // Posts
