@@ -39,10 +39,11 @@ owner:
  twitter: #
  facebook: #
  github: junglesta
- google:
+
+google:
   plus: #username
   analytics: UA-49653244-1
-  verify: google32e66f1a5601ec40
+  verify: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
 gems:
   - jekyll-sitemap
