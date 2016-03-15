@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "Planning Communication"
+title:  "Communication?"
 categories: news
 redir: http://revealing.junglestar.org/#/6
 ---

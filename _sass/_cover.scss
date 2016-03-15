@@ -8,8 +8,9 @@
   linear-gradient(
       to bottom,
       $bot_color ,
-      $top_color 70%,
-      lighten($bot_color, 10%)
+      $top_color 50%,
+      $bot_color 95%,
+      $bot_color
     );
 
   background-size: cover;
@@ -45,7 +46,7 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      
+
       -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
       justify-content: flex-start;

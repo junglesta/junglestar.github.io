@@ -6,6 +6,7 @@
   padding: 0 10px;
   // Positioning context for the mobile navigation icon
   position: relative;
+  background-color: $bot_color;
 }
 
 .site-header::before {
@@ -28,8 +29,8 @@
   font-size: $base-font-size*1.25;
   // float: right;
   line-height: 2;
-  .page-link { color: $grey-color; }
   .page-link {
+    color: $grey-color-light;
     display: inline-block;
     width: auto;
     padding: 15px;
@@ -37,7 +38,10 @@
 }
 
 // Page content
-.page-content { padding: $spacing-unit 0;}
+.page-content {
+  padding: $spacing-unit 0;
+  border-bottom: $spacing-unit*2 solid $brand-color;
+}
 .page-heading { font-size: 1.5rem;}
 
 .post-list {
