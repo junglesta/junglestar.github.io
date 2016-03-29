@@ -7,9 +7,10 @@
   background-image:
   linear-gradient(
       to bottom,
-      $bot_color ,
+      $brand_color ,
       $top_color 50%,
-      $bot_color 95%,
+      $brand_color 80%,
+      $bot_color 90%,
       $bot_color
     );
 

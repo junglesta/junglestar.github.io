@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Jungle✩Star is a small, flexible web agency.
-We help small companies organize their communication at best.
+We help companies and individuals organize their communication at best.
 We grow relationships with clients.
 We design, produce & develop well thought [user experiences](http://revealing.junglestar.org/#/8/1)
 

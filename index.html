@@ -3,14 +3,16 @@ layout: home
 ---
 
 <div class="home_content">
-  <ul class="post-list">
+  <ul class="post_list">
     {% for post in site.posts %}
       <li>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <a class="post_link" href="{{ post.url | prepend: site.baseurl }}">
             {% if post.ico_url %}
-            <img class="ico" src="{{post.ico_url}}" alt="{{post.title}}" />
+            <div class="post_link_ico">
+              <img class="" src="{{post.ico_url}}" alt="{{post.title}}" />
+            </div>
             {% endif %}
-            {{ post.title }}
+            <span class="post_link_text" ></span>{{ post.title }}
             <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
           </a>
       </li>

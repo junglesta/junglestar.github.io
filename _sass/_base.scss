@@ -8,6 +8,7 @@ dl, dd, ol, ul, figure {
 
 html, body{
     height: 100%;
+    background-color: $brand-color;
 }
 
 // Basic styling
@@ -68,16 +69,15 @@ a {
   position: relative;
   display: inline-block;
   padding-bottom: 2px;
-
-  &:hover {
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      border-top: 2px solid;
-    }
+   &:hover {
+     &::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       border-top: 2px solid $link-color;
+     }
   }
 }
 
@@ -115,7 +115,7 @@ code {
   border: 0.063em solid #dedede;
 }
 
-// Clearfix
+// Clearfix use it like: @extend %clearfix;
 %clearfix {
   &:after {
     content: "";

@@ -1,25 +1,38 @@
 //Post
-.post{
-  background: #161616;
+
+.post-meta { display: none;}
+
+.post_list {
+  margin-left: 0;
+  list-style: none;
+  > li { margin-bottom: $spacing-unit; }
 }
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-  text-align: right;
-  display: none;
-  .post-link:hover & {
-    display: inline;
-    float: right;
-    line-height: 42px;
-    padding: 6px 0;
+.post_link {
+  display: block;
+  font-size: 1.75rem;
+  text-align: center;
+  @extend %clearfix;
+}
+
+.post_link_ico {
+  width: 100%;
+  max-width: 256px;
+  float: left;
+
+  img {
+    margin: 0 auto;
+    max-width: 50vw;
+    @include media( "screen", ">minWidth") {max-width: 200px;}
   }
 }
 
-.post-link {
-  display: block;
-  font-size: 1.75rem;
+.post_link_text {
+  display: inline-block;
+  padding-top: 2rem;
+  @include media( "screen", ">minWidth") {padding-top: 7rem}
 }
+
 
 
 // Posts
@@ -101,7 +114,7 @@
   }
 }
 
-$action-color:rgba(255,255,0,.75);
+$action-color:$brand_color;
 
 //make a button of each mailto link
 a[href^="mailto"] {
