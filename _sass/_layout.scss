@@ -65,3 +65,9 @@ hr {
     margin: 2rem auto;
     background-color: rgba(255, 255, 255, 0.25);
 }
+
+//about page... but then all pages will need this...
+.About {
+  .site-title { color:$brand_color;}
+  .site-nav .page-link {color:$brand_color;}
+}
