@@ -31,7 +31,9 @@
   line-height: 2;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  //float: left
+  text-align: center;
+  width: 100%;
   color: white;
 }
 
@@ -68,6 +70,7 @@ hr {
 
 //about page... but then all pages will need this...
 .About {
-  .site-title { color:$brand_color;}
-  .site-nav .page-link {color:$brand_color;}
+  border-top: 10px solid $brand_color;
+  .site-title { color: $brand_color;}
+  .site-nav .page-link {color: $brand_color;}
 }
