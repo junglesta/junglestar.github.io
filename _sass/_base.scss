@@ -8,7 +8,7 @@ dl, dd, ol, ul, figure {
 
 html, body{
     height: 100%;
-    background-color: $brand-color;
+    background-color: $brand_color;
 }
 
 // Basic styling
@@ -20,8 +20,8 @@ body {
   @include media( "screen", ">maxWidth") {font-size: $base-font-size*1.3;}
   line-height: $base-line-height;
   font-weight: 300;
-  color: $text-color;
-  background-color: $background-color;
+  color: $text_color;
+  background-color: $background_color;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Links
 a {
-  color: $link-color;
+  color: $link_color;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -76,7 +76,7 @@ a {
        left: 0;
        bottom: 0;
        width: 100%;
-       border-top: 2px solid $link-color;
+       border-top: 2px solid $link_color;
      }
   }
 }
@@ -84,8 +84,8 @@ a {
 
 // Blockquotes
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $grey_color;
+  border-left: 4px solid $grey_color-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
   letter-spacing: -1px;
@@ -103,7 +103,7 @@ pre {
   display: block;
   font-size: 0.875em;
   font-family: Consolas;
-  color: $grey-color-dark;
+  color: $grey_color-dark;
   line-height: 1.3em;
   margin: 0px auto;
   padding: 0 10px;
@@ -145,7 +145,7 @@ code {
     height: 16px;
     vertical-align: middle;
 
-    path { fill: $grey-color; }
+    path { fill: $grey_color; }
   }
 }
 

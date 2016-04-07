@@ -30,7 +30,7 @@ $seconds_color: $hours_color;
 }
 
 .seconds {
-  text-shadow: 1px -1px 5px $bot_color;
+  text-shadow: 1px -1px 5px $brand_color;
   width: $sec_radius;
   height: $sec_radius;
 
@@ -44,7 +44,7 @@ $seconds_color: $hours_color;
 }
 
 .minutes {
-  text-shadow: 1px -1px 10px $bot_color;
+  text-shadow: 1px -1px 10px $brand_color;
   width: $min_radius;
   height: $min_radius;
 
@@ -59,7 +59,7 @@ $seconds_color: $hours_color;
 
 .hours {
   //background: url("data:image/svg+xml;charset=UTF-8,<svg></svg>");
-  text-shadow: 1px -1px 20px $bot_color;
+  text-shadow: 1px -1px 20px $brand_color;
   width: $hour_radius;
   height: $hour_radius;
 

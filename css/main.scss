@@ -12,27 +12,26 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 //colors
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background_color: #fdfdfd;
+$brand_color:      hsla(209, 100%, 40%, 1);//0069cc
+  //invert + other tests:
+  $brand_color-invert: invert($brand_color);
+  $brand_color-complementary: complement($brand_color);
+
 //bg
-$top_color: $background-color;//hsla(46, 100%, 54%, .5);
-$bot_color: hsla(209, 100%, 40%, 1); //blue;
-$text-color:       #111;
-  $link-color:      $bot_color;
+$top_color: $background-color;
+$text_color:       #111;
+  $link_color:      $brand_color;
 
-$grey-color:       #828282;
-  $grey-color-light: lighten($grey-color, 40%);
-  $grey-color-dark:  darken($grey-color, 25%);
-
-
+$grey_color:       #828282;
+  $grey_color-light: lighten($grey_color, 40%);
+  $grey_color-dark:  darken($grey_color, 25%);
 
 
 //// Predefined Break-points (for _cmq.scss)
 $mediaMinWidth: 320px;
 $mediaBp1Width: 600px;
 $mediaMaxWidth: 1024px;
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

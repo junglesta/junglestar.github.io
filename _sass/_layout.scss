@@ -6,13 +6,24 @@
   padding: 0 10px;
   // Positioning context for the mobile navigation icon
   position: relative;
-  background-color: $bot_color;
+  // background-color: $brand_color;
+  position: relative;
+  z-index: 1;
 }
 
-.site-header::before {
-  content: '';
+.site_header_graf {
   position: absolute;
   width: 100%;
+  //background-color: invert($brand_color);
+  height: 100%;
+  left:0;
+  top:38vh;
+  z-index: 0;
+
+  display: block;
+  background: url(/assets/svg/skyline.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .site-title {
@@ -30,7 +41,7 @@
   // float: right;
   line-height: 2;
   .page-link {
-    color: $grey-color-light;
+    color: $grey_color-light;
     display: inline-block;
     width: auto;
     padding: 15px;
@@ -40,8 +51,8 @@
 // Page content
 .page-content {
   padding: $spacing-unit 0;
-  border-bottom: $spacing-unit*2 solid $brand-color;
-  background-color:$background-color;
+  border-bottom: $spacing-unit*2 solid $brand_color;
+  background-color:$background_color;
 }
 .page-heading { font-size: 1.5rem;}
 
