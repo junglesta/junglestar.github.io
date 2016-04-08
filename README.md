@@ -1,6 +1,6 @@
-### junglestar.org
+### [junglestar.org](http://junglestar.org)
 
-![Alt text](screen.jpg)
+![Alt text](screen.png)
 
 ##thanks
 - Naman Kalkhuria: [Clean Theme](http://knaman2609.github.io/clean/)
