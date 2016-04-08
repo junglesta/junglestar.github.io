@@ -2,37 +2,6 @@
 
 .post-meta { display: none;}
 
-.post_list {
-  margin-left: 0;
-  list-style: none;
-  > li { margin-bottom: $spacing-unit; }
-  .post_link { // it's an <a>...
-    display: -webkit-box;
-    display: flex;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-  }
-}
-
-.post_link_text {
-  margin-left:.5rem;
-  display: block;
-}
-
-.post_link_ico {
-  width: 100%;
-  max-width: 200px;
-
-  img {
-    margin: 0 auto;
-    max-width: 30vw;
-    @include media( "screen", ">bp1Width") {max-width: 200px;}
-  }
-}
-
-
 // Posts
 .post-header {
   color: $grey_color;

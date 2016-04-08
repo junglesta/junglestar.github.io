@@ -40,7 +40,7 @@
 .site-nav {
   text-align: center;
   font-size: $base-font-size*1.25;
-  // float: right;
+  padding-top:1.5rem;
   line-height: 2;
   .page-link {
     color: $grey_color-light;
@@ -52,11 +52,11 @@
 
 // Page content
 .page-content {
-  padding: $spacing-unit 0;
-  border-bottom: $spacing-unit*2 solid $brand_color;
+  padding: $spacing-unit 0 $spacing-unit*2 0;
+  border-bottom: $spacing-unit*4 solid $brand_color;
   background-color:$background_color;
 }
-.page-heading { font-size: 1.5rem;}
+.page-heading {font-size: 1.5rem;}
 
 
 //styling hr

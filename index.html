@@ -8,7 +8,7 @@ layout: home
       <li>
           <a class="post_link" href="{{ post.url | prepend: site.baseurl }}">
             {% if post.ico_url %}
-            <div class="post_link_ico">
+            <div class="post_link_ico {{post.ico_name}}">
               <img class="" src="{{post.ico_url}}" alt="{{post.title}}" />
             </div>
             {% endif %}

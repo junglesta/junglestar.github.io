@@ -1,31 +1,77 @@
 // Home
 
 .home_content {
-  margin: 0 auto;
-  width: 96%;
-  @include media( "screen", ">bp1Width") { width: 85%; }
-  @include media( "screen", ">maxWidth") { width: 70%; }
+  width: 100%;
+  padding: 0 1rem;
+  @include media( "screen", ">bp1Width") { padding: 0 2rem; }
   a {
-    font-size: $base-font-size*1.25;
-    @include media( "screen", ">bp1Width") {
-      font-size: $base-font-size*1.75;
-    }
-    padding: 10px 30px;
     border:  1px solid transparent;
     &:hover {
       color: black;
-      border-right:  1px solid black;
+      border-right: 1px solid black;
     }
   }
-  a::before {
-      width: 0;
-  }
-  .ico{
+  a::before { width: 0; }
+  .ico {
     width: 50px;
     @include media( "screen", ">minWidth") { width: 60px; }
     @include media( "screen", ">bp1Width") { width: 80px; }
     @include media( "screen", ">maxWidth") { width:100px; }
     height: auto;
-    padding-right: 10px;
+  }
+}
+
+
+.post_list {// <ul>..
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0;
+  list-style: none;
+  > li {
+    background-color: #ddd;
+    margin: $spacing-unit $spacing-unit/2 ;
+    padding: $spacing-unit;
+    width: 100%;
+    @include media( "screen", ">bp1Width") {
+      width: 300px;
+    }
+
+  }
+  .post_link { // it's an <a> inside a <li>
+    display: -webkit-box;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+
+    flex-direction: row;
+
+    @include media( "screen", ">minWidth") {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+    }
+
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+    -webkit-box-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+  }
+}
+
+.post_link_text {
+  margin-left: 1.5rem;
+  display: block;
+}
+
+.post_link_ico {
+  padding: $spacing-unit;
+  img {
+    width: 100%;
+    @include media( "screen", ">bp1Width") {max-width: 200px;}
   }
 }
