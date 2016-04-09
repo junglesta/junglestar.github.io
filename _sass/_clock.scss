@@ -18,10 +18,10 @@ $seconds_color: $hours_color;
   top: -1rem;
   z-index: 10;
   font-weight:200;
-  zoom: .5;
-  @include media( "screen", ">minWidth") {zoom: .6; font-weight:200;}
-  @include media( "screen", ">bp1Width") {zoom: .7; font-weight:200;}
-  @include media( "screen", ">maxWidth") {zoom: 1; font-weight:100;}
+  transform: scale(.5);
+  @include media( "screen", ">minWidth") {transform: scale(.6); font-weight:200;}
+  @include media( "screen", ">bp1Width") {transform: scale(.7); font-weight:200;}
+  @include media( "screen", ">maxWidth") {transform: scale(1); font-weight:100;}
 
   div{
     text-align: center;
