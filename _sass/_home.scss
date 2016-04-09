@@ -4,14 +4,7 @@
   width: 100%;
   padding: 0 1rem;
   @include media( "screen", ">bp1Width") { padding: 0 2rem; }
-  a {
-    border:  1px solid transparent;
-    &:hover {
-      color: black;
-      border-right: 1px solid black;
-    }
-  }
-  a::before { width: 0; }
+  a { padding: 2rem; }
   .ico {
     width: 50px;
     @include media( "screen", ">minWidth") { width: 60px; }
@@ -31,28 +24,36 @@
   list-style: none;
   > li {
     background-color: #ddd;
-    margin: $spacing-unit $spacing-unit/2 ;
-    padding: $spacing-unit;
-    width: 100%;
+    margin: $spacing-unit*0.75 ;
+
+    width: $mediaMinWidth;
+    @include media( "screen", ">minWidth") {
+      width: 100%;
+    }
     @include media( "screen", ">bp1Width") {
-      width: 300px;
+      width: 41%;
+    }
+    @include media( "screen", ">maxWidth") {
+      width: 28%;
+    }
+    &:hover {
+      outline: 1px $brand-color solid;
+      background-color: white;
     }
 
   }
   .post_link { // it's an <a> inside a <li>
+
     display: -webkit-box;
     display: flex;
 
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    flex-direction: column;
 
-    flex-direction: row;
-
-    @include media( "screen", ">minWidth") {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      flex-direction: column;
-    }
+    -webkit-box-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
 
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -60,8 +61,10 @@
     -webkit-box-align: center;
     -ms-grid-row-align: center;
     align-items: center;
+
   }
 }
+
 
 .post_link_text {
   margin-left: 1.5rem;
@@ -70,6 +73,7 @@
 
 .post_link_ico {
   padding: $spacing-unit;
+  padding-bottom: $spacing-unit*2;
   img {
     width: 100%;
     @include media( "screen", ">bp1Width") {max-width: 200px;}

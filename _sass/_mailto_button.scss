@@ -1,0 +1,17 @@
+
+$action-color:$brand_color;
+
+//make a button of each mailto link
+a[href^="mailto"] {
+  border: 2px solid $action-color;
+  padding: 10px;
+  color: $action-color;
+  font-weight: bold;
+  &:hover{
+    background-color: $action-color;
+    color: white;
+    text-decoration: none;
+    outline: 0 none;
+    margin: 0;
+  }
+}

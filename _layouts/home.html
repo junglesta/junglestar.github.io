@@ -4,24 +4,26 @@
   {% include head.html %}
 
   <body class="home">
+    <div class="cover">
 
-    <div class="cover grandparent">
-      <div class="cover__clock parent top">
-        <div class="child">
-          <div class="clockwrap">
-            <div class='hours'></div>
-            <div class='seconds'></div>
-            <div class='minutes'></div>
-          </div>
-        </div>
+      <div class="cover__graf">
+        {% include svg/skyline.html %}
       </div>
 
-      <div class="cover__title parent bottom">
-        <div class="child">
+      <div class="cover__clock">
+
+        <div class='hours'></div>
+        <div class='seconds'></div>
+        <div class='minutes'></div>
+
+      </div>
+
+      <div class="cover__title">
+        <div class="btn">
           <div class="name"><h1>{{ site.title }}</h1></div>
           <div class="desc">Make life easy for your customers!</div>
-          <div class="btn">Know more</div>
         </div>
+
       </div>
 
     </div>
@@ -44,8 +46,7 @@
 
 
 
-    <div class="site_header_graf">
-    </div>
+
 
 
     <div class="page-content">

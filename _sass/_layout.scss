@@ -1,30 +1,16 @@
 // Site header
 
 .site-header {
-  min-height: 56px; //max-width: 940px;
+  top: -1px; // 2kill line in mobiles
+  min-height: 56px;
   margin: 0 auto;
   padding: 0 10px;
   // Positioning context for the mobile navigation icon
   position: relative;
-  // background-color: $brand_color;
-  position: relative;
+  background-color: $brand_color;
   z-index: 1;
 }
 
-.site_header_graf {
-  position: absolute;
-  width: 100%;
-  //background-color: invert($brand_color);
-  height: 100%;
-  left:0;
-  top:38vh;
-  z-index: 0;
-
-  display: block;
-  background: url(/assets/svg/skyline.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
 
 .site-title {
   font-size: 2rem;

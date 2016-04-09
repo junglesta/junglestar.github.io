@@ -9,6 +9,7 @@ dl, dd, ol, ul, figure {
 html, body{
     height: 100%;
     background-color: $brand_color;
+    overflow-x: hidden;
 }
 
 // Basic styling
@@ -21,8 +22,10 @@ body {
   line-height: $base-line-height;
   font-weight: 300;
   color: $text_color;
-  background-color: $background_color;
+  //background-color: $background_color;
   -webkit-text-size-adjust: 100%;
+  position: relative;
+
 }
 
 
@@ -59,7 +62,7 @@ li {
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-weight:300;
-  @include media( "screen", ">bp1Width") {font-weight:100;}
+  @include media( "screen", ">maxWidth") {font-weight:200;}
 }
 
 // Links
@@ -69,16 +72,6 @@ a {
   position: relative;
   display: inline-block;
   padding-bottom: 2px;
-   &:hover {
-     &::before {
-       content: '';
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       border-top: 2px solid $link_color;
-     }
-  }
 }
 
 

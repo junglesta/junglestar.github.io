@@ -1,90 +1,44 @@
 //cover
 .cover {
-  //height: 100vh;//position: fixed; top:0;left:0;right:0;bottom:0;
-  color: $top_color;
-  height: 100%;
-  background: $top_color;// url('http://lakto.org/c.jpg') no-repeat center center fixed;
+  height: 100vh;
+  position: relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  //color: $top_color;
+  //height: 100%;
+  //background: $top_color;// url('http://lakto.org/c.jpg') no-repeat center center fixed;
+  background-size: cover;
+
   background-image:
   linear-gradient(
       to bottom,
       $brand_color,
-      $top_color 65vh,
-      $brand_color 92vh,
-      $brand_color
+      $top_color 85vh,
+      lighten($brand_color, 30%) 85vh,
+      lighten($brand_color, 55%)
     );
-
-  background-size: cover;
-
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  .parent{
-    width: 100%;
-    @include media( "screen", ">maxWidth") {width: 50%;}
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-    &.top{
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-    }
-    &.bottom{
-      z-index:10;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
-    }
-  }
-  .child{
-    padding: 1rem;
-    @include media( "screen", ">minWidth") {padding: 1rem 2rem;}
-    @include media( "screen", ">maxWidth") {padding: 2rem 3rem;}
-    width:100%;//width:50vw;
-    height:50vh;// height:200px;
-  }
 }
-
-.cover__clock {}
 
 .cover__title {
   color: darken($brand_color, 5%) ;
   text-align: right;
+  text-shadow: 1px 0 10px white;
+  position: relative;
+  z-index: 11;
+  top: 45%;
+  margin-right: 3vw;
+  @include media( "screen", ">minWidth") {margin-right: 4vw;}
+  @include media( "screen", ">bp1Width") {margin-right: 5vw;}
+  @include media( "screen", ">maxWidth") {margin-right: 6vw;}
+
 
   .name h1{
     margin: -4rem 0 0 0;
     line-height: 1.25;
     font-size: 14vw;
-    @include media( "screen", ">minWidth") {font-size: 11vw;margin: -2rem 0 0 0;}
+    @include media( "screen", ">minWidth") {font-size: 11vw; margin: -2rem 0 0 0;}
     @include media( "screen", ">bp1Width") {font-size: 9vw;}
     @include media( "screen", ">maxWidth") {font-size: 7rem;}
   }
@@ -95,13 +49,9 @@
   }
   .btn {
     color: darken($brand_color, 5%);
-    padding: 8px 20px;
+    //padding: 8px 20px;
     margin-top: 1rem;
-    border: 1px solid darken($brand_color, 5%);
-    display: inline-block;
     border-radius: 20px;
     cursor: pointer;
-    background-color: rgba(0,0,0,.05);
-    &:hover{background-color: rgba(0,0,0,.1)}
   }
 }

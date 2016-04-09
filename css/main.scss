@@ -3,6 +3,11 @@
 ---
 @charset "utf-8";
 
+//// Predefined Break-points (for _cmq.scss)
+$mediaMinWidth: 320px;
+$mediaBp1Width: 600px;
+$mediaMaxWidth: 1024px;
+
 // typog
 $base-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
@@ -12,7 +17,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 //colors
-$background_color: #fdfdfd;
+$background_color: #e6e6e6; //#fdfdfd;
 $brand_color:      hsla(209, 100%, 40%, 1);//0069cc
   //invert + other tests:
   $brand_color-invert: invert($brand_color);
@@ -28,10 +33,6 @@ $grey_color:       #828282;
   $grey_color-dark:  darken($grey_color, 25%);
 
 
-//// Predefined Break-points (for _cmq.scss)
-$mediaMinWidth: 320px;
-$mediaBp1Width: 600px;
-$mediaMaxWidth: 1024px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -39,8 +40,10 @@ $mediaMaxWidth: 1024px;
         "base",
         "layout",
         "cover",
+        "cover_graf",
         "home",
         "post",
         "clock",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "mailto_button"
 ;
