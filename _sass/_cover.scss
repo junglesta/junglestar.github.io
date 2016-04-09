@@ -25,7 +25,11 @@
   text-shadow: 1px 0 10px white;
   position: relative;
   z-index: 11;
-  top: 45%;
+  top: 55%;
+  @media only screen and (orientation : landscape) {
+    top: 30%;
+  }
+
   margin-right: 3vw;
   @include media( "screen", ">minWidth") {margin-right: 4vw;}
   @include media( "screen", ">bp1Width") {margin-right: 5vw;}
