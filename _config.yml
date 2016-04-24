@@ -47,3 +47,7 @@ google:
 
 gems:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - github-pages
+  - html-proofer
