@@ -15,3 +15,18 @@ a[href^="mailto"] {
     margin: 0;
   }
 }
+
+//action button same look inverted
+.button {
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  // &:hover{
+  //   background-color: $action-color;
+  //   color: white;
+  //   text-decoration: none;
+  //   outline: 0 none;
+  //   margin: 0;
+  // }
+}

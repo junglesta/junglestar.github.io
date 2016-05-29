@@ -6,21 +6,13 @@
   left:0;
   right:0;
   bottom:0;
-  //background: $top_color;// url('http://lakto.org/c.jpg') no-repeat center center fixed;
   background-size: cover;
-
-  background-image:
-  linear-gradient(
-      to bottom,
-      darken($brand_color, 5%),
-      white 85vh
-    );
+  background-color: $brand_color;
 }
 
 .cover__title {
-  color: darken($brand_color, 5%) ;
+  color: white;
   text-align: right;
-  text-shadow: 1px 0 10px white;
   position: relative;
   z-index: 11;
   top: 80%;
@@ -48,8 +40,6 @@
     margin: 0 0 0 auto;
   }
   .btn {
-    color: darken($brand_color, 5%);
-    //padding: 8px 20px;
     margin-top: 1rem;
     border-radius: 20px;
     cursor: pointer;

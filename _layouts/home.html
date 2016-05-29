@@ -4,8 +4,8 @@
   {% include head.html %}
 
   <body class="home">
-    <div class="cover">
 
+    <div class="cover">
 
       <div class="cover__clock">
 
@@ -16,6 +16,7 @@
       </div>
 
       <div class="cover__title">
+
         <div class="btn">
           <div class="name"><h1>{{ site.title }}</h1></div>
           <div class="desc">Make life easy for your customers!</div>
@@ -25,30 +26,15 @@
 
     </div>
 
-    <header class="site-header">
+    <header class="site_header">
 
-      <div class="wrapper">
+      {% include intro.html %}
 
-        <nav class="site-nav">
-            {% for page in site.pages %}
-
-              {% if page.title %}
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-              {% endif %}
-
-            {% endfor %}
-        </nav>
-      </div>
     </header>
-
-
-
-
-
 
     <div class="page-content">
 
-        {{ content }}
+      {{ content }}
 
     </div>
 
