@@ -14,14 +14,21 @@ $seconds_color: $hours_color;
   position: relative;
   // left: -$min;
   // top: -$min*0.8;
-  left: -3rem;
-  top: 1rem;
+  left: -4rem;
+  top: 0;
   z-index: 10;
   font-weight:200;
   transform: scale(.5);
   @include media( "screen", ">minWidth") {transform: scale(.6); font-weight:200;}
   @include media( "screen", ">bp1Width") {transform: scale(.7); font-weight:200;}
   @include media( "screen", ">maxWidth") {transform: scale(1); font-weight:100;}
+
+  @media only screen and (orientation : landscape) {
+
+
+    left: -8rem;
+    top: -2rem;
+  }
 
   div{
     text-align: center;
