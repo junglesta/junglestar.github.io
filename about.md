@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 ---
@@ -21,5 +21,3 @@ Been procrastinating planning a **proper internet presence** for long?
 
 We have been **helping** small companies for years.
 **Let's start** a new phase together. Fresh and up-to-date!
-
-[know more](mailto:rokmabox@gmail.com)

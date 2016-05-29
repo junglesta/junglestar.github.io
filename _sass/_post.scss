@@ -4,9 +4,9 @@
 
 // Posts
 .post-header {
+  padding: 0 $spacing-unit;
   color: $grey_color;
   max-width: 540px;
-  padding: 0px 10px;
   margin: 0 auto;
   margin-bottom: $spacing-unit;
 }
@@ -19,11 +19,11 @@
 }
 
 .post-content {
+  padding: 0 $spacing-unit;
   color: $grey_color;
   margin-bottom: $spacing-unit;
   p {
     max-width: 540px;
-    padding: 0px 10px;
     margin: 0 auto;
     line-height: 1.5;
     margin-bottom: 20px;
