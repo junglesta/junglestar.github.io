@@ -7,7 +7,7 @@
   padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
-  background-color: $brand_color;
+  background-color: lighten($brand_color, 10%);
   z-index: 1;
 
   .wrapper {
