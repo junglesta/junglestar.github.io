@@ -47,8 +47,8 @@
   position: absolute;
   top: 270px;
   @media only screen and (orientation : landscape) {
-   top: 90px;
- }
+    top: 90px;
+  }
 
   left: calc(100% - 60px);
   display: block;
