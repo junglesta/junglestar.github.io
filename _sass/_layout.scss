@@ -1,3 +1,25 @@
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
 // Site header
 
 .site_header {
@@ -7,28 +29,20 @@
   padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
-  background-color: lighten($brand_color, 10%);
+  // background-color: lighten($brand_color, 10%);
   z-index: 1;
 
-  .wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-  }
+
   a {
     color: white;
     width: 80vw;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
   small {
     display: inline-block;
     margin-top: .25rem;
   }
 }
-
 
 .site_title {
   font-size: 2rem;
@@ -43,8 +57,8 @@
 
 .site_title:before {
   content: "";
-  position: absolute;
-  top: -60px;
+  position: relative;
+  top: 10px;
   left: calc(50% - 30px);
   display: block;
   height: 60px;
@@ -89,4 +103,15 @@ hr {
 .action_button {
   text-align: center;
 
+}
+
+.back_home {// a
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  line-height: 1.85;
+  font-size: 1.5rem;
+  text-align: center;
 }

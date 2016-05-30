@@ -19,7 +19,7 @@
 }
 
 .post-content {
-  padding: 0 $spacing-unit;
+  padding: $spacing-unit $spacing-unit 0  $spacing-unit;
   color: $grey_color;
   margin-bottom: $spacing-unit;
   p {

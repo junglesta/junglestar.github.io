@@ -10,8 +10,22 @@
     <div class="page-content">
 
       {{ content }}
-      
+
     </div>
+
+
+    {% include page_footer.html %}
+
+    <script type="text/javascript">
+
+          var btnSel = document.querySelector('.btn');
+          var header = document.getElementsByTagName('header')[0];
+
+          btnSel.addEventListener("click", function() {
+            header.scrollIntoView({behavior: "smooth"});
+          }, false);
+
+    </script>
 
     {% include script_google_analytics.html %}
 

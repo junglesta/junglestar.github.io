@@ -1,6 +1,6 @@
 //cover
 .cover {
-  height: 110vh;
+  height: 100vh;
   position: relative;
   top:0;
   left:0;
@@ -15,16 +15,11 @@
   text-align: right;
   position: relative;
   z-index: 11;
-  top: 80%;
+  padding-top: 22rem;
   @media only screen and (orientation : landscape) {
-    top: 65%;
-  }
-
-  margin-right: 6vw;
-  @include media( "screen", ">minWidth") {margin-right: 7vw;}
-  @include media( "screen", ">bp1Width") {margin-right: 8vw;}
-  @include media( "screen", ">maxWidth") {margin-right: 9vw;}
-
+   padding-top: 10rem;
+   width: 80%;
+ }
 
   .name h1{
     margin: -4rem 0 0 0;
@@ -47,10 +42,14 @@
 }
 
 
-.cover__title:before {
+.cover__title .btn:before {
   content: "";
   position: absolute;
-  top: -60px;
+  top: 270px;
+  @media only screen and (orientation : landscape) {
+   top: 90px;
+ }
+
   left: calc(100% - 60px);
   display: block;
   height: 60px;

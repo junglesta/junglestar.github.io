@@ -1,78 +1,78 @@
 //EMPTY COLOR clock css
+// items dimensions
 $hour: 300px;
-$min: 130px;
-$sec: 60px;
-
-$border_size: 0;
-
-$hours_color: rgba(255,255,255,.75);
-$minutes_color: $hours_color;
-$seconds_color: $hours_color;
+$min: 110px;
+$sec: 70px;
+$border_size: 2px;
+// items color
+$hours_color: $brand_color-invert;
+  $minutes_color: $hours_color;
+  $seconds_color: $hours_color;
 
 .cover__clock {
   //in this configuration its a flexbox item!
   position: relative;
-  // left: -$min;
-  // top: -$min*0.8;
   left: -4rem;
   top: 0;
   z-index: 10;
-  font-weight:200;
-  transform: scale(.5);
-  @include media( "screen", ">minWidth") {transform: scale(.6); font-weight:200;}
-  @include media( "screen", ">bp1Width") {transform: scale(.7); font-weight:200;}
-  @include media( "screen", ">maxWidth") {transform: scale(1); font-weight:100;}
+  font-weight:300;
+  line-height: 1.6;
+  transform: scale(.45);
+  @include media( "screen", ">minWidth") {transform: scale(.55);}
+  @include media( "screen", ">bp1Width") {transform: scale(.65);}
+  @include media( "screen", ">maxWidth") {transform: scale(1);}
 
   @media only screen and (orientation : landscape) {
-
-
-    left: -8rem;
+    left: -9rem;
     top: -2rem;
+    @include media( "screen", ">maxWidth") {
+      left: 0rem;
+      top: -4rem;
+    }
   }
 
-  div{
+  div {
     text-align: center;
     border-radius: 50%;
     position: absolute;
-
+    padding: 1rem;
+    background-color: $brand-color;
   }
 }
-.hours {
-  z-index: -10;
-}
+
 .seconds {
-  //text-shadow: 2px -2px 10px $brand_color;
   width: $sec;
   height: $sec;
 
-  top: 280px;
-  left: 280px;
+  top: 270px;
+  left: 270px;
 
-  z-index: 3;
-  font-size: 3rem;
+  padding: .25rem!important;
+  font-size: 2.5rem;
+  line-height: 1.5;
+
   color: $seconds_color;
   border: $border_size solid $seconds_color;
-  z-index: 100;
+  z-index: 3;
 }
 
 .minutes {
-  //text-shadow: 1px -1px 10px $brand_color;
   width: $min;
   height: $min;
 
   top: 250px;
   left: 250px;
 
-  z-index: 2;
-  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 1.5;
+
   color: $minutes_color;
   border: $border_size solid  $minutes_color;
-  z-index: 99;
+  z-index: 2;
 }
 
 .hours {
-  //background: url("data:image/svg+xml;charset=UTF-8,<svg></svg>");
-  //text-shadow: 1px -1px 20px $brand_color;
+  font-weight:200;
   width: $hour;
   height: $hour;
 
@@ -81,7 +81,6 @@ $seconds_color: $hours_color;
   z-index: 1;
 
   font-size: 10rem;
-  // font-weight: 100;
   color: $hours_color;
   border: $border_size solid $hours_color;
 }
