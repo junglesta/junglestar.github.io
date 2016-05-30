@@ -3,9 +3,9 @@
 $hour: 300px;
 $min: 110px;
 $sec: 70px;
-$border_size: 2px;
+$border_size: 4px;
 // items color
-$hours_color: $brand_color-invert;
+$hours_color: lighten($brand_color-invert, 10);
   $minutes_color: $hours_color;
   $seconds_color: $hours_color;
 
@@ -15,11 +15,10 @@ $hours_color: $brand_color-invert;
   left: -4rem;
   top: 0;
   z-index: 10;
-  font-weight:300;
   line-height: 1.6;
-  transform: scale(.45);
-  @include media( "screen", ">minWidth") {transform: scale(.55);}
-  @include media( "screen", ">bp1Width") {transform: scale(.65);}
+  transform: scale(.5);
+  @include media( "screen", ">minWidth") {transform: scale(.6);}
+  @include media( "screen", ">bp1Width") {transform: scale(.7);}
   @include media( "screen", ">maxWidth") {transform: scale(1);}
 
   @media only screen and (orientation : landscape) {
@@ -32,28 +31,35 @@ $hours_color: $brand_color-invert;
   }
 
   div {
-    text-align: center;
-    border-radius: 50%;
     position: absolute;
     padding: 1rem;
     background-color: $brand-color;
+    text-align: center;
+    border-radius: 50%;
+    border: $border_size solid $seconds_color;
+    @include media( "screen", ">minWidth") {
+      border: $border_size/2 solid $seconds_color;
+    }
   }
 }
 
 .seconds {
+  padding: .25rem!important;
+
   width: $sec;
   height: $sec;
 
   top: 270px;
   left: 270px;
+  z-index: 3;
 
-  padding: .25rem!important;
   font-size: 2.5rem;
-  line-height: 1.5;
+  line-height: 1.35;
+  font-weight:700;
+  @include media( "screen", ">minWidth") { font-weight:300;}
 
   color: $seconds_color;
-  border: $border_size solid $seconds_color;
-  z-index: 3;
+
 }
 
 .minutes {
@@ -62,17 +68,18 @@ $hours_color: $brand_color-invert;
 
   top: 250px;
   left: 250px;
+  z-index: 2;
 
   font-size: 3rem;
   line-height: 1.5;
+  font-weight:700;
+  @include media( "screen", ">minWidth") { font-weight:300;}
 
   color: $minutes_color;
-  border: $border_size solid  $minutes_color;
-  z-index: 2;
+
 }
 
 .hours {
-  font-weight:200;
   width: $hour;
   height: $hour;
 
@@ -80,7 +87,10 @@ $hours_color: $brand_color-invert;
   left: $hour/2;
   z-index: 1;
 
-  font-size: 10rem;
   color: $hours_color;
-  border: $border_size solid $hours_color;
+
+  font-size: 10rem;
+  font-weight:500;
+  @include media( "screen", ">minWidth") { font-weight:100;}
+
 }
