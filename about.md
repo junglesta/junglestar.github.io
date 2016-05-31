@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Jungle✩Star?
 
-We are a small, flexible web agency.
+**We are a small, flexible web agency**.
 We help companies and individuals organize their communication.
 We grow relationships with clients.
 We design, produce & develop well thought user experiences. [See sample >](http://revealing.junglestar.org/#/8/1)
