@@ -20,7 +20,7 @@ body {
   @include media( "screen", ">bp1Width") {font-size: $base-font-size*1.2;}
   @include media( "screen", ">maxWidth") {font-size: $base-font-size*1.3;}
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: 400;
   color: $text_color;
   //background-color: $background_color;
   -webkit-text-size-adjust: 100%;

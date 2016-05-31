@@ -39,8 +39,12 @@
   }
 
   h3 {
+    color: $brand-color;
     font-size: 1.75rem;
-    @include media( "screen", ">maxWidth") {font-size: 2rem;}
+    text-align: center;
+    @include media( "screen", ">maxWidth") {
+      font-size: 2rem;
+    }
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
