@@ -5,7 +5,7 @@ layout: cover
 <div class="home_content">
   <ul class="post_list">
     {% for post in site.posts %}
-      <li>
+      <li class="{{ post.tag }}">
           <a class="post_link" href="{{ post.url | prepend: site.baseurl }}">
             {% if post.ico_url %}
             <div class="post_link_ico {{post.ico_name}}">

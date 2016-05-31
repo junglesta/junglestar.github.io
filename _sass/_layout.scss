@@ -126,13 +126,11 @@ hr {
 
 
 
-.post_link[href*="tool"]{
+.post_list .commissioned-work{
+  background-color: lighten($brand-color, 55);
+  border: 5px solid white;
+
+
+.post_list .tools{
   background-color: white;
-}
-
-
-
-.post_link[href*="client"]{
-  background-color: white;
-  border: 1px solid $brand-color;
 }
