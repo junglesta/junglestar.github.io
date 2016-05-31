@@ -1,6 +1,7 @@
 _LAB/
 _LAB/*.*
 _LAB/**
+_LAB/_*.*
 _site/
 tmp/**
 .sass-cache
