@@ -22,11 +22,12 @@ a[href^="mailto"] {
   padding: 10px;
   color: white;
   font-weight: bold;
-  // &:hover{
-  //   background-color: $action-color;
-  //   color: white;
-  //   text-decoration: none;
-  //   outline: 0 none;
-  //   margin: 0;
-  // }
+  .site_header & {
+    color: $action-color;
+    border: 2px solid $action-color;
+  }
+  &:hover{
+    background-color: transparentize($action-color, .9);
+  }
+
 }

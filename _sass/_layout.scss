@@ -29,12 +29,14 @@
   padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
-  // background-color: lighten($brand_color, 10%);
+  background-color: transparentize(white, .25);
+
   z-index: 1;
 
 
   a {
     color: white;
+    color: black;
     width: 80vw;
     padding-bottom: 1rem;
   }
@@ -128,7 +130,7 @@ hr {
 
 .post_list .commissioned-work{
   background-color: lighten($brand-color, 55);
-  border: 5px solid white;
+  //border: 5px solid white;
 }
 
 .post_list .tools{
