@@ -123,3 +123,16 @@ hr {
   font-size: 1.5rem;
   text-align: center;
 }
+
+
+
+.post_link[href*="tool"]{
+  background-color: white;
+}
+
+
+
+.post_link[href*="client"]{
+  background-color: white;
+  border: 1px solid $brand-color;
+}
