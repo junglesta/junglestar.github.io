@@ -62,9 +62,9 @@ li {
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  font-weight:500;
-  @include media( "screen", ">minWidth") {font-weight:300;}
-  @include media( "screen", ">maxWidth") {font-weight:200;}
+  font-weight:700;
+  @include media( "screen", ">minWidth") {font-weight:500;}
+  @include media( "screen", ">maxWidth") {font-weight:300;}
 }
 
 // Links

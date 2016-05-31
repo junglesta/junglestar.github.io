@@ -94,7 +94,7 @@
 // Page content
 .page-content {
   padding: $spacing-unit 0 $spacing-unit*2 0;
-  border-bottom: $spacing-unit*4 solid $brand_color;
+  border-bottom: 100vh solid $brand_color;
   background-color:$background_color;
 }
 .page-heading {font-size: 1.5rem;}
