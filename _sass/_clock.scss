@@ -17,9 +17,15 @@ $hours_color: lighten($brand_color-invert, 10);
   z-index: 10;
   line-height: 1.6;
   transform: scale(.5);
-  @include media( "screen", ">minWidth") {transform: scale(.6);}
-  @include media( "screen", ">bp1Width") {transform: scale(.7);}
-  @include media( "screen", ">maxWidth") {transform: scale(1);}
+  @include media( "screen", ">minWidth") {
+    transform: scale(.5);
+  }
+  @include media( "screen", ">bp1Width") {
+    transform: scale(.7);
+  }
+  @include media( "screen", ">maxWidth") {
+    transform: scale(1);
+  }
 
   @media only screen and (orientation : landscape) {
     left: -9rem;
