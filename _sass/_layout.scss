@@ -16,7 +16,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 10vw;
 }
 
 
@@ -59,7 +59,7 @@
 .cover__title .btn:before {
   content: "";
   position: relative;
-  top: 10px;
+  top: 0;
 
   display: block;
   height: 60px;
@@ -73,7 +73,7 @@
 }
 
 .cover__title .btn:before {
-  left: calc(96vw - 60px);
+  left: calc(100% - 60px);
 }
 
 .site_nav {
