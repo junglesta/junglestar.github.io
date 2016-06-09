@@ -29,10 +29,9 @@
     margin: 0;
     padding-bottom: 4px;
     line-height: 1;
-    font-size: 14vw;
-    @include media( "screen", ">minWidth") {font-size: 11vw;}
-    @include media( "screen", ">bp1Width") {font-size: 9vw;}
-    @include media( "screen", ">maxWidth") {font-size: 7rem;}
+
+    @include responsive-font(10vw, 50px, 150px, 50px);
+
   }
 
   .desc {
@@ -45,5 +44,11 @@
     border-radius: 20px;
     cursor: pointer;
   }
+
+}
+
+.works_title {
+  width: 100%;
+  display: block;
 
 }

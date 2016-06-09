@@ -11,6 +11,7 @@ $mediaMaxWidth: 1024px;
 // typog
 $base-font-family: 'Lato', sans-serif;
 $base-font-size:   18px;
+$elastic_font_size: 2vw;
   $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 //util
@@ -36,6 +37,7 @@ $grey_color:       #212121;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "vst",
         "cmq",
         "base",
         "layout",

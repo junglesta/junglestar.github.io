@@ -14,7 +14,19 @@ a[href^="mailto"] {
     outline: 0 none;
     margin: 0;
   }
+  footer & {
+
+    border: 2px solid white;
+    color: white;
+    &:hover {
+      background-color: lighten($action-color, 10%);
+      color: white;
+    }
+  }
 }
+
+
+
 
 //action button same look inverted
 .button {

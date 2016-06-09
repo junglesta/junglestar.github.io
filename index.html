@@ -1,9 +1,14 @@
 ---
 layout: cover
 ---
+<div class="wrapper">
+  <h2 class="works_title">Recent works:</h2>
+</div>
+
 
 <div class="home_content">
   <ul class="post_list">
+
     {% for post in site.posts %}
       <li class="{{ post.tag }}">
           <a class="post_link" href="{{ post.url | prepend: site.baseurl }}">
@@ -17,5 +22,6 @@ layout: cover
           </a>
       </li>
     {% endfor %}
+
   </ul>
 </div>

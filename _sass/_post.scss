@@ -30,8 +30,8 @@
   }
 
   h2 {
-    font-size: 2rem;
-    @include media( "screen", ">maxWidth") {font-size: 3rem;}
+    font-size: 1.5rem;
+    @include media( "screen", ">maxWidth") {font-size: 2.5rem;}
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;

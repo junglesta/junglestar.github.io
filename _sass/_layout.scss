@@ -1,5 +1,5 @@
 .wrapper {
-  min-height: 100vh;
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,10 +18,15 @@
   align-items: center;
   padding: 2rem 10vw;
 }
-
+.wrapper.wrapper--fullview {
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
 // Site header
-
 .site_header {
   top:0; // 2kill line in mobiles
   min-height: 100vh;
@@ -29,8 +34,6 @@
   padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
-  background-color: transparentize(white, .25);
-
   z-index: 1;
 
 
@@ -46,6 +49,10 @@
   }
 }
 
+.site_header--light {
+    background-color: transparentize(white, .25);
+}
+
 .site_title {
   font-size: 2rem;
   line-height: 2;
@@ -58,6 +65,7 @@
 }
 
 .site_title:before,
+.footer_icon:before,
 .cover__title .btn:before {
   content: "";
   position: relative;
@@ -78,6 +86,10 @@
   left: calc(100% - 60px);
 }
 
+.footer_icon:before {
+  left: calc(50% - 30px);
+}
+
 .site_nav {
   text-align: center;
   font-size: $base-font-size*1.25;
@@ -94,7 +106,6 @@
 // Page content
 .page-content {
   padding: $spacing-unit 0 $spacing-unit*2 0;
-  border-bottom: 100vh solid $brand_color;
   background-color:$background_color;
 }
 .page-heading {font-size: 1.5rem;}
@@ -115,6 +126,12 @@ hr {
 
 }
 
+
+.footer_icon {
+  padding-bottom: $spacing-unit;
+}
+
+
 .back_home {// a
   width: 3rem;
   height: 3rem;
@@ -125,6 +142,7 @@ hr {
   font-size: 1.5rem;
   text-align: center;
 }
+
 
 
 

@@ -30,7 +30,7 @@
 
     </div>
 
-    <header class="site_header">
+    <header class="site_header site_header--light">
 
       {% include intro.html %}
 
@@ -42,7 +42,10 @@
 
     </div>
 
+    {% include page_footer.html %}
+
     <script>
+    //clock
       setInterval(function() {
         var seconds = new Date().getSeconds();
         var sdegree = seconds * 6 + 270;
@@ -81,6 +84,7 @@
 
     </script>
 
+    {% include script_blank.html %}
     {% include script_google_analytics.html %}
 
   </body>
