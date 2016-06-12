@@ -24,6 +24,7 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  // a {margin-bottom: 3rem;}
 }
 
 // Site header
@@ -38,7 +39,6 @@
 
 
   a {
-    color: white;
     color: black;
     width: 80vw;
     padding-bottom: 1rem;
@@ -47,6 +47,7 @@
     display: inline-block;
     margin-top: .25rem;
   }
+  h2 {color: $brand-color;}
 }
 
 .site_header--light {
