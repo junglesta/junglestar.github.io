@@ -68,6 +68,7 @@
 .site_title:before,
 .footer_icon:before,
 .cover__title .btn:before {
+  //junglestar logo
   content: "";
   position: relative;
   top: 0;
@@ -154,4 +155,29 @@ hr {
 
 .post_list .tools{
   background-color: white;
+}
+
+.tech_logos{
+  //svg container
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tech_logo {
+  //svgs
+  max-height: 80px;
+  padding: .5rem;
+  &.node {max-width: 150px;}
+  &.gulp {max-width: 100px;}
+  &.github {max-width: 90px;}
+  &.sass {max-width: 90px;}
+  &.npm {max-width: 90px;}
+  &.jekyll {max-width: 130px;}
+  &.ruby {max-width: 70px; opacity: .5;}
+  &.shopify {max-width: 100px;}
+  &.paypal {max-width: 130px;}
+  &.yeoman {max-width: 100px;}
 }
