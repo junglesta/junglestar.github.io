@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "Rocco Marosi Architecture Photography"
+title:  "Rocco Marosi<br>Architecture Photography"
 categories: portfolio webapp
 tag: commissioned-work
 redir: http://roccomarosi.com

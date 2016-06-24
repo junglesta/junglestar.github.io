@@ -130,7 +130,7 @@ hr {
 
 
 .footer_icon {
-  padding-bottom: $spacing-unit;
+  padding-top: $spacing-unit;
 }
 
 
@@ -164,6 +164,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  .post-content & {margin-bottom: 0;}
 }
 
 .tech_logo {

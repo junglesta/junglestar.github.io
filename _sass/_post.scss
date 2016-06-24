@@ -22,7 +22,7 @@
   padding: $spacing-unit $spacing-unit 0  $spacing-unit;
   color: $grey_color;
   margin-bottom: $spacing-unit;
-  p {
+  p, blockquote {
     max-width: 540px;
     margin: 0 auto;
     line-height: 1.5;
@@ -47,7 +47,7 @@
       font-size: 2rem;
     }
     max-width: 540px;
-    padding: 0px 10px;
+    padding: 0px 4px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -60,6 +60,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
 
   .highlight {
     color: #333;
