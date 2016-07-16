@@ -27,6 +27,7 @@
   // a {margin-bottom: 3rem;}
 }
 
+
 // Site header
 .site_header {
   top:0; // 2kill line in mobiles
@@ -130,8 +131,20 @@ hr {
 
 
 .footer_icon {
-  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit/2;
 }
+
+.qr.white {
+  height: 100px;
+  width: 100px;
+  svg {
+    padding-top: $spacing-unit/3;
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
 
 
 .back_home {// a

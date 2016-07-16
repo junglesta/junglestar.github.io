@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "Pinksummer<br>Contemporary Art"
+title:  "PINKSUMMER<br>Contemporary Art"
 categories: gallery custom webapp
 tag: commissioned-work
 redir: http://pinksummer.com
