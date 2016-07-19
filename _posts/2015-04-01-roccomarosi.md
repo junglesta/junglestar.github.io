@@ -3,7 +3,7 @@ layout: redirect
 title:  "ROCCO MAROSI<br>Architecture Photography"
 categories: portfolio webapp
 tag: commissioned-work
-redir: http://roccomarosi.com
+redir: http://roccomarosi.com/?ref=junglestar
 ico_url: http://roccomarosi.com/safari-pinned-tab.svg
 ico_name: roccomarosi
 ---

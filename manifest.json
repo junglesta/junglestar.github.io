@@ -1,5 +1,6 @@
 {
 	"name": "JungleStar",
+	"short_name": "JungleStar",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png?v=0.1.5",

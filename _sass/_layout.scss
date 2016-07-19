@@ -1,5 +1,5 @@
+// wrappers
 .wrapper {
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,7 +24,6 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  // a {margin-bottom: 3rem;}
 }
 
 
@@ -60,7 +59,6 @@
   line-height: 2;
   letter-spacing: -1px;
   margin-bottom: 0;
-  //float: left
   text-align: center;
   width: 100%;
   color: white;
@@ -116,32 +114,24 @@
 
 //styling hr
 hr {
-    border: 0;
-    height: 1px;
-    width: 75%;
-    margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.25);
+  border: 0;
+  height: 1px;
+  width: 75%;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.25);
 }
-
-
-.action_button {
-  text-align: center;
-
-}
-
 
 .footer_icon {
-  padding-bottom: $spacing-unit/2;
+  padding-bottom: $spacing-unit;
 }
 
-.qr.white {
-  height: 100px;
-  width: 100px;
+.qr.white {// should be 100 but qr got 10px margin so
+  height: 120px;
+  width: 120px;
   svg {
-    padding-top: $spacing-unit/3;
     display: block;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 120px;
+    max-height: 120px;
   }
 }
 
