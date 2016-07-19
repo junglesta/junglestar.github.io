@@ -1,4 +1,5 @@
 footer {
+  font-size: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,6 +25,7 @@ footer {
   align-content: center;
   color: white;
   a {
+    font-size: 1rem;
     color: white;
   }
 }
