@@ -11,7 +11,9 @@ $hours_color: lighten($brand_color-invert, 10);
 
 .cover__clock {
   //in this configuration its a flexbox item!
-  position: relative;
+  position: absolute;
+  display: block;
+  width: 100vw;
   left: -4rem;
   top: 0;
   z-index: 10;
