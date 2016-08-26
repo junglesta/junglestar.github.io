@@ -5,13 +5,16 @@ layout: cover
   <h2 class="works_title">See what we deliver!</h2>
 </div>
 
+{%comment%}
+{% unless post.link == 'local' %}target="_blank" rel="noopener"{% endunless %}
+{%endcomment%}
 
 <div class="home_content">
   <ul class="post_list">
 
     {% for post in site.posts %}
       <li class="{{ post.tag }}">
-          <a class="post_link" href="{{ post.url | prepend: site.baseurl }}" {% unless post.link == 'local' %}target="_blank" rel="noopener"{% endunless %}>
+          <a class="post_link" href="{{ post.url | prepend: site.baseurl }}" >
             {% if post.ico_url %}
             <div class="post_link_ico {{post.ico_name}}">
               <img class="" src="{{post.ico_url}}" alt="{{post.title}}" />

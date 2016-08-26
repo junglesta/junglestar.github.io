@@ -8,6 +8,9 @@
     if (links[i].hostname != window.location.hostname) {
       links[i].target = '_blank';
       links[i].className += ' externalLink';
+      links[i].className += ' curated_by_script_blank';
+      // add rel="noopener" too, dude...
+      links[i].rel += "noopener";
     }
   }
 })();

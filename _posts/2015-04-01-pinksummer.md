@@ -1,8 +1,8 @@
 ---
 layout: redirect
 title:  "PINKSUMMER<br>Contemporary Art"
-categories: gallery custom webapp
-tag: commissioned-work
+categories: webapp
+tag: commissioned-work 
 redir: http://pinksummer.com/?ref=junglestar
 ico_url: http://pinksummer.com/safari-pinned-tab.svg
 ico_name: pinksummer
