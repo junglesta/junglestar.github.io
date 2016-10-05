@@ -16,15 +16,18 @@ We design, produce & develop well thought user experiences. [See sample >](http:
 Got new ideas you **haven't yet find time** to develop?
 Been procrastinating planning a **proper internet presence** for long?
 
-### Internet presence?
+### Internet presence ?
 
-Today many new **free tools to simplify your work** do exist! Most of them are already installed on your phone, maybe you just don't know yet...
+Today there are many **free tools to simplify your work**! Most of them are already installed on your phone, maybe you just don't know yet...
 
-### Helping hand?
+### Guidance helping hand?
 
-Want to figure it out? We can help.
-We have been **helping** small companies for years.
+Want to figure it out on your own? We can help, when you need shortcuts. Think of us as the barber shop for small starters blokes. We have been **helping** small companies for years.
 **Let's start** a new phase together. Fresh and **up-to-date!**
+
+### Yes, any human?
+
+Sprouted from this [tree](http://rokma.com), Junglestar agency works using his extended network of carefully selected business partners, mostly on a per-project base.
 
 
 ### We ♡ Open source
