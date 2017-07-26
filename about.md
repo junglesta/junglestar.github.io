@@ -18,16 +18,15 @@ Been procrastinating planning a **proper internet presence** for long?
 
 ### Internet presence?
 
-Today there are many **free tools to simplify your work**! Most of them are already installed on your phone, maybe you just don't know yet...
+Today there are many **free tools to simplify your work**! Most of them are already installed on your phone, maybe you just don't know yet...  we can show you how.
 
 ### Guidance?
 
-Need an helping hand? Want to figure it out on your own? We can help, when you need shortcuts. When deciding which path to take. We have been **helping** small companies for years. In this fast changing world it's about how fast can you study and produce solutions.
-**Let's start** a new phase together. Fresh and **up-to-date!**
+Need an helping hand? Are you having difficulties figuring it all out on your own? We can help. We offer guidance. We can show you shortcuts and the best path to take. We have been **helping** small companies for many years. In this fast changing world it's all about how quickly you can produce well thought solutions.
 
-### Yes, any human?
+### Who are we?
 
-Sprouted from this [tree](http://rokma.com), Junglestar agency works using his extended network of carefully selected business partners, mostly on a per-project base.
+Junglestar agency is [Rokma's](http://rokma.com) brainchild. We use an extended network of carefully selected business partners, mostly on a per-project basis.
 
 
 ### We ♡ Open source
