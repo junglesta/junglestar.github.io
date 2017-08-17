@@ -1,17 +1,7 @@
-<header class="site-header">
+<div class="site_header">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-    </nav>
-
+  <div class="wrapper wrapper--fullview">
+    <div class="site_title btn">{{ site.title }}</div>
   </div>
 
-</header>
+</div>

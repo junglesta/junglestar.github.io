@@ -1,35 +1,104 @@
-// Site header
+// wrappers
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem 10vw;
+}
+.wrapper.wrapper--fullview {
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
-.site-header {
-  min-height: 56px; //max-width: 940px;
+
+// Site header
+.site_header {
+  top:0; // 2kill line in mobiles
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
+  z-index: 1;
+
+
+  a {
+    color: black;
+    width: 80vw;
+    padding-bottom: 1rem;
+  }
+  small {
+    display: inline-block;
+    margin-top: .25rem;
+  }
+  h2 {color: $brand-color;}
 }
 
-.site-header::before {
-  content: '';
-  position: absolute;
-  width: 100%;
+.site_header--light {
+    background-color: transparentize(white, .25);
 }
 
-.site-title {
+.site_title {
   font-size: 2rem;
   line-height: 2;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  text-align: center;
+  width: 100%;
   color: white;
 }
 
-.site-nav {
+.site_title:before,
+.footer_icon:before,
+.cover__title .btn:before {
+  //junglestar logo
+  content: "";
+  position: relative;
+  cursor: pointer;
+  top: 0;
+
+  display: block;
+  height: 60px;
+  width: 60px;
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E %3Cpath fill='white' d='M328.813 60.47L328.78 224.3c-.006 43.783-11.565 75.953-34.648 96.506-23.096 20.562-53.638 31.03-91.638 31.43-38.827.4-69.976-9.04-93.463-28.317-23.496-19.284-35.235-44.104-35.228-74.486.003-13.4 6.537-20.18 19.618-20.315 13.89-.144 20.838 4.912 20.835 15.163 0 22.482 7.86 40.15 23.593 53.008 15.72 12.85 36.863 19.146 63.433 18.87 27.783-.29 49.23-8.007 64.355-23.153 15.116-15.146 22.688-37.906 22.693-68.28l.036-192.883C261.95 17.906 231.884 10 200 10 95.233 10 10 95.234 10 200.002 10 304.77 95.233 390 200 390c104.766 0 190-85.23 190-189.998 0-55.104-23.588-104.795-61.187-139.533zM56.593 184.72l52.3-49.918-12.416-70.414 64.732 33.195L225.88 64.28l-12.297 70.435 52.39 49.832-72.33 10.334-32.296 64.1-32.408-64.044-72.35-10.215z'/%3E %3C/svg%3E");
+}
+
+.site_title:before {
+  left: calc(50% - 30px);
+}
+
+.cover__title .btn:before {
+  left: calc(100% - 60px);
+}
+
+.footer_icon:before {
+  left: calc(50% - 30px);
+}
+
+.site_nav {
   text-align: center;
   font-size: $base-font-size*1.25;
-  // float: right;
+  padding-top:1.5rem;
   line-height: 2;
-  .page-link { color: $grey-color; }
   .page-link {
+    color: $grey_color-light;
     display: inline-block;
     width: auto;
     padding: 15px;
@@ -37,40 +106,83 @@
 }
 
 // Page content
-.page-content { padding: $spacing-unit 0;}
-.page-heading { font-size: 1.5rem;}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-  > li { margin-bottom: $spacing-unit/2; }
+.page-content {
+  padding: $spacing-unit 0 $spacing-unit*2 0;
+  background-color:$background_color;
 }
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-  text-align: right;
-  display: none;
-  .post-link:hover & {
-    display: inline;
-    float: right;
-    line-height: 42px;
-    padding: 6px 0;
-  }
-}
-
-.post-link {
-  display: block;
-  font-size: 1.75rem;
-}
-
+.page-heading {font-size: 1.5rem;}
 
 
 //styling hr
 hr {
-    border: 0;
-    height: 1px;
-    width: 75%;
-    margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.25);
+  border: 0;
+  height: 1px;
+  width: 75%;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer_icon {
+  padding-bottom: $spacing-unit;
+}
+
+.qr.white {// should be 100 but qr got 10px margin so
+  height: 120px;
+  width: 120px;
+  svg {
+    display: block;
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+
+
+.back_home {// a
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  line-height: 1.85;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+
+.post_list .commissioned-work{
+  background-color: lighten($brand-color, 55);
+  //border: 5px solid white;
+}
+
+.post_list .tools{
+  background-color: white;
+}
+
+.tech_logos{
+  //svg container
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .post-content & {margin-bottom: 0;}
+}
+
+.tech_logo {
+  //svgs
+  max-height: 80px;
+  padding: .5rem;
+  &.node {max-width: 150px;}
+  &.gulp {max-width: 100px;}
+  &.github {max-width: 90px;}
+  &.sass {max-width: 90px;}
+  &.npm {max-width: 90px;}
+  &.jekyll {max-width: 130px;}
+  &.ruby {max-width: 70px; opacity: .5;}
+  &.shopify {max-width: 100px;}
+  &.paypal {max-width: 130px;}
+  &.yeoman {max-width: 100px;}
 }

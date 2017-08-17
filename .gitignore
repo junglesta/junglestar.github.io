@@ -1,25 +1,15 @@
-#-base(notworking damn):
+_LAB/
+_LAB/*.*
+_LAB/**
+_LAB/_*.*
 _site/
-**/_site
-_site/**
-
-
-#-caches
 tmp/**
 .sass-cache
-
-#-Logs
 logs
 *.log
 
-
-#-Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-
-
-#-OS generated files #
 **/.Trashes
 **/Icon
 **/.DS_Store
@@ -32,20 +22,11 @@ node_modules
 .AppleDouble
 .LSOverride
 
-# Icon must ends with two \r.
 Icon
-# Thumbnails
 ._*
-
-# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
 
-
-
-# Packages #
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
 *.7z
 *.dmg
 *.gz
@@ -54,5 +35,3 @@ Icon
 *.rar
 *.tar
 *.zip
-
-_site/feed.xml

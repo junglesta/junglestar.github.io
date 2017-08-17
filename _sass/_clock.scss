@@ -1,74 +1,104 @@
 //EMPTY COLOR clock css
-$hour_radius: 300px;
-$min_radius: 130px;
-$sec_radius: 60px;
+// items dimensions
+$hour: 300px;
+$min: 110px;
+$sec: 70px;
+$border_size: 4px;
+// items color
+$hours_color: lighten($brand_color-invert, 10);
+  $minutes_color: $hours_color;
+  $seconds_color: $hours_color;
 
-$border_size: 0;
-
-$hours_color: white;
-$minutes_color: $hours_color;
-$seconds_color: $hours_color;
-
-.clockwrap {
+.cover__clock {
   //in this configuration its a flexbox item!
-  position: relative; //necessary for inner absolute positioned elements
-  left: -$min_radius;
-  top: -$min_radius*0.8;
-  z-index: 1;
-  font-weight:300;
-  zoom: .35;
-  @include media( "screen", ">minWidth") {zoom: .5; font-weight:100;}
-  @include media( "screen", ">bp1Width") {zoom: .7;}
-  @include media( "screen", ">maxWidth") {zoom: .9;}
+  position: absolute;
+  display: block;
+  width: 100vw;
+  left: -4rem;
+  top: 0;
+  z-index: 10;
+  line-height: 1.6;
+  transform: scale(.5);
+  @include media( "screen", ">minWidth") {
+    transform: scale(.5);
+  }
+  @include media( "screen", ">bp1Width") {
+    transform: scale(.7);
+  }
+  @include media( "screen", ">maxWidth") {
+    transform: scale(1);
+  }
 
-  div{
+  @media only screen and (orientation : landscape) {
+    left: -9rem;
+    top: -2rem;
+    @include media( "screen", ">maxWidth") {
+      left: 0rem;
+      top: -4rem;
+    }
+  }
+
+  div {
+    position: absolute;
+    padding: 1rem;
+    background-color: $brand-color;
     text-align: center;
     border-radius: 50%;
-    position: absolute;
-
+    border: $border_size solid $seconds_color;
+    @include media( "screen", ">minWidth") {
+      border: $border_size/2 solid $seconds_color;
+    }
   }
 }
 
 .seconds {
-  text-shadow: 1px -1px 5px $bot_color;
-  width: $sec_radius;
-  height: $sec_radius;
+  padding: .25rem!important;
 
-  top: 280px;
-  left: 280px;
+  width: $sec;
+  height: $sec;
 
+  top: 270px;
+  left: 270px;
   z-index: 3;
-  font-size: 2rem;
+
+  font-size: 2.5rem;
+  line-height: 1.35;
+  font-weight:700;
+  @include media( "screen", ">minWidth") { font-weight:300;}
+
   color: $seconds_color;
-  border: $border_size solid $seconds_color;
+
 }
 
 .minutes {
-  text-shadow: 1px -1px 10px $bot_color;
-  width: $min_radius;
-  height: $min_radius;
+  width: $min;
+  height: $min;
 
   top: 250px;
   left: 250px;
-
   z-index: 2;
-  font-size: 5rem;
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight:700;
+  @include media( "screen", ">minWidth") { font-weight:300;}
+
   color: $minutes_color;
-  border: $border_size solid  $minutes_color;
+
 }
 
 .hours {
-  //background: url("data:image/svg+xml;charset=UTF-8,<svg></svg>");
-  text-shadow: 1px -1px 20px $bot_color;
-  width: $hour_radius;
-  height: $hour_radius;
+  width: $hour;
+  height: $hour;
 
-  top: $hour_radius/2;
-  left: $hour_radius/2;
+  top: $hour/2;
+  left: $hour/2;
   z-index: 1;
 
-  font-size: 12rem;
-  // font-weight: 100;
   color: $hours_color;
-  border: $border_size solid $hours_color;
+
+  font-size: 10rem;
+  font-weight:500;
+  @include media( "screen", ">minWidth") { font-weight:100;}
+
 }

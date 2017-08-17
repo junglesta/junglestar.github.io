@@ -1,20 +1,66 @@
 // Home
 
 .home_content {
-  max-width: 540px;
-  margin: 0 auto;
-  padding: 0 10px;
-  a {
-    font-size: $base-font-size*1.75;
-    padding: 10px 30px;
-    border:  2px solid transparent;
-    &:hover {
-      background: #fafafd;
-      border:  2px solid $bot_color;
-      border-radius:30px;
-    }
+  width: 100%;
+  padding: 0 1rem;
+  @include media( "screen", ">bp1Width") { padding: 0 2rem; }
+  a { padding: 2rem; }
+  .ico {
+    width: 50px;
+    @include media( "screen", ">minWidth") { width: 60px; }
+    @include media( "screen", ">bp1Width") { width: 80px; }
+    @include media( "screen", ">maxWidth") { width:100px; }
+    height: auto;
   }
-  a::before {
-      width: 0;
+}
+
+
+.post_list {// <ul>..
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0;
+  list-style: none;
+  > li {
+    background-color: #ddd;
+    margin: $spacing-unit*0.75 ;
+
+    width: $mediaMinWidth;
+    @include media( "screen", ">minWidth") {
+      width: 100%;
+    }
+    @include media( "screen", ">bp1Width") {
+      width: 41%;
+    }
+    @include media( "screen", ">maxWidth") {
+      width: 28%;
+    }
+    &:hover {
+      outline: 1px $brand-color solid;
+      background-color: white;
+    }
+
+  }
+  .post_link { // it's an <a> inside a <li>
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+.post_link_text {
+  margin-left: 1.5rem;
+  display: block;
+
+}
+
+.post_link_ico {
+  padding: $spacing-unit/8;
+  padding-bottom: $spacing-unit;
+  img {
+    width: 100%;
+    @include media( "screen", ">bp1Width") {max-width: 200px;}
   }
 }

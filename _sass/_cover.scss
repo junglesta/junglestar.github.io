@@ -1,106 +1,55 @@
 //cover
 .cover {
-  //height: 100vh;//position: fixed; top:0;left:0;right:0;bottom:0;
-  color: $top_color;
-  height: 100%;
-  background: $top_color;// url('http://lakto.org/c.jpg') no-repeat center center fixed;
-  background-image:
-  linear-gradient(
-      to bottom,
-      $bot_color ,
-      $top_color 70%,
-      lighten($bot_color, 10%)
-    );
-
+  height: 100vh;
+  position: relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
   background-size: cover;
+  background-color: $brand_color;
 
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  .parent{
-    width: 100%;
-    @include media( "screen", ">maxWidth") {width: 50%;}
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-    &.top{
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-    }
-    &.bottom{
-      z-index:10;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
-    }
-  }
-  .child{
-    padding: 1rem;
-    @include media( "screen", ">minWidth") {padding: 1rem 2rem;}
-    @include media( "screen", ">maxWidth") {padding: 2rem 3rem;}
-    width:100%;//width:50vw;
-    height:50vh;// height:200px;
-  }
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.cover__clock {}
-
 .cover__title {
-  color: darken($bot_color, 5%) ;
+  color: white;
   text-align: right;
+  position: relative;
+  z-index: 11;
+  width: 100% ;
 
-  .name h1{
-    margin: -4rem 0 0 0;
-    line-height: 1.25;
-    font-size: 14vw;
-    @include media( "screen", ">minWidth") {font-size: 11vw;margin: -2rem 0 0 0;}
-    @include media( "screen", ">bp1Width") {font-size: 9vw;}
-    @include media( "screen", ">maxWidth") {font-size: 7rem;}
+  padding-top: 50vh;
+  @media only screen and (orientation : landscape) {
+    padding-top: 0;
   }
+  @include media( "screen", ">maxWidth") {
+    padding-top: 50vh;
+  }
+
+  .name h1 {
+    margin: 0;
+    padding-bottom: 4px;
+    line-height: 1;
+
+    @include responsive-font(10vw, 50px, 150px, 50px);
+
+  }
+
   .desc {
     font-size: 1.2rem;
     max-width: 400px;
     margin: 0 0 0 auto;
   }
+
   .btn {
-    color: darken($bot_color, 5%);
-    padding: 8px 20px;
-    margin-top: 1rem;
-    border: 1px solid darken($bot_color, 5%);
-    display: inline-block;
     border-radius: 20px;
     cursor: pointer;
-    background-color: rgba(0,0,0,.05);
-    &:hover{background-color: rgba(0,0,0,.1)}
   }
+}
+
+.works_title {
+  color: $brand_color;
 }

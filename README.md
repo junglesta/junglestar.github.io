@@ -1,8 +1,8 @@
-### junglestar.org
+### [junglestar.org](http://junglestar.org)
 
-![Alt text](screen.jpg)
+![Alt text](/assets/jpg/screen.jpg)
 
-##thanks
+## thanks
 - Naman Kalkhuria: [Clean Theme](http://knaman2609.github.io/clean/)
 - [jekyll](http://jekyllrb.com)
 - [the net...](http://www...)

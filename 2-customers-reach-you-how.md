@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "How customers reach you?"
+title:  "Can customers reach you?"
 categories: news
 redir: http://revealing.junglestar.org/#/4
 ---

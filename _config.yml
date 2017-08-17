@@ -1,11 +1,10 @@
 # The current release
-version: v0.1.3
+version: v0.1.6
 
 # Site settings
 title: Junglestar
-email: me@rokma.com
-description: > # this means to ignore newlines until "baseurl:"
- It's a jungle out there. DIY is not enough. How customers get to know you?
+email: info@junglestar.org
+description: It's a jungle out there. DIY is not enough. How customers get to know you?
 baseurl: "" #"/clean" # the subpath of your site, e.g. /blog/
 url: "http://junglestar.org" # the base hostname & protocol for your site
 twitter_username: rokmatwit
@@ -40,10 +39,15 @@ owner:
  twitter: #
  facebook: #
  github: junglesta
- google:
+
+google:
   plus: #username
   analytics: UA-49653244-1
-  verify: google32e66f1a5601ec40
+  verify: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
 gems:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - github-pages
+  - html-proofer

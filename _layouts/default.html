@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body class="{% if page.title %}{{ page.title }}{% endif %} post{% if page.is_home %} home{% endif %}">
 
+    <span id="top"></span>
+
     {% include header.html %}
 
     <div class="page-content">
-        {{ content }}
+
+      {{ content }}
+
     </div>
+
+    {% include page_footer.html %}
+
+    <script type="text/javascript">
+      //scroll down
+      var btnSel = document.querySelector('.btn');
+      var header = document.getElementsByTagName('header')[0];
+
+      btnSel.addEventListener("click", function() {
+        header.scrollIntoView({behavior: "smooth"});
+      }, false);
+
+    </script>
+
+    {% include script_microdata.html %}
+    {% include script_blank.html %}
+    {% include script_google_analytics.html %}
 
   </body>
 

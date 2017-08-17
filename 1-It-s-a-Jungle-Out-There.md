@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "It's a Jungle Out There"
+title:  "It's a Jungle"
 categories: news
 redir: http://revealing.junglestar.org/
 ---
