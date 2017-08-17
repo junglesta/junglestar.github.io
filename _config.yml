@@ -51,3 +51,7 @@ plugins:
  - jekyll-redirect-from
  - jekyll-sitemap
  - jekyll-feed
+
+
+#Use html-proofer with this terminal command:
+# bundle exec htmlproofer ./_site --disable-external
