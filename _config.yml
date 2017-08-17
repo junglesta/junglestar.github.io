@@ -1,5 +1,5 @@
 # The current release
-version: v0.1.6
+version: v0.2.0
 
 # Site settings
 title: Junglestar
@@ -45,9 +45,9 @@ google:
   analytics: UA-49653244-1
   verify: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
-gems:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - github-pages
-  - html-proofer
+plugins:
+ - html-proofer
+ - jekyll-seo-tag
+ - jekyll-redirect-from
+ - jekyll-sitemap
+ - jekyll-feed
