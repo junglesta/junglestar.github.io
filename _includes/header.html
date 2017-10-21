@@ -1,7 +1,11 @@
 <div class="site_header">
 
   <div class="wrapper wrapper--fullview">
+    {%if page.title=="about"%}
+    <div class="site_title btn">{{ page.question }} {{ page.after }}</div>
+    {%else%}
     <div class="site_title btn">{{ site.title }}</div>
+    {%endif%}
   </div>
 
 </div>

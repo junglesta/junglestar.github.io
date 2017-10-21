@@ -1,13 +1,18 @@
 ---
 layout: page
 title: about
+description: "Junglestar, a small, flexible, One Stop Shop web agency. We do information architecture, screen design, deploy. Packed solutions all-included. Or top quality custom designs on the cheap. We help companies and individuals organize their communication. We grow relationships with clients.
+We design, produce & develop well thought user experiences. From [slide shows](http://revealing.junglestar.org/#/8/1) to [offline ready web apps]"
 permalink: /about/
+question: Have questions
+after: "?!"
 ---
 
 ### Jungle✩Star?
 
 We are a **small, flexible web agency**.
 We help companies and individuals organize their communication.
+We do information architecture, screen design, deploy.
 We grow relationships with clients.
 We design, produce & develop well thought user experiences. From [slide shows](http://revealing.junglestar.org/#/8/1) to [offline ready web apps](https://junglesta.github.io/wherenodoctor/?ref=junglestar-about)
 
@@ -26,7 +31,7 @@ Need an helping hand? Are you having difficulties figuring it all out on your ow
 
 ### Who are we?
 
-Junglestar agency is [Rokma's](http://rokma.com) brainchild. We use an extended network of carefully selected business partners, mostly on a per-project basis.
+Junglestar agency is [Rokma's](http://rokma.com) brainchild. We are an extended network of carefully selected business partners, working on a per-project basis.
 
 
 ### We ♡ Open source
