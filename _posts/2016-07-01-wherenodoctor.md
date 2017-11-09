@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "WHERE NO DOCTOR<br>offline-ready book"
+title:  "WHERE NO DOCTOR<br>Offline-Ready Book"
 category: webapp
 tag: tool open-source
 redir: https://nodoctor.junglestar.org/?ref=junglestar
