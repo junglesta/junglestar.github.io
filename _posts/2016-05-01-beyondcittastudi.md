@@ -1,7 +1,7 @@
 ---
 layout: redirect
 title:  "BEYOND CITTA STUDI<br>Crowdsourcing Event"
-categories: webapp
+category: webapp
 tag: commissioned-work open-source
 redir: http://beyondcittastudi.org/?ref=junglestar
 ico_url: /assets/svg/fonok.svg

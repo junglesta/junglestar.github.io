@@ -1,7 +1,7 @@
 ---
 layout: redirect
 title:  "LIQUID EYE<br>Water Housing Systems"
-categories: website
+category: website
 tag: commissioned-work open-source
 redir: http://liquideye.co/?ref=junglestar
 ico_url: /assets/ico/liquideye/safari-pinned-tab.svg

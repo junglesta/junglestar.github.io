@@ -186,3 +186,20 @@ hr {
   &.paypal {max-width: 130px;}
   &.yeoman {max-width: 100px;}
 }
+
+.webapp {
+  position: relative;
+  &:before {
+    content: 'APP';
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid $brand_color;
+    background-color: inherit;
+    color: $brand_color;
+  }
+}
