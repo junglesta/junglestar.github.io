@@ -1,0 +1,22 @@
+.card {
+  background-color: white;
+  -webkit-box-shadow: $card-shadow;
+  box-shadow: $card-shadow;
+  -webkit-transition: $transition_shadow;
+  transition: $transition_shadow;
+
+  &:hover,
+  &:focus {
+    -webkit-box-shadow: $card-shadow--hover;
+    box-shadow: $card-shadow--hover;
+  }
+
+  &:active {
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+  h2,
+  h3 {
+    padding-top: 0;
+  }
+}

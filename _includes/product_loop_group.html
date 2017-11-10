@@ -1,0 +1,24 @@
+<div class="product_page_title">
+  <h1>{{page.title}}</h1>
+</div>
+
+<!-- {% if page.url contains 'food' %}
+  {% capture resto %}{% include editables/restaurant.md %}{% endcapture %}
+  {{ resto | markdownify }}
+{% endif %} -->
+
+
+<div class="product_grid">
+
+{% capture pagegroup %}{{ page.product_group | slugify }}{% endcapture %}
+
+{% for product in site.products reversed %}
+  {% if product.path contains pagegroup %}
+    {% unless product.publish=='notyet' %}
+
+      {% include product_card.html %}
+
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+</div>

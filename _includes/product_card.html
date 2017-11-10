@@ -1,0 +1,31 @@
+<a class="looper__link card {{ product.product_group }}" title="{{ product.name }}" href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
+<!--
+  <div class="product_image">
+    <figure class="">
+      <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/products/{{ product.product_group }}/{{ product.name | slugify }}.jpg" alt="{{ product.name }}" title="{{ product.name }}">
+      {% if product.tag %}
+      <figcaption class="figcaption {{ product.tag | slugify }}">{{ product.tag }}</figcaption>
+      {% endif %}
+    </figure>
+    <div class="product_group {{ product.product_group | slugify }}">
+      {{ product.product_group }}
+    </div>
+  </div> -->
+
+  <div class="product_text">
+    <h1>{{product.name}}</h1>
+    <h2>{{product.products.product_name}}</h2>
+    <h3>{{product.products.product_subname}}</h3>
+    <p>{{product.products.product_desc}}</p>
+
+    <div class="product_text_content">
+      {{product.content | strip_html | truncatewords: 16}}
+    </div>
+
+    <div class="button_row">
+      <span class="button">Learn more</span>
+    </div>
+
+  </div>
+
+</a>

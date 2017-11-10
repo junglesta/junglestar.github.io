@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//// Predefined Break-points (for _cmq.scss)
+$mediaMinWidth: 320px;
+$mediaBp1Width: 600px;
+$mediaMaxWidth: 1024px;
+
+// typog
+$base-font-family: 'Lato', sans-serif;
+$base-font-size:   18px;
+$elastic_font_size: 2vw;
+  $small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+//util
+$spacing-unit:     30px;
+
+//colors
+$black: black;
+$background_color: #e6e6e6; //#fdfdfd;
+$brand_color:      hsla(209, 100%, 40%, 1);//0069cc
+  //invert + other tests:
+  $brand_color-invert: invert($brand_color);
+  $brand_color-complementary: complement($brand_color);
+
+//bg
+$top_color: $background-color;
+$text_color:       #111;
+  $link_color:      $brand_color;
+
+$grey_color:       #212121;
+$grey_color-light: lighten($grey_color, 40%);
+$grey_color-dark:  darken($grey_color, 25%);
+
+
+//shadows
+$shadow_color: rgb(0,0,0);
+$header_shadow: 0 2px 10px 0 rgba($shadow_color,0.16);
+$card_shadow: 0px 0px 2px 0px rgba($shadow_color,0.12), 0px 2px 2px 0px rgba($shadow_color,0.24);
+$card_shadow--hover: 0px 0px 8px 0px rgba($shadow_color,0.12), 0px 8px 8px 0px rgba($shadow_color,0.24);
+//material design reference: .mdc-elevation--z4
+$main_shadow: 0px 2px 4px -1px rgba($shadow_color, 0.2), 0px 4px 5px 0px rgba($shadow_color, 0.14), 0px 1px 10px 0px rgba($shadow_color, 0.12);
+
+$transition_shadow: box-shadow 0.2s ease;
+
+$product_category_1: hsla(117, 100%, 81%, .75); //food
+$product_category_2: hsla(43, 100%, 81%, .75); //tour
+$product_category_3: hsla(205, 100%, 81%, .75); //accommodation
+
+$vertical_rhythm: 2rem;
+$vertical_rhythm--small: 1rem;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "vst",
+        "cmq",
+        "base",
+        "layout",
+        "cover",
+        "home",
+        "about",
+        "post",
+        "clock",
+        "syntax-highlighting",
+        "footer",
+        "products",
+        "cards"
+;

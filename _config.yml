@@ -1,5 +1,5 @@
 # The current release
-version: v0.2.1
+version: v0.3.0
 
 # Site settings
 title: Junglestar
@@ -15,7 +15,7 @@ markdown: kramdown
 kramdown:
  input: GFM
  hard_wrap: false
-permalink: /:categories/:title/
+permalink: /:title/
 
 # Exclude these files from your production _site
 exclude:
@@ -55,3 +55,23 @@ plugins:
 
 #Use html-proofer with this terminal command:
 # bundle exec htmlproofer ./_site --disable-external
+
+collections:
+  products:
+    output: true
+    permalink: /offer/:title/
+  works:
+    output: true
+    permalink: /works/:title/
+  pages:
+    output: true
+    permalink: /:title/
+  redir:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product # change this to get the layout needed
