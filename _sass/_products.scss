@@ -171,3 +171,22 @@ blockquote p {
   width: 100%;
   margin-bottom: $vertical_rhythm--small;
 }
+
+
+.product_page {
+  .page_content {
+    display: flex;
+    align-items: center;
+    .card {
+      display: block;
+      position: relative;
+      left: auto;
+      margin: 0 auto;
+      min-width: 50vw;
+      max-width: 50vw;
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}

@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 //// Predefined Break-points (for _cmq.scss)
-$mediaMinWidth: 320px;
-$mediaBp1Width: 620px;
+$mediaMinWidth: 600px;
+$mediaBp1Width: 820px;
 $mediaMaxWidth: 1024px;
 
 // typog
@@ -53,35 +53,33 @@ $vertical_rhythm: 2rem;
 $vertical_rhythm--small: 1rem;
 
 $heading1: 1.5rem;
-$heading2: $heading1/8*6;
-$heading3: $heading1/8*5;
-$heading4: $heading1/8*4;
-$heading5: $heading1/8*5;
-$heading6: $heading1/8*6;
+$heading2: $heading1/10*8;
+$heading3: $heading2/10*8;
+$heading4: $heading3/10*8;
+$heading5: $heading4/10*8;
+$heading6: $heading5/10*8;
 
 // buttons
 $black_stroke: hsl(0,0%,60%);
 $button_focus_bg: hsla(0, 0%, 91%, 1);
 $button_book: hsl(205, 100%, 51%);
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "vst",
-        "cmq",
-        "base",
-        "responsive_font",
-        "layout",
-        "cover",
-        "home",
-        "about",
-        "post",
-        "clock",
-        "colors",
-        "syntax-highlighting",
-        "footer",
-        "headings",
-        "products",
-        "buttons",
-        "cards",
-        "offer"
+  "cmq",
+  "base",
+  "responsive_font",
+  "layout",
+  "flex",
+  "cover",
+  "home",
+  "about",
+  "post",
+  "clock",
+  "colors",
+  "footer",
+  "headings",
+  "products",
+  "buttons",
+  "cards",
+  "offer"
 ;

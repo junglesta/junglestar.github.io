@@ -3,19 +3,19 @@
 
   {% include head.html %}
 
-  <body class="{% if page.title %}{{ page.title }}{% endif %} post{% if page.is_home %} home{% endif %}">
+  <body class="{% if page.title %}{{ page.title | slugify }}_page{% endif %} {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
 
     <span id="top"></span>
 
     {% include header.html %}
 
-    <div class="page-content">
+    <div class="page_content">
 
       {{ content }}
 
     </div>
 
-    {% include page_footer.html %}
+    {% include footer.html %}
 
     <script type="text/javascript">
       //scroll down
@@ -28,7 +28,7 @@
 
     </script>
 
-    {% if page.layout == 'offer' %}
+    {% if page.title == 'offer' %}
       {% include script_card.html %}
     {% endif %}
 

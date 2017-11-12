@@ -32,17 +32,15 @@
 
     </div>
 
-    <header class="site_header site_header--light">
+    <header class="site_header light_bg">
 
       {% include intro.html %}
 
     </header>
 
-    <div class="page-content">
+    <div class="page_content">
 
-      <div class="wrapper">
-        <h1 class="works_title">See what we deliver!</h1>
-      </div>
+      <h1 class="works_title center">See what we deliver!</h1>
 
       {%comment%}
       {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}
@@ -71,7 +69,7 @@
 
     </div>
 
-    {% include page_footer.html %}
+    {% include footer.html %}
 
     <script>
     //clock

@@ -1,15 +1,72 @@
 ---
 layout: default
 ---
+<div class="card {{ product.product_group }}" title="{{ product.name }}" >
 
-<div class="product post post_{{ page.name }}">
-  <span>{{ page.product_group }}</span>
+  <div class="product_text">
 
-  <article class="post-content">
-    <p>{{ page.name }}</p>
-    <p>{{ page.title }}</p>
-  </article>
+    <h1>{{page.name}}</h1>
 
-  <div class="action_button">touch</div>
+    <h2>{{page.product.name}}</h2>
+
+    <h5 class="center">{{page.product.type}}</h5>
+
+    <h5 class="center">{{page.product.subname}}</h5>
+
+    <p>{{page.product.desc}}</p>
+
+    <div class="selling_points">
+
+      {% if page.product.selling_points.sp01 %}
+      <div class="center">GET:</div>
+
+      <ul>
+
+        <li class="checkmark">{{page.product.selling_points.sp01}}</li>
+
+        {% if page.product.selling_points.sp02 %}
+        <li class="checkmark">{{page.product.selling_points.sp02}}</li>
+        {% endif %}
+
+        {% if prodpageuct.product.selling_points.sp03 %}
+        <li class="checkmark">{{page.product.selling_points.sp03}}</li>
+        {% endif %}
+
+        {% if page.product.selling_points.sp04 %}
+        <li class="checkmark">{{page.product.selling_points.sp04}}</li>
+        {% endif %}
+
+        {% if page.product.selling_points.sp05 %}
+        <li class="checkmark">{{page.product.selling_points.sp05}}</li>
+        {% endif %}
+
+        {% if page.product.selling_points.sp06 %}
+        <li class="checkmark">{{page.product.selling_points.sp06}}</li>
+        {% endif %}
+
+        {% if page.product.selling_points.sp07 %}
+        <li class="checkmark">{{page.product.selling_points.sp07}}</li>
+        {% endif %}
+
+        {% if page.product.selling_points.sp08 %}
+        <li class="checkmark">{{page.product.selling_points.sp08}}</li>
+        {% endif %}
+
+      </ul>
+      {% endif %}
+
+    </div>
+
+    <div class="starting_at center">
+      <p>Starting at {{page.product.starting_at }} Euro</p>
+    </div>
+
+    <div class="button_row center">
+      <a href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
+        <span class="button center">Learn more</span>
+      </a>
+    </div>
+
+  </div>
 
 </div>

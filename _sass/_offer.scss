@@ -1,6 +1,6 @@
 $big_card_width: 30vw;
 
-body.offer {
+.offer_page {
   ul {
     margin-left: 5px;
     @include media( "screen", ">minWidth") {
@@ -12,9 +12,9 @@ body.offer {
     @extend %clearfix;
     position: relative;
     display: block;
-    min-height: 60vh;
+    min-height: 100vh;
     @include media( "screen", ">bp1Width") {
-      min-height: 40vh;
+      min-height: 50vh;
     }
     min-width: $big_card_width;
     width: 90vw;
@@ -22,7 +22,7 @@ body.offer {
   }
 
   .selling_points {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: $spacing_unit;
   }
 

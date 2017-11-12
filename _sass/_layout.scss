@@ -1,49 +1,21 @@
-// wrappers
 .wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 2rem 10vw;
-}
-.wrapper.wrapper--fullview {
-  min-width: 100vw;
-  min-height: 100vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 2rem;
-  padding-right: $spacing_unit;
+  padding-left: $spacing_unit/2;
+  padding-right: $spacing_unit/2;
 }
 
-
-// Site header
 .site_header {
+  position: relative;
+  z-index: 1;
   top:0; // 2kill line in mobiles
   min-height: 100vh;
   margin: 0 auto;
-  // Positioning context for the mobile navigation icon
-  position: relative;
-  z-index: 1;
-
-
+  padding-top: $spacing_unit;
+  padding-bottom: $spacing_unit;
   a {
     color: black;
-    width: 80vw;
-    padding-bottom: 1rem;
+    padding-bottom: $spacing_unit;
+    padding-left: $spacing_unit/2;
+    padding-right: $spacing_unit/2;
   }
   small {
     display: inline-block;
@@ -52,7 +24,7 @@
   .header_title {color: $brand-color;}
 }
 
-.site_header--light {
+.light_bg {
     background-color: transparentize(white, .25);
 }
 
@@ -97,7 +69,7 @@
 .site_nav {
   text-align: center;
   font-size: $base-font-size*1.25;
-  padding-top:1.5rem;
+  padding-top: $spacing_unit;
   line-height: 2;
   .page-link {
     color: $grey_color-light;
@@ -107,20 +79,17 @@
   }
 }
 
-// Page content
-.page-content {
+.page_content {
   padding: $spacing_unit 0 $spacing_unit*2 0;
   background-color:$background_color;
 }
 .page-heading {font-size: 1.5rem;}
 
-
-//styling hr
 hr {
   border: 0;
   height: 1px;
   width: 75%;
-  margin: 2rem auto;
+  margin: $spacing_unit auto;
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -138,8 +107,6 @@ hr {
   }
 }
 
-
-
 .back_home {// a
   width: 3rem;
   height: 3rem;
@@ -150,8 +117,6 @@ hr {
   font-size: 1.5rem;
   text-align: center;
 }
-
-
 
 
 .post_list .commissioned-work{
@@ -167,7 +132,7 @@ hr {
   //svg container
   display:  flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   .post-content & {margin-bottom: 0;}
@@ -204,4 +169,8 @@ hr {
     background-color: inherit;
     color: $brand_color;
   }
+}
+
+.full_height {
+  height: 100vh;
 }

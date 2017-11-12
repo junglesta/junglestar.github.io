@@ -1,0 +1,69 @@
+<div class="wrapper flex flex_rows flex_wrap">
+
+  <div class="section">
+
+    <h1 class="title">Jungle✩Star?</h1>
+
+    <div class="text">
+      {% capture text_block1 %}{% include text_blocks/junglestar.md %}{% endcapture %}
+      {{ text_block1 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">New idea?</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/new-idea.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">Internet presence?</h1>
+
+    <div class="text">
+      {% capture text_block3 %}{% include text_blocks/today-tools.md %}{% endcapture %}
+      {{ text_block3 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">Guidance?</h1>
+
+    <div class="text">
+      {% capture text_block4 %}{% include text_blocks/guidance.md %}{% endcapture %}
+      {{ text_block4 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">Who are we?</h1>
+
+    <div class="text">
+      {% capture text_block5 %}{% include text_blocks/who.md %}{% endcapture %}
+      {{ text_block5 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">We ♡ Open source</h1>
+
+    <div class="text">
+      {% capture text_block6 %}{% include text_blocks/open-source.md %}{% endcapture %}
+      {{ text_block6 | markdownify }}
+    </div>
+
+  </div>
+
+</div>

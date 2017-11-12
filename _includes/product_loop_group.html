@@ -1,14 +1,13 @@
 <div class="product_grid">
 
-{% capture pagegroup %}{{ page.product_group | slugify }}{% endcapture %}
-
 {% for product in site.products reversed %}
-  {% if product.path contains pagegroup %}
-    {% unless product.publish=='notyet' %}
 
-      {% include product_card.html %}
+  {% unless product.publish=='notyet' %}
 
-    {% endunless %}
-  {% endif %}
+    {% include product_card.html %}
+
+  {% endunless %}
+
 {% endfor %}
+
 </div>

@@ -1,16 +1,4 @@
 <div id="{{ product.name | slugify }}" class="looper__link card {{ product.product_group }}" title="{{ product.name }}" >
-<!--
-  <div class="product_image">
-    <figure class="">
-      <img class="product_thumb" src="{{ site.baseurl }}/assets/p/products/{{ product.product_group }}/{{ product.name | slugify }}.jpg" alt="{{ product.name }}" title="{{ product.name }}">
-      {% if product.tag %}
-      <figcaption class="figcaption {{ product.tag | slugify }}">{{ product.tag }}</figcaption>
-      {% endif %}
-    </figure>
-    <div class="product_group {{ product.product_group | slugify }}">
-      {{ product.product_group }}
-    </div>
-  </div> -->
 
   <div class="product_text">
 
@@ -24,14 +12,13 @@
 
     <p>{{product.product.desc}}</p>
 
-    <!-- <div class="text_content">
-      {{product.content | strip_html | truncatewords: 16}}
-    </div> -->
-
     <div class="selling_points">
+
       {% if product.product.selling_points.sp01 %}
-      <div class="center">YOU GET:</div>
+      <div class="center">GET:</div>
+
       <ul>
+
         <li class="checkmark">{{product.product.selling_points.sp01}}</li>
 
         {% if product.product.selling_points.sp02 %}
@@ -63,8 +50,8 @@
         {% endif %}
 
       </ul>
-
       {% endif %}
+
     </div>
 
     <div class="starting_at center">

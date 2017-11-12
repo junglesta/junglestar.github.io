@@ -9,16 +9,16 @@ question: Need website. How much?
 product:
   group: design
   name: Amazing Landing
-  type: "Packed solutions all-included"
+  type: "All-included package"
   subname: "Quality website template. Name, Hosting and SSL included."
-  desc: "We load data, process everything and produce a spicy website ready to compete."
+  desc: "We load data, process everything and produce a spicy landing page ready to hit."
   starting_at: 500
   selling_points:
-    sp01: Responsive designed landing page.
-    sp02: 3rd level domain name.
-    sp03: SEO optimized.
-    sp04: Hosting on CDN. Global coverage.
-    sp05: Secured https included.
+    sp01: Responsive landing page.
+    sp02: SEO optimized.
+    sp03: Hosting on CDN. Global coverage.
+    sp04: Secure SLL/https included.
+    sp05: Domain name (you.junglestar.org).
     sp06: Social media friendly.
     sp07: Data entry.
 ---

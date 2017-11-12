@@ -1,0 +1,23 @@
+<footer class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center">
+
+  <a title="back home" href="/" class="footer_icon"></a>
+
+  <a title="send email" class="action_button mail" href="mailto:{{ site.email }}">
+
+    <span class="action_title revealed">get in touch</span>
+
+    <span class="action_title reveal_on_hover">send email</span>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+      <g>
+      	<path fill="white" d="M64,12H0v39h64V12z M59.605,14L32,31.81L4.395,14H59.605z M2,49V14.835L32,34.19l30-19.355V49H2z"/>
+      </g>
+    </svg>
+
+  </a>
+
+  <div class="action_title">phone link</div>
+
+  <div class="qr white">{% include svg/junglestarQR.svg %}</div>
+
+</footer>

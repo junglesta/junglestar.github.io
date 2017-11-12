@@ -8,18 +8,18 @@ permalink: /offer/full-site/
 question: Need a site and I have questions...
 product:
   group: design
-  name: Amazing package
-  type: "Packed solutions all-included"
+  name: Amazing Website
+  type: "All-included package"
   subname: "Quality website template. Name, Hosting and SSL included."
-  desc: "We load you look and data, process everything and produce a clean performant website ready to compete."
+  desc: "We load your look and data, process everything and produce a clean performant website ready to compete."
   starting_at: 1000
   selling_points:
-    sp01: Responsive designed full website.
-    sp02: 3rd level domain name.
-    sp03: SEO optimized.
-    sp04: Hosting on CDN. Global coverage.
-    sp05: Secured https included.
+    sp01: Responsive full website.
+    sp02: SEO optimized.
+    sp03: Hosting on CDN. Global coverage.
+    sp04: Secure SLL/https included.
+    sp05: Domain name (you.junglestar.org).
     sp06: Social media friendly.
     sp07: Collaborator editing system.
-    sp07: Data entry.
+    sp08: Data entry.
 ---

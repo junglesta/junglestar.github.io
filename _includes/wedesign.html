@@ -1,0 +1,48 @@
+<div class="wrapper flex flex_rows flex_wrap">
+
+  <div class="section">
+
+    <h1 class="title">Phones era</h1>
+
+    <div class="text">
+      {% capture text_block1 %}{% include text_blocks/phone-era.md %}{% endcapture %}
+      {{ text_block1 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">Today you don't buy software</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/pay-developer.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">From plan to working product.</h1>
+
+    <div class="text">
+      {% capture text_block3 %}{% include text_blocks/how.md %}{% endcapture %}
+      {{ text_block3 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <h1 class="title">Technology</h1>
+
+    <div class="text">
+      {% capture text_block4 %}{% include text_blocks/tech.md %}{% endcapture %}
+      {{ text_block4 | markdownify }}
+    </div>
+
+  </div>
+
+
+</div>
