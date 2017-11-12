@@ -1,5 +1,6 @@
 .about_page,
-.wedesign_page {
+.wedesign_page,
+.home {
   .section {
     width: 100%;
     padding: $spacing_unit $spacing_unit;
@@ -10,7 +11,7 @@
       width: 50%;
     }
     @include media( "screen", ">maxWidth") {
-      padding: $spacing_unit*2 $spacing_unit*3;
+      padding: $spacing_unit $spacing_unit*2;
     }
   }
 }
