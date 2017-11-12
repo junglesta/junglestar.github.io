@@ -1,0 +1,58 @@
+<script>
+//make card get to frotn when clicked using class .is_selected
+/* code that SPEAKs: toggle big qr code ballons */
+
+function toggleClass(element, className){
+    if (!element || !className){
+        return;
+    }
+
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (nameIndex == -1) {
+        classString += ' ' + className;
+    }
+    else {
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
+}
+
+document.getElementById('landing-page').addEventListener('click', function() {
+  if (document.body.classList.contains('custom_card_is_selected')) {
+      toggleClass(document.getElementById('custom'), 'is_selected'),
+      toggleClass(document.body, 'custom_card_is_selected');
+  }
+  if (document.body.classList.contains('full_card_is_selected')) {
+      toggleClass(document.getElementById('full-site'), 'is_selected'),
+      toggleClass(document.body, 'full_card_is_selected');
+  }
+  toggleClass(document.getElementById('landing-page'), 'is_selected'),
+  toggleClass(document.body, 'landing_card_is_selected');
+});
+
+document.getElementById('full-site').addEventListener('click', function() {
+  if (document.body.classList.contains('landing_card_is_selected')) {
+      toggleClass(document.getElementById('landing-page'), 'is_selected'),
+      toggleClass(document.body, 'landing_card_is_selected');
+  }
+  if (document.body.classList.contains('custom_card_is_selected')) {
+      toggleClass(document.getElementById('custom'), 'is_selected'),
+      toggleClass(document.body, 'custom_card_is_selected');
+  }
+  toggleClass(document.getElementById('full-site'), 'is_selected'),
+  toggleClass(document.body, 'full_card_is_selected');
+});
+
+document.getElementById('custom').addEventListener('click', function() {
+  if (document.body.classList.contains('landing_card_is_selected')) {
+      toggleClass(document.getElementById('landing-page'), 'is_selected'),
+      toggleClass(document.body, 'landing_card_is_selected');
+  }
+  if (document.body.classList.contains('full_card_is_selected')) {
+      toggleClass(document.getElementById('full-site'), 'is_selected'),
+      toggleClass(document.body, 'full_card_is_selected');
+  }
+  toggleClass(document.getElementById('custom'), 'is_selected'),
+  toggleClass(document.body, 'custom_card_is_selected');
+});
+</script>

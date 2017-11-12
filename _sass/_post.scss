@@ -4,11 +4,11 @@
 
 // Posts
 .post-header {
-  padding: 0 $spacing-unit;
+  padding: 0 $spacing_unit;
   color: $grey_color;
   max-width: 540px;
   margin: 0 auto;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing_unit;
 }
 
 .post-title {
@@ -19,9 +19,9 @@
 }
 
 .post-content {
-  padding: $spacing-unit $spacing-unit 0  $spacing-unit;
+  padding: $spacing_unit $spacing_unit 0  $spacing_unit;
   color: $grey_color;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing_unit;
   p, blockquote {
     max-width: 540px;
     margin: 0 auto;

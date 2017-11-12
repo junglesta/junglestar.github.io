@@ -1,8 +1,8 @@
-<a class="looper__link card {{ product.product_group }}" title="{{ product.name }}" href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
+<div id="{{ product.name | slugify }}" class="looper__link card {{ product.product_group }}" title="{{ product.name }}" >
 <!--
   <div class="product_image">
     <figure class="">
-      <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/products/{{ product.product_group }}/{{ product.name | slugify }}.jpg" alt="{{ product.name }}" title="{{ product.name }}">
+      <img class="product_thumb" src="{{ site.baseurl }}/assets/p/products/{{ product.product_group }}/{{ product.name | slugify }}.jpg" alt="{{ product.name }}" title="{{ product.name }}">
       {% if product.tag %}
       <figcaption class="figcaption {{ product.tag | slugify }}">{{ product.tag }}</figcaption>
       {% endif %}
@@ -13,19 +13,70 @@
   </div> -->
 
   <div class="product_text">
-    <h1>{{product.name}}</h1>
-    <h2>{{product.products.product_name}}</h2>
-    <h3>{{product.products.product_subname}}</h3>
-    <p>{{product.products.product_desc}}</p>
 
-    <div class="product_text_content">
+    <h1>{{product.name}}</h1>
+
+    <h2>{{product.product.name}}</h2>
+
+    <h5 class="center">{{product.product.type}}</h5>
+
+    <h5 class="center">{{product.product.subname}}</h5>
+
+    <p>{{product.product.desc}}</p>
+
+    <!-- <div class="text_content">
       {{product.content | strip_html | truncatewords: 16}}
+    </div> -->
+
+    <div class="selling_points">
+      {% if product.product.selling_points.sp01 %}
+      <div class="center">YOU GET:</div>
+      <ul>
+        <li class="checkmark">{{product.product.selling_points.sp01}}</li>
+
+        {% if product.product.selling_points.sp02 %}
+        <li class="checkmark">{{product.product.selling_points.sp02}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp03 %}
+        <li class="checkmark">{{product.product.selling_points.sp03}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp04 %}
+        <li class="checkmark">{{product.product.selling_points.sp04}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp05 %}
+        <li class="checkmark">{{product.product.selling_points.sp05}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp06 %}
+        <li class="checkmark">{{product.product.selling_points.sp06}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp07 %}
+        <li class="checkmark">{{product.product.selling_points.sp07}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp08 %}
+        <li class="checkmark">{{product.product.selling_points.sp08}}</li>
+        {% endif %}
+
+      </ul>
+
+      {% endif %}
     </div>
 
-    <div class="button_row">
-      <span class="button">Learn more</span>
+    <div class="starting_at center">
+      <p>Starting at {{product.product.starting_at }} Euro</p>
+    </div>
+
+    <div class="button_row center">
+      <a href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
+        <span class="button center">Learn more</span>
+      </a>
     </div>
 
   </div>
 
-</a>
+</div>

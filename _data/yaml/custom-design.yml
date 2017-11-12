@@ -1,4 +1,3 @@
----
 layout: product
 name: custom
 title: amazing custom design
@@ -10,15 +9,13 @@ product:
   group: design
   name: Awesome Custom Design
   type: "Customized to your needs"
-  subname: "Top Custom designs at competitive prices."
-  desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
+  subname: "Top quality custom designs at competitive prices."
+  desc: "We grow relationships with clients. We design, produce & develop well thought user experiences. Working with your ideas and your existing team."
   starting_at: 5000
   selling_points:
-    sp01: Custom designed information architecture.
-    sp02: All included.
-    sp03: SEO, Data entry, Deploy, CDN Hosting and SSL.
-    sp04: 2nd level domain name.
-    sp05: Custom screen-design.
-    sp06: Custom code.
-    sp07: Your-Company-Feel build into it!
----
+    sp01: All the components in other offers.
+    sp02: We do information architecture.
+    sp03: We do screen-design.
+    sp04: We do coding & deploy.
+    sp05: Your-Company-Feel build into it!
+    sp06: We grow relationships.

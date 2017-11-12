@@ -3,8 +3,17 @@
 .home_content {
   width: 100%;
   padding: 0 1rem;
-  @include media( "screen", ">bp1Width") { padding: 0 2rem; }
-  a { padding: 2rem; }
+
+  a {
+    padding: .5rem;
+    @include media( "screen", ">minWidth") {
+      padding: 1rem;
+    }
+    @include media( "screen", ">bp1Width") {
+      padding: 1.25rem;
+    }
+  }
+
   .ico {
     width: 50px;
     @include media( "screen", ">minWidth") { width: 60px; }
@@ -24,7 +33,7 @@
   list-style: none;
   > li {
     background-color: #ddd;
-    margin: $spacing-unit*0.75 ;
+    margin: $spacing_unit*0.75 ;
 
     width: $mediaMinWidth;
     @include media( "screen", ">minWidth") {
@@ -57,9 +66,9 @@
 }
 
 .post_link_ico {
-  margin-top: $spacing-unit;
-  padding: $spacing-unit/8;
-  padding-bottom: $spacing-unit;
+  margin-top: $spacing_unit;
+  padding: $spacing_unit/8;
+  padding-bottom: $spacing_unit;
   img {
     width: 100%;
     @include media( "screen", ">bp1Width") {max-width: 200px;}

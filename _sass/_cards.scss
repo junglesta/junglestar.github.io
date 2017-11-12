@@ -1,4 +1,6 @@
 .card {
+  font-size: 16px;
+  z-index: 10;
   background-color: white;
   -webkit-box-shadow: $card-shadow;
   box-shadow: $card-shadow;
@@ -18,5 +20,19 @@
   h2,
   h3 {
     padding-top: 0;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    height: 15%;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    height: 20%;
+    min-height: 60px;
   }
 }

@@ -19,11 +19,14 @@
   padding: 2rem 10vw;
 }
 .wrapper.wrapper--fullview {
+  min-width: 100vw;
   min-height: 100vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-left: 2rem;
+  padding-right: $spacing_unit;
 }
 
 
@@ -32,7 +35,6 @@
   top:0; // 2kill line in mobiles
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 2rem;
   // Positioning context for the mobile navigation icon
   position: relative;
   z-index: 1;
@@ -47,7 +49,7 @@
     display: inline-block;
     margin-top: .25rem;
   }
-  h2 {color: $brand-color;}
+  .header_title {color: $brand-color;}
 }
 
 .site_header--light {
@@ -107,7 +109,7 @@
 
 // Page content
 .page-content {
-  padding: $spacing-unit 0 $spacing-unit*2 0;
+  padding: $spacing_unit 0 $spacing_unit*2 0;
   background-color:$background_color;
 }
 .page-heading {font-size: 1.5rem;}
@@ -123,7 +125,7 @@ hr {
 }
 
 .footer_icon {
-  padding-bottom: $spacing-unit;
+  padding-bottom: $spacing_unit;
 }
 
 .qr.white {// should be 100 but qr got 10px margin so

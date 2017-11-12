@@ -1,0 +1,57 @@
+.button_row {
+  padding-top: $vertical_rhythm--small/8;
+  padding-bottom: $vertical_rhythm--small/2;
+  width: 100%;
+  display: block;
+  // this for the book_now button
+  .product_text & {
+    padding-top: $vertical_rhythm;
+    padding-bottom: $vertical_rhythm;
+    text-align: center;
+    @include media( "screen", ">minWidth") {
+      text-align: left;
+    }
+  }
+  .card & {
+    padding-top: $vertical_rhythm--small;
+    padding-bottom: 0;
+  }
+}
+
+.button {
+  //a
+  background-color: white;
+  display: inline-block;
+  width: auto;
+  line-height: 32px;
+  margin-right: $vertical_rhythm--small/2;
+  margin-bottom: $vertical_rhythm--small/2;
+  border: 1px solid $black_stroke;
+  border-radius: 4px;
+  color: $black;
+  padding: 0 10px;
+  opacity: 0.9;
+  -webkit-box-shadow: $card_shadow;
+  box-shadow: $card_shadow;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+    background-color: $button_focus_bg;
+  }
+
+  &:active {
+    background-color: $button_focus_bg;
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+
+  .book_now & {
+    background-color: $button_book;
+    color: white;
+    font-weight: 500;
+    .menu & {
+      margin-left: $vertical_rhythm--small/2;
+    }
+  }
+}

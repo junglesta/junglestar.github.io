@@ -68,6 +68,7 @@ collections:
     permalink: /:title/
   redir:
     output: true
+    permalink: /:title/
 
 defaults:
   - scope:

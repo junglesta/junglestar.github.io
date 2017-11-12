@@ -1,4 +1,3 @@
----
 layout: product
 name: full site
 title: amazing full site
@@ -10,16 +9,13 @@ product:
   group: design
   name: Amazing package
   type: "Packed solutions all-included"
-  subname: "Quality website template. Name, Hosting and SSL included."
+  subname: "Quality website template. All included."
   desc: "We load you look and data, process everything and produce a clean performant website ready to compete."
-  starting_at: 1000
+  starting_at: 2000
   selling_points:
-    sp01: Responsive designed full website.
-    sp02: 3rd level domain name.
-    sp03: SEO optimized.
-    sp04: Hosting on CDN. Global coverage.
-    sp05: Secured https included.
-    sp06: Social media friendly.
-    sp07: Collaborator editing system.
-    sp07: Data entry.
----
+    sp01: Responsive designed website.
+    sp02: SEO optimized.
+    sp03: Hosting on CDN global coverage.
+    sp04: Secured https included.
+    sp05: Social media friendly.
+    sp06: Collaborator friendly code.
