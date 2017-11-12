@@ -39,8 +39,8 @@
   }
 
   .desc {
-    font-size: 1.2rem;
-    max-width: 400px;
+    @include responsive-font(2.2vw, 21px, 55px, 36px);
+    max-width: 600px;
     margin: 10px 0 0 auto;
   }
 
