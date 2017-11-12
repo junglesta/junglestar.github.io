@@ -1,4 +1,3 @@
-
 We make use of the latest **open source** technology and services:
 
 {:.tech_logos}
