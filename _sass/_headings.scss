@@ -8,6 +8,9 @@ h6 {
   padding: 0;
   font-weight: 400;
   line-height: 1.44;
+  .section & {
+    color: $brand_color;
+  }
 }
 
 

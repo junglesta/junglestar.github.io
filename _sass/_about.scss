@@ -10,7 +10,7 @@
       width: 50%;
     }
     @include media( "screen", ">maxWidth") {
-      padding: $spacing_unit $spacing_unit*2;
+      padding: $spacing_unit*2 $spacing_unit*3;
     }
   }
 }
