@@ -3,9 +3,8 @@ $big_card_width: 30vw;
 .offer_page {
   ul {
     margin-left: 5px;
-    @include media( "screen", ">minWidth") {
-      margin-left: 15px;
-    }
+    max-width: 300px;
+    margin: $spacing_unit/2 auto $spacing_unit auto;
   }
 
   .product_grid {
@@ -24,11 +23,6 @@ $big_card_width: 30vw;
   .selling_points {
     font-size: 15px;
     margin-bottom: $spacing_unit;
-  }
-
-  .button_row {
-    min-width: 100%;
-    text-align: center;
   }
 }
 
@@ -52,7 +46,8 @@ $big_card_width: 30vw;
   }
 
   p {
-    margin-left: 20px;
+    margin-left: $spacing_unit/2;
+    margin-right: $spacing_unit/2;
   }
 
   &:nth-child(1) {

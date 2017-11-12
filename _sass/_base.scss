@@ -6,7 +6,8 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     background-color: $brand_color;
     overflow-x: hidden;
@@ -182,4 +183,8 @@ strong {
 
 .center {
   text-align: center;
+}
+
+.brand_color {
+  color: $brand_color;
 }

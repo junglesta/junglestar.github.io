@@ -6,6 +6,7 @@ description: "Junglestar, a small, flexible, One Stop Shop web agency. We do inf
 We design, produce & develop well thought user experiences. From [slide shows](http://revealing.junglestar.org/#/8/1) to [offline ready web apps]"
 permalink: /offer/full-site/
 question: Need a site and I have questions...
+publish: # notyet or empty
 product:
   group: design
   name: Amazing Website

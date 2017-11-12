@@ -190,3 +190,12 @@ blockquote p {
     }
   }
 }
+
+
+
+.product_page {
+  ul {
+    max-width: 300px;
+    margin: $spacing_unit/2 auto $spacing_unit auto;
+  }
+}

@@ -7,13 +7,13 @@ layout: default
 
     <h1>{{page.name}}</h1>
 
-    <h2>{{page.product.name}}</h2>
+    <h2 class="brand_color">{{page.product.name}}</h2>
 
     <h5 class="center">{{page.product.type}}</h5>
 
-    <h5 class="center">{{page.product.subname}}</h5>
+    <h5 class="center brand_color">{{page.product.subname}}</h5>
 
-    <p>{{page.product.desc}}</p>
+    <p class="center">{{page.product.desc}}</p>
 
     <div class="selling_points">
 
@@ -62,8 +62,8 @@ layout: default
     </div>
 
     <div class="button_row center">
-      <a href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
-        <span class="button center">Learn more</span>
+      <a href="mailto:{{site.email}}">
+        <span class="button center">Let's start talking...</span>
       </a>
     </div>
 
