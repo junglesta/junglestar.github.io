@@ -93,6 +93,7 @@
 .page_content {
   padding: $spacing_unit 0 $spacing_unit*2 0;
   background-color:$background_color;
+  min-height: 520px;
 }
 .page-heading {font-size: 1.5rem;}
 
