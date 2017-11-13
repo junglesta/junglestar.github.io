@@ -8,25 +8,23 @@
   bottom:0;
   background-size: cover;
   background-color: $brand_color;
-
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-end;
 }
 
 .cover__title {
   color: white;
-  text-align: right;
+  text-align: center;
   position: relative;
   z-index: 11;
   width: 100% ;
+  @include media( "screen", ">minWidth") {
+    //text-align: right;
+  }
 
-  padding-top: 50vh;
   @media only screen and (orientation : landscape) {
     padding-top: 0;
   }
   @include media( "screen", ">maxWidth") {
-    padding-top: 50vh;
+    padding-top: 10vh;
   }
 
   .name h1 {
@@ -40,8 +38,9 @@
 
   .desc {
     @include responsive-font(2.2vw, 21px, 55px, 36px);
-    max-width: 600px;
+    //max-width: 600px;
     margin: 10px 0 0 auto;
+    text-align: center;
   }
 
   .btn {
@@ -55,12 +54,19 @@
 }
 
 .animated_svg_wrap {
-  position: relative;
+  display: flex;
+  @include media( "screen", ">minWidth") {
+
+  }
 }
 .jeistar {
-  height: 60vh;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  width: 80vw;
+  height: 50%;
+  @include media( "screen", ">minWidth") {
+    height: 50vh;
+    padding-top: 10vh;
+  }
+  @include media( "screen", ">maxWidth") {
 
+  }
 }
