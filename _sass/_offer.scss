@@ -55,7 +55,7 @@ $big_card_width: 30vw;
   }
 
   &:nth-child(1) {
-    left: 0;
+    left: -1.75rem;
     z-index: 1;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -98,7 +98,7 @@ $big_card_width: 30vw;
   }
 
   &:nth-child(3) {
-    right: 0;
+    right: -1.75rem;
     z-index: 2;
     transform: translateY(-1rem);
     margin-top: 5rem;
@@ -107,7 +107,7 @@ $big_card_width: 30vw;
       margin-top:0;
       margin-bottom: 0;
     }
-    
+
     &.is_selected,
     &:hover {
       z-index: 10;

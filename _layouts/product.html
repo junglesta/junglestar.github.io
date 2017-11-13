@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="card {{ product.product_group }} section" title="{{ product.name }}" >
+<div class="card {{ page.product_group }} section {% if page.bestseller %}bestseller{% endif %} {% if page.bestvalue %}bestvalue{% endif %}" title="{{ page.name }}" >
 
   <div class="product_text">
 
