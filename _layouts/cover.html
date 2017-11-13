@@ -7,7 +7,7 @@
 
     <span id="top"></span>
 
-    <div class="cover">
+    <div class="cover js_scrollto01">
 
       <div class="wrapper flex flex_cols flex_align_center full_height flex_justify_center">
 
@@ -15,7 +15,7 @@
 
         <div class="cover__title">
 
-          <div class="btn cover__button scrollto01" >
+          <div class="btn">
             <div class="name"><h1>{{ site.title }}</h1></div>
             <div class="desc">Make life easy for your customers!</div>
           </div>
@@ -65,11 +65,14 @@
 
     {% include footer.html %}
 
-    {% include script_hi_vivus.html %}
     {% include script_scroll_to.html %}
 
+    {% include script_hi_vivus.html %}
+
     {% include script_microdata.html %}
+
     {% include script_blank.html %}
+
     {% include script_google_analytics.html %}
 
   </body>

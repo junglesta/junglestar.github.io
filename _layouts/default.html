@@ -17,16 +17,7 @@
 
     {% include footer.html %}
 
-    <script type="text/javascript">
-      //scroll down
-      var btnSel = document.querySelector('.btn');
-      var header = document.getElementsByTagName('header')[0];
-
-      btnSel.addEventListener("click", function() {
-        header.scrollIntoView({behavior: "smooth"});
-      }, false);
-
-    </script>
+    {% include script_scroll_to.html %}
 
     {% if page.title == 'offer' %}
       {% include script_card.html %}

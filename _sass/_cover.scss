@@ -53,11 +53,6 @@
   color: $brand_color;
 }
 
-
-.cover__button {
-    color: white;
-}
-
 .animated_svg_wrap {
   display: flex;
   @include media( "screen", ">minWidth") {

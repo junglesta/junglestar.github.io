@@ -27,6 +27,7 @@ $big_card_width: 30vw;
 }
 
 .card {
+  cursor: pointer;
   border-radius: 4px;
   display: block;
   position: relative;
@@ -45,6 +46,7 @@ $big_card_width: 30vw;
     max-width: $big_card_width;
   }
 
+
   p {
     margin-left: $spacing_unit/2;
     margin-right: $spacing_unit/2;
@@ -61,8 +63,6 @@ $big_card_width: 30vw;
       background-color: hsla(0, 0%, 95%, 1);
     }
   }
-
-
 
   &:nth-child(2) {
     z-index: 3;
@@ -98,6 +98,7 @@ $big_card_width: 30vw;
       background-color: hsla(0, 0%, 95%, 1);
     }
   }
+
 }
 
 .full_card_is_selected .card.is_selected,
