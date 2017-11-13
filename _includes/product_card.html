@@ -6,9 +6,9 @@
 
     <h2 class="brand_color">{{product.product.name}}</h2>
 
-    <h5 class="center">{{product.product.type}}</h5>
+    <h4 class="center">{{product.product.type}}</h4>
 
-    <h5 class="brand_color center">{{product.product.subname}}</h5>
+    <h3 class="brand_color center">{{product.product.subname}}</h3>
 
     <p>{{product.product.desc}}</p>
 
@@ -47,6 +47,14 @@
 
         {% if product.product.selling_points.sp08 %}
         <li class="checkmark">{{product.product.selling_points.sp08}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp09 %}
+        <li class="checkmark">{{product.product.selling_points.sp09}}</li>
+        {% endif %}
+
+        {% if product.product.selling_points.sp10 %}
+        <li class="checkmark">{{product.product.selling_points.sp10}}</li>
         {% endif %}
 
       </ul>

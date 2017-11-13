@@ -17,9 +17,9 @@ product:
   selling_points:
     sp01: Custom designed architecture.
     sp02: All included.
-    sp03: SEO, CDN Hosting & SSL/https.
+    sp03: SEO, CDN Hosting, SSL/https.
     sp04: Data entry, Deploy.
-    sp05: Domain name (yourcompany.com).
+    sp05: Domain name.
     sp06: Custom code & functionalities.
     sp07: Collaborator editing system.
     sp08: Your-Company look & feel!

@@ -18,9 +18,9 @@ product:
     sp01: Responsive full website.
     sp02: SEO optimized.
     sp03: Hosting on global CDN.
-    sp04: Secure SLL/https included.
+    sp04: Secure SLL/https.
     sp05: Domain name.
     sp06: Social media friendly.
-    sp07: Collaborator editing system.
-    sp08: Data entry.
+    sp07: Data entry.
+    sp08: Collaborator editing system.
 ---

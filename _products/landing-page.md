@@ -18,7 +18,7 @@ product:
     sp01: Responsive landing page.
     sp02: SEO optimized.
     sp03: Hosting on global CDN.
-    sp04: Secure SLL/https included.
+    sp04: Secure SLL/https.
     sp05: Domain name.
     sp06: Social media friendly.
     sp07: Data entry.
