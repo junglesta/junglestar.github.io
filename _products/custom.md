@@ -11,7 +11,7 @@ product:
   group: design
   name: Awesome Design
   type: "Customized to your needs"
-  subname: "Top Custom designs at competitive prices."
+  subname: "Carefully Crafted Design at competitive prices."
   desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
   starting_at: 5000
   selling_points:

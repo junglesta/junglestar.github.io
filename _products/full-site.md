@@ -17,9 +17,9 @@ product:
   selling_points:
     sp01: Responsive full website.
     sp02: SEO optimized.
-    sp03: Hosting on CDN. Global coverage.
+    sp03: Hosting on global CDN.
     sp04: Secure SLL/https included.
-    sp05: Domain name (you.junglestar.org).
+    sp05: Domain name.
     sp06: Social media friendly.
     sp07: Collaborator editing system.
     sp08: Data entry.
