@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // Basic styling
 body {
   font-family: $base-font-family;

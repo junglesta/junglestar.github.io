@@ -1,0 +1,16 @@
+<script>
+  // from http://iamdustan.com/smoothscroll/
+  /* code that SPEAKs: scroll to target */
+
+  // add event listener on load
+  window.addEventListener('load', function() {
+
+    // scroll into view
+    document.querySelector('.scrollto01').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.scrolltarget01').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
