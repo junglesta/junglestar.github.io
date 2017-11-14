@@ -1,4 +1,4 @@
-<div id="{{ product.name | slugify }}" class="looper__link section card {{ product.product_group }} {% if product.bestseller %}bestseller{% endif %} {% if product.bestvalue %}bestvalue{% endif %}" title="{{ product.name }}" >
+<div id="{{ product.name | slugify }}" class="looper__link section card {{ product.product_group }} {% if product.bestseller %}bestseller{% endif %} {% if product.bestvalue %}bestvalue{% endif %}" title="{{ product.name | upcase }} package" >
 
   <div class="product_text">
 
