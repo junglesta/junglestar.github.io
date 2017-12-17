@@ -63,7 +63,11 @@
     </div>
 
     <div class="starting_at center">
-      <p>Starting at {{product.product.starting_at }} Euro</p>
+      <p>Starting at {{product.product.starting_at }} Euro.
+        {% if product.product.demo_url %}
+        <a href="{{product.product.demo_url}}">See Demo.</a>
+        {% endif %}
+      </p>
     </div>
 
     <div class="button_row center">

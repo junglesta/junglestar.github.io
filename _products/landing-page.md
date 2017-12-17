@@ -16,6 +16,7 @@ product:
   subname: "Quality website template. Name, Hosting and SSL included."
   desc: "We load data, process everything and produce a spicy landing page ready to hit."
   starting_at: 500
+  demo_url: https://amazing-single.junglestar.org/
   selling_points:
     sp01: Responsive landing page.
     sp02: SEO optimized.

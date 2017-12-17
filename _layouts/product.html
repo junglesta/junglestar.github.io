@@ -58,8 +58,14 @@ layout: default
     </div>
 
     <div class="starting_at center">
-      <p>Starting at {{page.product.starting_at }} Euro</p>
+      <p>Starting at {{page.product.starting_at }} Euro.
+        {% if page.product.demo_url %}
+        <a href="{{page.product.demo_url}}">See Demo.</a>
+        {% endif %}
+      </p>
     </div>
+
+
 
     <div class="button_row center">
       <a href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{page.name | upcase}} package">

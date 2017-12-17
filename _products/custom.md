@@ -16,6 +16,7 @@ product:
   subname: "Carefully Crafted Design at competitive prices."
   desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
   starting_at: 5000
+  demo_url: https://amazing-days.junglestar.org/
   selling_points:
     sp01: Custom designed architecture.
     sp02: All included.

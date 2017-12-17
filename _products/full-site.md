@@ -16,6 +16,7 @@ product:
   subname: "Quality website template. Name, Hosting and SSL included."
   desc: "We load your look and data, process everything and produce a clean performant website ready to compete."
   starting_at: 1000
+  demo_url: https://amazing-food.junglestar.org/
   selling_points:
     sp01: Responsive full website.
     sp02: SEO optimized.
