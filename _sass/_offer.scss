@@ -1,4 +1,4 @@
-$big_card_width: 30vw;
+$big_card_width: 29vw;
 
 .offer_page {
   ul {
@@ -16,8 +16,8 @@ $big_card_width: 30vw;
       min-height: 50vh;
     }
     min-width: $big_card_width;
-    width: 90vw;
-    margin: -20vh 5vw 0;
+    width: 86vw;
+    margin: -20vh 7vw 0;
   }
 
   .selling_points {
@@ -86,7 +86,7 @@ $big_card_width: 30vw;
       padding: 0;
       margin: 0;
       max-width: 10%;
-      left: calc(50% - 15vw);
+      left: calc(50% - 14.5vw);
       min-width: $big_card_width;
     }
 
@@ -99,6 +99,7 @@ $big_card_width: 30vw;
   }
 
   &:nth-child(3) {
+    top: -1.5rem;
     right: 0;
     z-index: 2;
     transform: translateY(-1rem);

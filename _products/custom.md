@@ -18,12 +18,15 @@ product:
   starting_at: 5000
   demo_url: https://amazing-days.junglestar.org/
   selling_points:
-    sp01: Custom designed architecture.
-    sp02: All included.
-    sp03: SEO, CDN Hosting, SSL/https.
-    sp04: Data entry, Deploy.
+    sp01: Responsive full website.
+    sp02: SEO optimized.
+    sp03: Hosting on global CDN.
+    sp04: Secure SLL/https.
     sp05: Domain name.
-    sp06: Custom code & functionalities.
-    sp07: Collaborator editing system.
-    sp08: Your-Company look & feel!
+    sp06: Social media friendly.
+    sp07: Data entry, deploy.
+    sp08: Collaborator editing system.
+    sp09: Custom designed architecture.
+    sp10: Custom code & functionalities.
+    sp11: Your-Company look & feel!
 ---
