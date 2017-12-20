@@ -4,6 +4,7 @@ footer {
   padding-top: $spacing_unit;
   padding-bottom: $spacing_unit;
   color: white;
+
   a {
     font-size: 1rem;
     color: white;
@@ -23,6 +24,7 @@ footer {
   padding: 0;
   margin: 0;
   text-align: center;
+
   span {
     display: block;
     line-height: 1;
@@ -30,15 +32,26 @@ footer {
     margin: 0;
     color: white;
   }
+
   .revealed {}
-  .reveal_on_hover { display: none; }
+
+  .reveal_on_hover {
+    display: none;
+  }
+
   &:hover {
-    .reveal_on_hover {display: block;}
-    .revealed { display: none; }
     text-decoration: none;
     outline: 0 none;
     margin: 0;
     background-color: transparent;
-    opacity: .85;
+    opacity: 0.85;
+
+    .reveal_on_hover {
+      display: block;
+    }
+
+    .revealed {
+      display: none;
+    }
   }
 }

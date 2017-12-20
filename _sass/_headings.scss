@@ -8,11 +8,12 @@ h6 {
   padding: 0;
   font-weight: 400;
   line-height: 1.44;
+
+  .offer_content &,
   .section & {
     color: $brand_color;
   }
 }
-
 
 h1 {
   @include responsive-font(5vw, $heading1, $heading1*1.5, $heading1);
@@ -57,8 +58,6 @@ h6 {
   padding-top: $heading6;
   padding-bottom: $heading6;
 }
-
-
 
 .top_padded {
   padding-top: 115px;

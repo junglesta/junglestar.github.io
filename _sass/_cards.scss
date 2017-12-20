@@ -16,16 +16,15 @@
   box-shadow: $card-shadow;
   -webkit-transition: $transition_shadow;
   transition: $transition_shadow;
-
-  @include media( "screen", ">maxWidth") {
+  @include media("screen", ">maxWidth") {
     display: inline-block;
     margin: 0;
     min-width: $big_card_width;
     max-width: $big_card_width;
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     -webkit-box-shadow: $card-shadow--hover;
     box-shadow: $card-shadow--hover;
   }
@@ -68,11 +67,9 @@
   &:nth-child(1) {
     left: 0;
     z-index: 1;
-
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       left: -1.5rem;
     }
-
     // &.is_selected,
     &:hover {
       z-index: 11;
@@ -85,8 +82,7 @@
     z-index: 3;
     left: 0;
     max-width: 80%;
-
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       max-width: 10%;
     }
 
@@ -101,8 +97,7 @@
   &:nth-child(3) {
     right: 0;
     z-index: 2;
-
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       right: -1.5rem;
     }
 
@@ -115,8 +110,8 @@
   }
 }
 
-.full_card_is_selected .card.is_selected,
 .custom_card_is_selected .card.is_selected,
+.full_card_is_selected .card.is_selected,
 .landing_card_is_selected .card.is_selected {
   z-index: 10;
   transform: scale(1.15);

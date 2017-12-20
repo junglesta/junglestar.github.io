@@ -1,16 +1,16 @@
 .about_page,
-.wedesign_page,
-.home {
+.home,
+.wedesign_page {
   .section {
     width: 100%;
-    padding: $spacing_unit $spacing_unit;
-    @include media( "screen", ">minWidth") {
+    padding: $spacing_unit;
+    @include media("screen", ">minWidth") {
       padding: $spacing_unit $spacing_unit*2;
     }
-    @include media( "screen", ">bp1Width") {
+    @include media("screen", ">bp1Width") {
       width: 50%;
     }
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       padding: $spacing_unit $spacing_unit*2;
     }
   }

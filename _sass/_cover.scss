@@ -1,11 +1,12 @@
 //cover
+
 .cover {
   height: 100vh;
   position: relative;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-color: $brand_color;
 }
@@ -15,15 +16,11 @@
   text-align: center;
   position: relative;
   z-index: 11;
-  width: 100% ;
-  @include media( "screen", ">minWidth") {
-    //text-align: right;
-  }
-
+  width: 100%;
   @media only screen and (orientation : landscape) {
     padding-top: 0;
   }
-  @include media( "screen", ">maxWidth") {
+  @include media("screen", ">maxWidth") {
     padding-top: 10vh;
   }
 
@@ -31,14 +28,11 @@
     margin: 0;
     padding-bottom: 4px;
     line-height: 1;
-
     @include responsive-font(10vw, 50px, 150px, 50px);
-
   }
 
   .desc {
     @include responsive-font(2.2vw, 21px, 55px, 36px);
-    //max-width: 600px;
     margin: 10px 0 0 auto;
     text-align: center;
   }
@@ -55,18 +49,13 @@
 
 .animated_svg_wrap {
   display: flex;
-  @include media( "screen", ">minWidth") {
-
-  }
 }
+
 .jeistar {
   width: 80vw;
   height: 50%;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     height: 50vh;
     padding-top: 10vh;
-  }
-  @include media( "screen", ">maxWidth") {
-
   }
 }

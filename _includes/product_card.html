@@ -78,9 +78,15 @@
       </p>
     </div>
 
-    <div class="button_row center">
+    <!-- <div class="button_row center">
       <a href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
         <span class="button center">Learn more</span>
+      </a>
+    </div> -->
+
+    <div class="button_row center">
+      <a href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{ product.name | upcase }} package">
+        <span class="button center">Let's start talking!</span>
       </a>
     </div>
 

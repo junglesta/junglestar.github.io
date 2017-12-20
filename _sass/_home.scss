@@ -3,77 +3,84 @@
 .home_content {
   width: 100%;
   padding: 0 $spacing_unit-big;
-  @include media( "screen", ">bp1Width") {
+  @include media("screen", ">bp1Width") {
     padding: 0 1rem;
   }
 
   a {
-    padding: .5rem;
-    @include media( "screen", ">minWidth") {
+    padding: 0.5rem;
+    @include media("screen", ">minWidth") {
       padding: 1rem;
     }
-    @include media( "screen", ">bp1Width") {
+    @include media("screen", ">bp1Width") {
       padding: 1.25rem;
     }
   }
 
   .ico {
     width: 50px;
-    @include media( "screen", ">minWidth") { width: 60px; }
-    @include media( "screen", ">bp1Width") { width: 80px; }
-    @include media( "screen", ">maxWidth") { width:100px; }
+    @include media("screen", ">minWidth") {
+      width: 60px;
+    }
+    @include media("screen", ">bp1Width") {
+      width: 80px;
+    }
+    @include media("screen", ">maxWidth") {
+      width: 100px;
+    }
     height: auto;
   }
 }
 
-
-.post_list {// <ul>..
+.post_list {
+  // <ul>..
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   margin: 0;
   list-style: none;
+
   > li {
     background-color: #ddd;
-    margin: $spacing_unit*0.75 ;
-
+    margin: $spacing_unit*0.75;
     width: $mediaMinWidth;
-    @include media( "screen", ">minWidth") {
+    @include media("screen", ">minWidth") {
       width: 100%;
     }
-    @include media( "screen", ">bp1Width") {
+    @include media("screen", ">bp1Width") {
       width: 41%;
     }
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       width: 28%;
     }
+
     &:hover {
       outline: 1px $brand-color solid;
       background-color: white;
     }
-
   }
-  .post_link { // it's an <a> inside a <li>
+
+  .post_link {
+    // it's an <a> inside a <li>
     display: block;
     font-size: 1.5rem;
     text-align: center;
   }
 }
 
-
 .post_link_text {
   margin-left: 1.5rem;
   display: block;
-
 }
 
 .post_link_ico {
   margin-top: $spacing_unit;
-  padding: $spacing_unit/8;
-  padding-bottom: $spacing_unit;
+  padding: $spacing_unit/8 $spacing_unit/8 $spacing_unit;
+
   img {
     width: 100%;
-    @include media( "screen", ">bp1Width") {max-width: 200px;}
+    @include media("screen", ">bp1Width") {
+      max-width: 200px;
+    }
   }
 }

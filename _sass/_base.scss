@@ -1,83 +1,114 @@
 // Reset some basic elements
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-    height: 100%;
-    background-color: $brand_color;
-    overflow-x: hidden;
+body,
+html {
+  height: 100%;
+  background-color: $brand_color;
+  overflow-x: hidden;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-// Basic styling
 body {
-  font-family: $base-font-family;
-
-  // // $base-font-size (with 50px fallback), minumum 35px, maximum 150px
-  // @include responsive-font($base-font-size, 35px, 150px, 18px);
-
-  font-size: $base-font-size;
-  @include media( "screen", ">minWidth") {font-size: $base-font-size*1.1;}
-  @include media( "screen", ">bp1Width") {font-size: $base-font-size*1.15;}
-  @include media( "screen", ">maxWidth") {font-size: $base-font-size*1.2;}
-
   line-height: $base-line-height;
   font-weight: 700;
   color: $text_color;
   -webkit-text-size-adjust: 100%;
   position: relative;
-
+  font-family: $base-font-family;
+  // // $base-font-size (with 50px fallback), minumum 35px, maximum 150px
+  // @include responsive-font($base-font-size, 35px, 150px, 18px);
+  font-size: $base-font-size;
+  @include media("screen", ">minWidth") {
+    font-size: $base-font-size*1.1;
+  }
+  @include media("screen", ">bp1Width") {
+    font-size: $base-font-size*1.15;
+  }
+  @include media("screen", ">maxWidth") {
+    font-size: $base-font-size*1.2;
+  }
 }
-
 
 // Set `margin-bottom` to maintain vertical rhythm
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing_unit / 2;
+%vertical-rhythm,
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: $spacing_unit / 2;
 }
 
-
-// Images
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-// Figures
-figure > img {display: block;}
-figcaption { font-size: $small-font-size;}
+figure > img {
+  display: block;
+}
 
-// Lists
-ul, ol {
+figcaption {
+  font-size: $small-font-size;
+}
+
+ol,
+ul {
   margin-left: $spacing_unit;
 }
 
 li {
-  > ul,
-  > ol {
+  > ol,
+  > ul {
     margin-bottom: 0;
   }
 }
 
-// Headings
-h1, h2, h3, h4, h5, h6 {
-  font-weight:700;
-  @include media( "screen", ">minWidth") {font-weight:500;}
-  @include media( "screen", ">maxWidth") {font-weight:300;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include media("screen", ">minWidth") {
+    font-weight: 500;
+  }
+  @include media("screen", ">maxWidth") {
+    font-weight: 300;
+  }
 }
 
-
-// Links
 a {
   color: $link_color;
   text-decoration: none;
@@ -86,8 +117,6 @@ a {
   padding-bottom: 2px;
 }
 
-
-// Blockquotes
 blockquote {
   color: $grey_color;
   border-left: 4px solid $grey_color-light;
@@ -101,7 +130,6 @@ blockquote {
   }
 }
 
-
 pre {
   font-family: 'Open Sans', sans-serif;
   max-width: 540px;
@@ -110,7 +138,7 @@ pre {
   font-family: Consolas;
   color: $grey_color-dark;
   line-height: 1.3em;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -141,7 +169,6 @@ code {
 //   }
 // }
 
-
 // Icons
 .icon {
   > svg {
@@ -150,10 +177,11 @@ code {
     height: 16px;
     vertical-align: middle;
 
-    path { fill: $grey_color; }
+    path {
+      fill: $grey_color;
+    }
   }
 }
-
 
 * {
   margin: 0;
@@ -161,28 +189,33 @@ code {
   box-sizing: border-box;
 }
 
-
 strong {
   font-weight: 900;
 }
-
-
 /**
  * Quick fade on target to attract user attention
  */
-
 :target {
-    -webkit-animation: target-fade 3s 1;
-    -moz-animation: target-fade 3s 1;
+  -webkit-animation: target-fade 3s 1;
+  -moz-animation: target-fade 3s 1;
 }
-
 @-webkit-keyframes target-fade {
-    0% { background-color: rgba(0,0,0,.1); }
-    100% { background-color: rgba(0,0,0,0); }
+  0% {
+    background-color: rgba(0,0,0,.1);
+  }
+
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
 }
 @-moz-keyframes target-fade {
-    0% { background-color: rgba(0,0,0,.1); }
-    100% { background-color: rgba(0,0,0,0); }
+  0% {
+    background-color: rgba(0,0,0,.1);
+  }
+
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
 }
 
 .center {

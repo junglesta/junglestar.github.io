@@ -1,28 +1,31 @@
 //Post
-
-.post-meta { display: none;}
-
+.post-meta {
+  display: none;
+}
 // Posts
 .post-header {
   padding: 0 $spacing_unit;
   color: $grey_color;
   max-width: 540px;
-  margin: 0 auto;
-  margin-bottom: $spacing_unit;
+  margin: 0 auto $spacing_unit;
 }
 
 .post-title {
   font-size: 1.2rem;
   letter-spacing: -1px;
-  line-height: .5;
-  @include media( "screen", ">maxWidth") {font-size: 3rem;}
+  line-height: 0.5;
+  @include media("screen", ">maxWidth") {
+    font-size: 3rem;
+  }
 }
 
 .post-content {
-  padding: $spacing_unit $spacing_unit 0  $spacing_unit;
+  padding: $spacing_unit $spacing_unit 0;
   color: $grey_color;
   margin-bottom: $spacing_unit;
-  p, blockquote {
+
+  blockquote,
+  p {
     max-width: 540px;
     margin: 0 auto;
     line-height: 1.5;
@@ -32,55 +35,53 @@
   h2 {
     color: $brand-color;
     font-size: 1.5rem;
-    @include media( "screen", ">maxWidth") {font-size: 2.5rem;}
+    @include media("screen", ">maxWidth") {
+      font-size: 2.5rem;
+    }
     max-width: 540px;
-    padding: 0px 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    padding: 0 10px;
+    margin: 0 auto 20px;
   }
 
   h3 {
     color: $brand-color;
     font-size: 1.75rem;
     text-align: center;
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       font-size: 2rem;
     }
     max-width: 540px;
-    padding: 0px 4px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    padding: 0 4px;
+    margin: 0 auto 20px;
   }
 
   h4 {
     font-size: 1.5rem;
-    @include media( "screen", ">maxWidth") {font-size: 1.75rem;}
+    @include media("screen", ">maxWidth") {
+      font-size: 1.75rem;
+    }
     max-width: 540px;
-    padding: 0px 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    padding: 0 10px;
+    margin: 0 auto 20px;
   }
-
 
   .highlight {
     color: #333;
     z-index: -1;
     background: #fafafd;
     border: 0.063em solid #dedede;
-    border-right: 0em solid #fff;
+    border-right: 0 solid #fff;
     line-height: 1.5;
     padding-top: 1em;
     padding-bottom: 1em;
     left: 0;
     right: 0;
-    margin: 20px 0px;
+    margin: 20px 0;
   }
 
   ul {
     max-width: 540px;
-    padding: 0 10px;
-    padding-left: 40px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    padding: 0 10px 0 40px;
+    margin: 0 auto 20px;
   }
 }

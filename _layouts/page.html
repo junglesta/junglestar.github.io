@@ -2,15 +2,27 @@
 layout: default
 ---
 {% if page.title == "offer" %}
-  {% include product_loop_group.html %}
+  <div class="section light_bg offer_content">
+
+    {% include product_loop_group.html %}
+
+  </div>
 {% endif %}
 
 {% if page.title == "about" %}
-  {% include about.html %}
+  <div class="page_content">
+
+    {% include about.html %}
+
+  </div>
 {% endif %}
 
 {% if page.permalink == "/works/wedesign/" %}
-  <div class="wrapper flex flex_rows flex_wrap wedesign_page">
-    {% include wedesign.html %}
+  <div class="section page_content">
+
+    <div class="wrapper flex flex_rows flex_wrap wedesign_page">
+      {% include wedesign.html %}
+    </div>
+
   </div>
 {% endif %}

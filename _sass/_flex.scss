@@ -5,36 +5,42 @@
   &.flex_cols {
     flex-direction: column;
   }
-  &.flex_rows  {
+
+  &.flex_rows {
     flex-direction: row;
   }
-  &.flex_align_center  {
+
+  &.flex_align_center {
     align-items: center;
   }
+
   &.flex_align_baseline {
     align-items: baseline;
   }
+
   &.flex_wrap {
     flex-wrap: wrap;
   }
+
   &.flex_justify_center {
     justify-content: center;
   }
+
   &.flex_align_content_center {
     align-content: center;
   }
+
   &.flex_cols_bp1 {
     flex-direction: column;
-    @include media( "screen", ">bp1Width") {
+    @include media("screen", ">bp1Width") {
       flex-direction: row;
     }
   }
+
   &.flex_cols_max {
     flex-direction: column;
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       flex-direction: row;
     }
   }
-
-
 }

@@ -9,10 +9,12 @@
     padding-bottom: $vertical_rhythm;
     text-align: center;
   }
+
   .card & {
     padding-top: $vertical_rhythm--small;
     padding-bottom: 0;
   }
+
   .offer_page &,
   .product_page & {
     min-width: 100%;
@@ -30,15 +32,12 @@
   margin-bottom: $vertical_rhythm--small/2;
   border: 1px solid $black_stroke;
   border-radius: 4px;
-  //color: $black;
   padding: 0 10px;
   opacity: 0.9;
   -webkit-box-shadow: $card_shadow;
   box-shadow: $card_shadow;
-
   color: $brand_color;
   border: 2px solid $brand_color;
-  //width: 170px;
   margin: 0 auto;
 
   &:focus,
@@ -57,6 +56,7 @@
     background-color: $button_book;
     color: white;
     font-weight: 500;
+
     .menu & {
       margin-left: $vertical_rhythm--small/2;
     }
