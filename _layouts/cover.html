@@ -36,14 +36,15 @@
 
       <h1 class="works_title center">See what we deliver!</h1>
 
-      {%comment%}
+      {% comment %}
       {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}
-      {%endcomment%}
+      {% endcomment %}
 
       <div class="home_content">
+
         <ul class="post_list">
 
-          {% for work in site.works reversed%}
+          {% for work in site.works reversed %}
             <li class="{{ work.tag }} {{ work.category }}">
                 <a class="post_link" href="{{ work.url | prepend: site.baseurl }}" {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}>
                   {% if work.ico_url %}
@@ -58,8 +59,14 @@
           {% endfor %}
 
         </ul>
+
       </div>
 
+    </div>
+
+    <div class="offer_content light_bg">
+
+      {% include product_loop_group.html %}
 
     </div>
 

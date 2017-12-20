@@ -1,11 +1,28 @@
 .card {
   font-size: 16px;
   z-index: 10;
-  background-color: white;
+  background-color: hsla(0, 0%, 95%, 1);
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  width: 90%;
+  min-width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   -webkit-box-shadow: $card-shadow;
   box-shadow: $card-shadow;
   -webkit-transition: $transition_shadow;
   transition: $transition_shadow;
+
+  @include media( "screen", ">maxWidth") {
+    display: inline-block;
+    margin: 0;
+    min-width: $big_card_width;
+    max-width: $big_card_width;
+  }
 
   &:hover,
   &:focus {
@@ -17,6 +34,7 @@
     -webkit-transform: translateY(0.25em);
     transform: translateY(0.25em);
   }
+
   h2,
   h3 {
     padding-top: 0;
@@ -27,12 +45,109 @@
     text-transform: uppercase;
     height: 15%;
   }
+
   h2 {
     text-align: center;
   }
+
   h3 {
     text-align: center;
     height: 20%;
     min-height: 60px;
   }
+
+  p {
+    margin-left: $spacing_unit/2;
+    margin-right: $spacing_unit/2;
+  }
+
+  & > * {
+    margin-top: 3rem;
+  }
+
+  &:nth-child(1) {
+    left: 0;
+    z-index: 1;
+
+    @include media( "screen", ">maxWidth") {
+      left: -1.5rem;
+    }
+
+    // &.is_selected,
+    &:hover {
+      z-index: 11;
+      transform: scale(1.1);
+      background-color: hsla(0, 0%, 95%, 1);
+    }
+  }
+
+  &:nth-child(2) {
+    z-index: 3;
+    left: 0;
+    max-width: 80%;
+
+    @include media( "screen", ">maxWidth") {
+      max-width: 10%;
+    }
+
+    &.is_selected,
+    &:hover {
+      z-index: 11;
+      transform: scale(1.15);
+      background-color: hsla(0, 0%, 95%, 1);
+    }
+  }
+
+  &:nth-child(3) {
+    right: 0;
+    z-index: 2;
+
+    @include media( "screen", ">maxWidth") {
+      right: -1.5rem;
+    }
+
+    &.is_selected,
+    &:hover {
+      z-index: 11;
+      transform: scale(1.1);
+      background-color: hsla(0, 0%, 95%, 1);
+    }
+  }
+}
+
+.full_card_is_selected .card.is_selected,
+.custom_card_is_selected .card.is_selected,
+.landing_card_is_selected .card.is_selected {
+  z-index: 10;
+  transform: scale(1.15);
+  -webkit-box-shadow: $card-shadow--hover;
+  box-shadow: $card-shadow--hover;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.checkmark {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.checkmark:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 6px;
+  border: solid limegreen;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  padding-right: 8px;
+  padding-bottom: 10px;
+  margin-right: 16px;
+}
+
+.selling_points {
+  font-size: 15px;
+  margin-bottom: $spacing_unit;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }

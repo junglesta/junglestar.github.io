@@ -25,5 +25,5 @@ product:
     sp05: Domain name.
     sp06: Social media friendly.
     sp07: Data entry.
-    sp08: Collaborator editing system.
+    sp08: Collaborators editing system.
 ---

@@ -26,30 +26,18 @@ figure {
 }
 
 .product_grid {
+  @extend %clearfix;
+  margin: 0 $spacing_unit-big;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: $vertical_rhythm--small;
-
-  > * {
-    display: block;
-    max-width: 100%;
-    @include media( "screen", ">minWidth") {
-      max-width: calc(50% - 10px);
-    }
-    @include media( "screen", ">bp1Width") {
-      max-width: calc(33.33% - 10px);
-      //just for this website, cos have only 2 rooms,
-      .rooms & {
-        max-width: calc(50% - 10px);
-      }
-    }
-  }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .looper__link {
@@ -64,17 +52,18 @@ figure {
 }
 
 .product_text {
-  padding: 0 $vertical_rhythm--small;
   margin-top: $vertical_rhythm--small;
   margin-bottom: $vertical_rhythm--small;
-  .food.product & {
-    @include media( "screen", ">minWidth") {
-      display: block;
-    }
-  }
+  padding-top: $vertical_rhythm;
+  padding-bottom: $vertical_rhythm;
+
   .product & {
-    @include media( "screen", ">minWidth") {
+    @include media("screen", ">minWidth") {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
     }
   }
@@ -82,6 +71,7 @@ figure {
   h1 {
     padding-bottom: $vertical_rhythm--small/2;
   }
+
   h2,
   h3 {
     padding-top: $vertical_rhythm--small/2;
@@ -94,12 +84,12 @@ blockquote p {
   line-height: 1.25;
   font-weight: 500;
   padding-left: $vertical_rhythm--small;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     max-width: 400px!important;
     margin: 0 auto 0 10%;
     padding-left: $vertical_rhythm;
   }
-  @include media( "screen", ">maxWidth") {
+  @include media("screen", ">maxWidth") {
     max-width: 500px!important;
     margin: 0 auto 0 10%;
     padding-left: $vertical_rhythm;
@@ -114,41 +104,11 @@ blockquote p {
 .product_image {
   position: relative;
   width: 100%;
-
-  .food & {
-    background-color: $product_category_1;
-    color: transparentize($black, .85);
-  }
-
-  .activities & {
-    background-color: $product_category_2;
-    color: transparentize($black, .85);
-  }
-
-  .rooms & {
-    background-color: $product_category_3;
-    color: transparentize($black, .85);
-  }
 }
 
 .product_image_group {
   position: relative;
   width: 100%;
-
-  .food & {
-    background-color: $product_category_1;
-    color: transparentize($black, .85);
-  }
-
-  .activities & {
-    background-color: $product_category_2;
-    color: transparentize($black, .85);
-  }
-
-  .rooms & {
-    background-color: $product_category_3;
-    color: transparentize($black, .85);
-  }
 }
 
 .product_group {
@@ -172,15 +132,20 @@ blockquote p {
   margin-bottom: $vertical_rhythm--small;
 }
 
-
 .product_page {
   ul {
     max-width: 300px;
-    margin: $spacing_unit/2 auto $spacing_unit auto;
+    margin: $spacing_unit/2 auto $spacing_unit;
   }
+
   .page_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+
     .card {
       display: block;
       position: relative;
@@ -188,14 +153,28 @@ blockquote p {
       margin: 0 auto;
       min-width: 90%;
       max-width: 90%;
-      @include media( "screen", ">bp1Width"){
+      @include media("screen", ">bp1Width") {
         min-width: 50vw;
         max-width: 50vw;
       }
 
       &:hover {
+        -webkit-transform: none;
         transform: none;
       }
     }
+  }
+}
+
+.offer_content {
+  padding-top: $spacing_unit-big;
+  padding-bottom: $spacing_unit-big;
+}
+
+.offer_page {
+  ul {
+    margin-left: 5px;
+    max-width: 300px;
+    margin: $spacing_unit/2 auto $spacing_unit;
   }
 }

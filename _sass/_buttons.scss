@@ -8,9 +8,6 @@
     padding-top: $vertical_rhythm;
     padding-bottom: $vertical_rhythm;
     text-align: center;
-    @include media( "screen", ">minWidth") {
-      text-align: left;
-    }
   }
   .card & {
     padding-top: $vertical_rhythm--small;
@@ -33,11 +30,16 @@
   margin-bottom: $vertical_rhythm--small/2;
   border: 1px solid $black_stroke;
   border-radius: 4px;
-  color: $black;
+  //color: $black;
   padding: 0 10px;
   opacity: 0.9;
   -webkit-box-shadow: $card_shadow;
   box-shadow: $card_shadow;
+
+  color: $brand_color;
+  border: 2px solid $brand_color;
+  //width: 170px;
+  margin: 0 auto;
 
   &:focus,
   &:hover {
@@ -64,35 +66,4 @@
     color: $brand_color;
     border: 2px solid $brand_color;
   }
-  // &:hover {
-  //   background-color: transparentize($brand_color, .9);
-  // }
-
-  .offer_page &,
-  .product_page & {
-    color: $brand_color;
-    border: 2px solid $brand_color;
-    width: 170px;
-    margin: 0 auto;
-  }
-}
-
-
-//action button same look inverted
-.button {
-  //
-  // .site_header & {
-  //   color: $brand_color;
-  //   border: 2px solid $brand_color;
-  // }
-  // &:hover {
-  //   background-color: transparentize($brand_color, .9);
-  // }
-  //
-  // .offer_page & {
-  //   color: $brand_color;
-  //   border: 2px solid $brand_color;
-  //   width: 150px;
-  //   margin: 0 auto;
-  // }
 }

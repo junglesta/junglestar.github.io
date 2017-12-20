@@ -13,7 +13,7 @@ product:
   group: design
   name: Awesome Design
   type: "Customized to your needs"
-  subname: "Carefully Crafted Design at competitive prices."
+  subname: "Carefully Crafted Design."
   desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
   starting_at: 5000
   demo_url: https://amazing-days.junglestar.org/
@@ -24,9 +24,9 @@ product:
     sp04: Secure SLL/https.
     sp05: Domain name.
     sp06: Social media friendly.
-    sp07: Data entry, deploy.
-    sp08: Collaborator editing system.
-    sp09: Custom designed architecture.
-    sp10: Custom code & functionalities.
+    sp07: Data entry and deploys.
+    sp08: Collaborators editing system.
+    sp09: Custom architecture.
+    sp10: Custom functionalities.
     sp11: Your-Company look & feel!
 ---

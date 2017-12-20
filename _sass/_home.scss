@@ -2,7 +2,10 @@
 
 .home_content {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 $spacing_unit-big;
+  @include media( "screen", ">bp1Width") {
+    padding: 0 1rem;
+  }
 
   a {
     padding: .5rem;

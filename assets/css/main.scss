@@ -16,6 +16,7 @@ $elastic_font_size: 2vw;
 $base-line-height: 1.5;
 //util
 $spacing_unit: 3vw;
+$spacing_unit-big: 8vw;
 
 //colors
 $black: black;
@@ -64,6 +65,9 @@ $black_stroke: hsl(0,0%,60%);
 $button_focus_bg: hsla(0, 0%, 91%, 1);
 $button_book: hsl(205, 100%, 51%);
 
+// cards
+$big_card_width: 27.5vw;
+
 @import
   "cmq",
   "base",
@@ -81,6 +85,5 @@ $button_book: hsl(205, 100%, 51%);
   "products",
   "buttons",
   "cards",
-  "offer",
   "ico_backgrounds"
 ;

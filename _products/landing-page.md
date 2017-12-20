@@ -14,7 +14,7 @@ product:
   name: Amazing Landing
   type: "All-included package"
   subname: "Quality website template. Name, Hosting and SSL included."
-  desc: "We load data, process everything and produce a spicy landing page ready to hit."
+  desc: "We load data, process everything and produce a spicy landing page ready to hit. The perfect digital brochure with zero maintenance cost!"
   starting_at: 500
   demo_url: https://amazing-single.junglestar.org/
   selling_points:
