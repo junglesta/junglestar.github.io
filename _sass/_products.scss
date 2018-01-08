@@ -28,16 +28,13 @@ figure {
 .product_grid {
   @extend %clearfix;
   margin: 0 $spacing_unit-big;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  flex-direction: column;
+  @include media("screen", ">maxWidth") {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
 
 .looper__link {

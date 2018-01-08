@@ -192,9 +192,8 @@ code {
 strong {
   font-weight: 900;
 }
-/**
- * Quick fade on target to attract user attention
- */
+
+//Quick fade on target to attract user attention
 :target {
   -webkit-animation: target-fade 3s 1;
   -moz-animation: target-fade 3s 1;
@@ -224,4 +223,13 @@ strong {
 
 .brand_color {
   color: $brand_color;
+}
+
+
+.top_pad {
+  padding-top: $spacing_unit;
+}
+
+.top_pad--big {
+  padding-top: $spacing_unit-big;
 }
