@@ -16,7 +16,7 @@ product:
   subname: "Carefully Crafted Design."
   desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
   starting_at: 5000
-  demo_url: https://amazing-days.junglestar.org/
+  demo_url: http://liquideye.co/
   selling_points:
     sp01: Responsive full website.
     sp02: SEO optimized.
