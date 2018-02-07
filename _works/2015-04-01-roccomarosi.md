@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "ROCCO MAROSI<br>Architecture Photography"
+title: "ROCCO MAROSI<br>Architecture Photography"
 category: website
 tag: commissioned-work open-source
 redir: https://roccomarosi.com/?ref=junglestar

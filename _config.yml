@@ -1,12 +1,12 @@
 # The current release
-version: v0.4.0
+version: v0.5.0
 
 # Site settings
 title: Junglestar
 email: info@junglestar.org
 description: "It's a jungle out there. DIY is not enough. How customers get to know you? Junglestar One Stop Shop do information architecture, screen design, deploy. We offer packed solutions all-included. Or top quality custom designs on the cheap. See our web-apps!"
 baseurl: "" #"/clean" # the subpath of your site, e.g. /blog/
-url: "http://junglestar.org" # the base hostname & protocol for your site
+url: "https://junglestar.org" # the base hostname & protocol for your site
 twitter_username: rokmatwit
 github_username: toybreaker
 
@@ -29,12 +29,18 @@ exclude:
  - node_modules
  - uploads
  - rakefile
+ - ["vendor"]
+
+# the following exclude is necessary to make Travis CI work:
+# https://github.com/jekyll/jekyll/issues/5267
+# https://github.com/jekyll/jekyll/issues/2938
+# exclude: ["vendor"]
 
 owner:
  name: Junglestar
  avatar_url: #
  email: rokmabox@gmail.com
- link: http://junglestar.org
+ link: https://junglestar.org
  disqus-shortname:
  twitter: #
  facebook: #
@@ -50,7 +56,6 @@ plugins:
  - jekyll-seo-tag
  - jekyll-redirect-from
  - jekyll-sitemap
- - jekyll-feed
 
 
 #Use html-proofer with this terminal command:
