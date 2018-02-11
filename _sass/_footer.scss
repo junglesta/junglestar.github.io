@@ -12,7 +12,9 @@ footer {
 }
 
 .action_title {
-  padding-top: $spacing_unit;
+  padding-top: $spacing_unit*2;
+  text-align: center;
+  width: 100%;
 }
 
 .action_button {

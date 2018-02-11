@@ -1,8 +1,8 @@
 <footer class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center">
 
-  <a title="back home" href="/" class="footer_icon"></a>
+  <a title="flex_item back home" href="/" class="footer_icon"></a>
 
-  <a title="send email" class="action_button mail" href="mailto:{{ site.email }}">
+  <a title="flex_item send email" class="action_button mail" href="mailto:{{ site.email }}">
 
     <span class="action_title revealed">get in touch</span>
 
@@ -16,8 +16,12 @@
 
   </a>
 
-  <div class="action_title">phone link</div>
+  <div class="flex_item qr white">
 
-  <div class="qr white">{% include svg/junglestarQR.svg %}</div>
+    <div class="action_title">phone link</div>
+
+    {% include svg/junglestarQR.svg %}
+
+  </div>
 
 </footer>
