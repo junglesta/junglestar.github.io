@@ -14,7 +14,7 @@ product:
   name: Awesome Design
   type: "Customized to your needs"
   subname: "Carefully Crafted Design."
-  desc: "We custom design, produce & develop a well thought user experiences for your brand. Working with your existing look, ideas and team."
+  desc: "We custom design, produce & develop a well thought user experiences for your brand. Starting by embracing your existing look, ideas and team."
   starting_at: 5000
   demo_url: http://liquideye.co/
   selling_points:

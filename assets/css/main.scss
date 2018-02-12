@@ -28,10 +28,10 @@ $brand_color:      hsla(209, 100%, 40%, 1);//0069cc
 
 //bg
 $top_color: $background-color;
-$text_color:       #111;
-  $link_color:      $brand_color;
+$text_color: #111;
+$link_color: $brand_color;
 
-$grey_color:       #212121;
+$grey_color: #212121;
 $grey_color-light: lighten($grey_color, 40%);
 $grey_color-dark:  darken($grey_color, 25%);
 
@@ -53,8 +53,10 @@ $product_category_3: hsla(205, 100%, 81%, .75); //accommodation
 $vertical_rhythm: 2rem;
 $vertical_rhythm--small: 1rem;
 
-$heading1: 1.5rem;
-$heading2: $heading1/10*8;
+//headings master
+$heading1: 3rem;
+//headings derivated
+$heading2: $heading1/10*7;
 $heading3: $heading2/10*8.5;
 $heading4: $heading3/10*8.5;
 $heading5: $heading4/10*8.5;

@@ -16,7 +16,7 @@ h6 {
 }
 
 h1 {
-  @include responsive-font(5vw, $heading1, $heading1*1.5, $heading1);
+  @include responsive-font(5vw, $heading1, $heading1*1.2, $heading1);
   line-height: 1.1;
   padding-top: $heading1/3*2;
   padding-bottom: $heading1/3*2;
@@ -24,28 +24,28 @@ h1 {
 }
 
 h2 {
-  @include responsive-font(4vw, $heading2, $heading2*2, $heading2);
+  @include responsive-font(4vw, $heading2, $heading2*1.3, $heading2);
   line-height: 1.1;
   padding-top: $heading2;
   padding-bottom: $heading2;
 }
 
 h3 {
-  @include responsive-font(3vw, $heading3, $heading3*2, $heading3);
+  @include responsive-font(3vw, $heading3, $heading3*1.35, $heading3);
   line-height: 1.1;
   padding-top: $heading3;
   padding-bottom: $heading3;
 }
 
 h4 {
-  @include responsive-font(2.5vw, $heading4, $heading4*2, $heading4);
+  @include responsive-font(2.5vw, $heading4, $heading4*1.4, $heading4);
   line-height: 1.1;
   padding-top: $heading4;
   padding-bottom: $heading4;
 }
 
 h5 {
-  @include responsive-font(2vw, $heading5, $heading5*2, $heading5);
+  @include responsive-font(2vw, $heading5, $heading5*1.4, $heading5);
   font-size: $heading5;
   line-height: 1;
   padding-top: $heading5;

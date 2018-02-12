@@ -58,6 +58,7 @@
   }
 }
 
+
 .light_bg,
 .page_content.light_bg {
   background-color: transparentize(white, .25);
@@ -72,6 +73,22 @@
   width: 100%;
   color: white;
 }
+
+
+
+.mean_title {
+  color: $brand_color;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &.mean_title--first {
+    background-color: black;
+    h1 {color: white;}
+  }
+}
+
 
 
 .footer_icon:before,
@@ -114,7 +131,7 @@
 }
 
 .page_content {
-  padding: $spacing_unit 0 $spacing_unit*2;
+  padding: 0 0 $spacing_unit*2;
   background-color: $background_color;
   min-height: 760px;
 }

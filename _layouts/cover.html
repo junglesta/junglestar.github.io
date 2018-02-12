@@ -34,7 +34,12 @@
 
     <div class="page_content">
 
-      <h1 class="works_title center">See what we deliver!</h1>
+      <div class="mean_title">
+        <div class="wrapper">
+          <h1 class="center">See what we deliver!</h1>
+        </div>
+      </div>
+
 
       {% comment %}
       {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}
@@ -65,10 +70,6 @@
     </div>
 
     <div class="offer_content light_bg">
-
-
-
-
 
       {% include product_loop_group.html %}
 
