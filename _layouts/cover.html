@@ -9,7 +9,7 @@
 
     <div class="cover js_scrollto01">
 
-      <div class="wrapper flex flex_cols flex_align_center full_height flex_justify_center">
+      <div class="wrapper wrapper--slim flex flex_cols flex_align_center full_height flex_justify_center">
 
         {% include hi.html %}
 
@@ -35,7 +35,7 @@
     <div class="page_content">
 
       <div class="mean_title">
-        <div class="wrapper">
+        <div class="wrapper wrapper--slim">
           <h1 class="center">See what we deliver!</h1>
         </div>
       </div>
@@ -50,17 +50,17 @@
         <ul class="post_list">
 
           {% for work in site.works reversed %}
-            <li class="{{ work.tag }} {{ work.category }}">
-                <a class="post_link" href="{{ work.url | prepend: site.baseurl }}" {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}>
-                  {% if work.ico_url %}
-                  <div class="post_link_ico {{work.ico_name}}">
-                    <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
-                  </div>
-                  {% endif %}
-                  <span class="post_link_text" ></span>{{ work.title }}
-                  <div class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</div>
-                </a>
-            </li>
+          <li class="{{ work.tag }} {{ work.category }}">
+            <a class="post_link" href="{{ work.url | prepend: site.baseurl }}" {% unless work.link == 'local' %}target="_blank" rel="noopener"{% endunless %}>
+              {% if work.ico_url %}
+              <div class="post_link_ico {{work.ico_name}}">
+                <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
+              </div>
+              {% endif %}
+              <span class="post_link_text" ></span>{{ work.title }}
+              <div class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</div>
+            </a>
+          </li>
           {% endfor %}
 
         </ul>

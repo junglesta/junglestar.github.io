@@ -15,6 +15,10 @@
     padding-left: $spacing_unit*2;
     padding-right: $spacing_unit*2;
   }
+  &.wrapper--slim {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .intro {
@@ -270,4 +274,9 @@ hr {
 
 .js_scrollto01 {
   cursor: pointer;
+}
+
+
+.text {
+  padding-top: $spacing_unit/2;
 }

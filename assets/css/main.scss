@@ -55,20 +55,30 @@ $product_category_1: hsla(117, 100%, 81%, .75); //food
 $product_category_2: hsla(43, 100%, 81%, .75); //tour
 $product_category_3: hsla(205, 100%, 81%, .75); //accommodation
 
-//headings master
-$heading1: 40px; //3rem;
-//headings derivated
-$heading2: $heading1/10*7;
-$heading3: $heading2/10*8.5;
-$heading4: $heading3/10*8.5;
-$heading5: $heading4/10*8.5;
-$heading6: $heading5/10*8.5;
-
 // responsive headings
-$heading1_responsive: 5vw;
+$heading1_responsive: 4vw;
 $heading1_min: 35px;
-$heading1_max: 50px;
-$heading1_fallback: 50px;
+$heading1_max: 46px;
+
+$heading2_responsive: 3.5vw;
+$heading2_min: 30px;
+$heading2_max: 42px;
+
+$heading3_responsive: 3vw;
+$heading3_min: 25px;
+$heading3_max: 36px;
+
+$heading4_responsive: 2.5vw;
+$heading4_min: 20px;
+$heading4_max: 33px;
+
+$heading5_responsive: 2.25vw;
+$heading5_min: 18px;
+$heading5_max: 30px;
+
+$heading6_responsive: 2vw;
+$heading6_min: 16px;
+$heading6_max: 26px;
 
 // buttons
 $black_stroke: hsl(0,0%,60%);

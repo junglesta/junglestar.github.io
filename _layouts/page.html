@@ -1,31 +1,41 @@
 ---
 layout: default
 ---
+
 {% if page.title == "offer" %}
-  <div class="section light_bg offer_content">
 
-    <div class="scrolltarget">
-      {% include product_loop_title.html %}
-    </div>
-    {% include product_loop_group.html %}
+<div class="section light_bg offer_content">
 
+  {% comment %}
+  scrolltarget div wrap is needed cos js will scroll to the vertical center of the div block
+  {% endcomment %}
+  <div class="scrolltarget">
+    {% include product_loop_title.html %}
   </div>
+
+  {% include product_loop_group.html %}
+
+</div>
 {% endif %}
+
 
 {% if page.title == "about" %}
-  <div class="page_content">
 
-    {% include about.html %}
+<div class="page_content">
 
-  </div>
+  {% include about.html %}
+
+</div>
 {% endif %}
 
+
 {% if page.permalink == "/works/wedesign/" %}
-  <div class="section page_content">
 
-    <div class="wrapper flex flex_rows flex_wrap wedesign_page">
-      {% include wedesign.html %}
-    </div>
+<div class="section page_content">
 
+  <div class="wrapper flex flex_rows flex_wrap wedesign_page">
+    {% include wedesign.html %}
   </div>
+
+</div>
 {% endif %}
