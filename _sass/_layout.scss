@@ -1,6 +1,8 @@
 .wrapper {
   padding-left: $spacing_unit-big;
   padding-right: $spacing_unit-big;
+  padding-top: $spacing_unit-big;
+  padding-bottom: $spacing_unit-big;
   @include media("screen", ">minWidth") {
     padding-left: $spacing_unit-big;
     padding-right: $spacing_unit-big;

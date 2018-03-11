@@ -14,7 +14,12 @@ $base-font-size:   18px;
 $elastic_font_size: 2vw;
   $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-//util
+
+// vertical rhythm
+$vertical_rhythm: 2rem;
+$vertical_rhythm--small: 1rem;
+
+//responsive spacing
 $spacing_unit: 3vw;
 $spacing_unit-big: 8vw;
 
@@ -50,17 +55,20 @@ $product_category_1: hsla(117, 100%, 81%, .75); //food
 $product_category_2: hsla(43, 100%, 81%, .75); //tour
 $product_category_3: hsla(205, 100%, 81%, .75); //accommodation
 
-$vertical_rhythm: 2rem;
-$vertical_rhythm--small: 1rem;
-
 //headings master
-$heading1: 3rem;
+$heading1: 40px; //3rem;
 //headings derivated
 $heading2: $heading1/10*7;
 $heading3: $heading2/10*8.5;
 $heading4: $heading3/10*8.5;
 $heading5: $heading4/10*8.5;
 $heading6: $heading5/10*8.5;
+
+// responsive headings
+$heading1_responsive: 5vw;
+$heading1_min: 35px;
+$heading1_max: 50px;
+$heading1_fallback: 50px;
 
 // buttons
 $black_stroke: hsl(0,0%,60%);

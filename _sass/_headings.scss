@@ -16,10 +16,11 @@ h6 {
 }
 
 h1 {
-  @include responsive-font(5vw, $heading1, $heading1*1.2, $heading1);
+  //@include responsive-font(5vw, $heading1, $heading1*1.2, $heading1);
+  @include responsive-font($heading1_responsive, $heading1_min, $heading1_max, $heading1_fallback);
   line-height: 1.1;
-  padding-top: $heading1/3*2;
-  padding-bottom: $heading1/3*2;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   font-weight: 500;
 }
 
