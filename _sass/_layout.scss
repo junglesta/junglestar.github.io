@@ -95,7 +95,11 @@
   }
 }
 
-
+.mean_icon {//contains svg
+  min-width: 120px;
+  padding-top: 10px;
+  padding-right: 30px;
+}
 
 .footer_icon:before,
 .site_title:before {
