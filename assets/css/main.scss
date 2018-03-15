@@ -27,7 +27,7 @@ $spacing_unit-big: 8vw;
 $black: black;
 $white: white;
 $background_color: #e6e6e6; //#fdfdfd;
-$brand_color:      hsla(209, 100%, 40%, 1);//0069cc
+$brand_color: hsla(209, 100%, 40%, 1); //0069cc
   //invert + other tests:
   $brand_color-invert: invert($brand_color);
   $brand_color-complementary: complement($brand_color);
