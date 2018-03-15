@@ -25,6 +25,7 @@ $spacing_unit-big: 8vw;
 
 //colors
 $black: black;
+$white: white;
 $background_color: #e6e6e6; //#fdfdfd;
 $brand_color:      hsla(209, 100%, 40%, 1);//0069cc
   //invert + other tests:
@@ -99,11 +100,11 @@ $big_card_width: 27.5vw;
   "home",
   "about",
   "post",
-  "colors",
   "footer",
   "headings",
   "products",
   "buttons",
   "cards",
-  "ico_backgrounds"
+  "ico_backgrounds",
+  "colors"
 ;

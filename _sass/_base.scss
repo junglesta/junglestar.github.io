@@ -32,7 +32,7 @@ html {
 
 body {
   line-height: $base-line-height;
-  font-weight: 700;
+  font-weight: 500;
   color: $text_color;
   -webkit-text-size-adjust: 100%;
   position: relative;
@@ -170,6 +170,10 @@ code {
 // }
 
 // Icons
+svg {
+  width: 100%;
+}
+
 .icon {
   > svg {
     display: inline-block;

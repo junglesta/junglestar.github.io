@@ -70,6 +70,15 @@
   background-color: transparentize(white, .25);
 }
 
+.dark_bg,
+.page_content.dark_bg {
+  background-color: black;
+
+  .text {
+    color: $white;
+  }
+}
+
 .site_title {
   font-size: 2rem;
   line-height: 2.2;
@@ -99,6 +108,10 @@
   min-width: 120px;
   padding-top: 10px;
   padding-right: 30px;
+  width: 20vw;
+  .site_header & {
+    padding-right: 0;
+  }
 }
 
 .footer_icon:before,
