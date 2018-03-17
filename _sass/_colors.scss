@@ -4,3 +4,20 @@
 .color_white {
   color: $white!important;
 }
+
+
+//svg colors
+.brand_color {
+  fill: transparent;
+  stroke: $brand_color;
+  stroke-width: 8px;
+  @include media( "screen", ">minWidth") {
+    stroke-width: 6px;
+  }
+  @include media( "screen", ">bp1Width") {
+    stroke-width: 5px;
+  }
+  @include media( "screen", ">maxWidth") {
+    stroke-width: 4px;
+  }
+}

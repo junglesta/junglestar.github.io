@@ -3,7 +3,6 @@ layout: default
 ---
 
 {% if page.title == "offer" %}
-
 <div class="section light_bg offer_content">
 
   {% comment %}
@@ -20,7 +19,6 @@ layout: default
 
 
 {% if page.title == "about" %}
-
 <div class="page_content">
 
   {% include about.html %}
@@ -29,13 +27,8 @@ layout: default
 {% endif %}
 
 
-{% if page.permalink == "/works/wedesign/" %}
-
-<div class="section page_content">
-
-  <div class="wrapper flex flex_rows flex_wrap wedesign_page">
-    {% include wedesign.html %}
-  </div>
-
+{% if page.permalink == "/design/" %}
+<div class="page_content">
+  {% include design.html %}
 </div>
 {% endif %}

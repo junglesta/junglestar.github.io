@@ -1,11 +1,15 @@
-<div class="flex flex_rows flex_wrap">
+<div class="wrapper flex flex_rows flex_wrap">
 
   <div class="section">
 
-    <h1 class="title">Phones era</h1>
+    <div class="mean_icon">
+      {% include svg/junglestar_logo_brandcolor.svg %}
+    </div>
+
+    <h1 class="title">Building for the Phones Era</h1>
 
     <div class="text">
-      {% capture text_block1 %}{% include text_blocks/phone-era.md %}{% endcapture %}
+      {% capture text_block1 %}{% include text_blocks/phone_era.md %}{% endcapture %}
       {{ text_block1 | markdownify }}
     </div>
 
@@ -13,16 +17,24 @@
 
   <div class="section">
 
+    <div class="mean_icon">
+      {% include svg/junglestar_logo_brandcolor.svg %}
+    </div>
+
     <h1 class="title">Today you don't buy software</h1>
 
     <div class="text">
-      {% capture text_block2 %}{% include text_blocks/pay-developer.md %}{% endcapture %}
+      {% capture text_block2 %}{% include text_blocks/pay_developer.md %}{% endcapture %}
       {{ text_block2 | markdownify }}
     </div>
 
   </div>
 
   <div class="section">
+
+    <div class="mean_icon">
+      {% include svg/junglestar_logo_brandcolor.svg %}
+    </div>
 
     <h1 class="title">From plan to working product.</h1>
 
@@ -35,7 +47,11 @@
 
   <div class="section">
 
-    <h1 class="title">Technology</h1>
+    <div class="mean_icon">
+      {% include svg/junglestar_logo_brandcolor.svg %}
+    </div>
+
+    <h1 class="title">Open source technology</h1>
 
     <div class="text">
       {% capture text_block4 %}{% include text_blocks/tech.md %}{% endcapture %}
