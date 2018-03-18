@@ -6,11 +6,18 @@
 }
 
 
-//svg colors
 .brand_color {
+  color: $brand_color;
+}
+
+//svg colors
+svg.brand_color {
   fill: transparent;
   stroke: $brand_color;
   stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
   @include media( "screen", ">minWidth") {
     stroke-width: 6px;
   }
