@@ -1,4 +1,4 @@
-We make use of the latest **open source** technology and services:
+We make use of the latest **Open Source** technology and services:
 
 {:.tech_logos}
 ![paypal]({{ site.baseurl }}/assets/svg/paypal.svg){:.tech_logo}{:.paypal}

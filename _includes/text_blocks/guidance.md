@@ -1,5 +1,5 @@
 Need an helping hand?
-The creative process can indeed be overwhelming. Are you having difficulties figuring it all out on your own? We can help. We offer guidance.
+The **Creative Process** can indeed be overwhelming. The **Adjacent Possible** is not easy to spot. Are you having difficulties figuring it all out on your own? We can help. We offer **Guidance**.
 
 We have been managing creative processes in the marketing communication field for more than 25 years.
 

@@ -1,19 +1,18 @@
 .color_black {
   color: $black!important;
 }
+
 .color_white {
   color: $white!important;
 }
-
 
 .brand_color {
   color: $brand_color;
 }
 
 //svg colors
-svg.brand_color {
+svg.outlined {
   fill: transparent;
-  stroke: $brand_color;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -27,4 +26,10 @@ svg.brand_color {
   @include media( "screen", ">maxWidth") {
     stroke-width: 4px;
   }
+}
+svg.brand_color {
+  stroke: $brand_color;
+}
+svg.white_color {
+  stroke: $white;
 }

@@ -1,4 +1,4 @@
-Today there are many **free tools** and **free services** to simplify our internet presence**!
+Today there are many **Free Tools** and **Free Services** to simplify our internet presence**!
 
 Many of them are already installed on our phones, maybe you just don't know how to make them work for you yet...  
 
