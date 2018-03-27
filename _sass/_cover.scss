@@ -55,3 +55,16 @@
     padding-top: 10vh;
   }
 }
+
+.to_presentation {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.to_about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
