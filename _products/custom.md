@@ -16,7 +16,7 @@ product:
   subname: "Carefully Crafted Design."
   desc: "We custom design, produce & develop a well thought user experiences for your brand. Starting by embracing your existing look, ideas and team."
   starting_at: 5000
-  demo_url: http://liquideye.co/
+  demo_url: https://binocle.it/?ref=junglestar
   selling_points:
     sp01: Responsive full website.
     sp02: SEO optimized.
