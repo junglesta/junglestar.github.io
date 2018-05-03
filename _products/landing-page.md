@@ -2,8 +2,7 @@
 layout: product
 name: landing page
 title: amazing landing page
-description: "Junglestar, a small, flexible, One Stop Shop web agency. We do information architecture, screen design, deploy. Packed solutions all-included. Or top quality custom designs on the cheap. We help companies and individuals organize their communication. We grow relationships with clients.
-We design, produce & develop well thought user experiences. From [slide shows](http://revealing.junglestar.org/#/8/1) to [offline ready web apps]"
+description: "Junglestar is a small, flexible, web agency. We do information architecture, screen design, code and deploy. We offer landing page websites at a competitive price. We help companies and individuals organize their communication. We grow relationships with clients. We design, produce & develop well thought user experiences."
 permalink: /offer/landing-page/
 question: "&quot;Need website.<br>How much?&quot;"
 bestseller:  #true or empty (bestseller+bestvalue=cannot)

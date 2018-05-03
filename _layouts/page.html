@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.title == "offer" %}
+{% if page.title contains "offer" %}
 <div class="section light_bg offer_content">
 
   {% comment %}
@@ -15,19 +15,23 @@ layout: default
   {% include product_loop_group.html %}
 
 </div>
-{% endif %}
 
+<div class="offer_content light_bg">
 
-{% if page.title == "about" %}
-<div class="page_content">
-
-  {% include about.html %}
+  {% include product_streetbiz.html %}
 
 </div>
 {% endif %}
 
 
-{% if page.permalink == "/design/" %}
+{% if page.title contains "about" %}
+<div class="page_content">
+  {% include about.html %}
+</div>
+{% endif %}
+
+
+{% if page.title contains "design" %}
 <div class="page_content">
   {% include design.html %}
 </div>

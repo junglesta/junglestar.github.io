@@ -2,8 +2,7 @@
 layout: product
 name: custom
 title: amazing custom design
-description: "Junglestar, a small, flexible, One Stop Shop web agency. We do information architecture, screen design, deploy. Packed solutions all-included. Or top quality custom designs on the cheap. We help companies and individuals organize their communication. We grow relationships with clients.
-We design, produce & develop well thought user experiences. From [slide shows](http://revealing.junglestar.org/#/8/1) to [offline ready web apps]"
+description: "Junglestar is a small, flexible, web agency. We do information architecture, screen design, code and deploy. We offer top quality custom designed websites at competitive prices. We design, produce and develop well thought user experiences. We grow relationships with clients."
 permalink: /offer/custom/
 question: "&quot;Yes I want this,<br>that and also...&quot;"
 bestseller: #true or empty (bestseller+bestvalue=cannot)
