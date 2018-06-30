@@ -12,10 +12,41 @@
     <div class="mean_icon">
       {% include svg/google_my_biz.svg %}
     </div>
-    <h3 class="center">Using Google My Business <br>we'll provide all details about your shop, phone number, working hours, products, location map, in a way that will display gorgeoulsy when people search Google.<br>This ultra convenient offer garantees being well listed on Google and includes a website too!</h3>
+    <h3 class="center">Using Google My Business <br>we'll provide all details about your shop, phone number, working hours, products, location map, in a way that will display gorgeoulsy when people search Google.<br>This ultra convenient offer garantees being well listed on Google<br> and also <strong>includes a one page website</strong>!</h3>
   </div>
 </div>
 
+
+<div class="print_only">
+
+{% if page.prices_rp %}
+
+  <div class="starting_at center print_footer">
+    <p>Starting at 2.900.000 Rp.</p>
+  </div>
+
+  {% if page.show_agent_prices %}
+
+    <div class="starting_at center agent_price">
+      <p>Agent price 2.300.000 Rp.</p>
+    </div>
+
+    <div class="starting_at center agent_gets">
+      <p>Agent gets 600.000 Rp.</p>
+    </div>
+
+  {% endif %}
+
+{% else %}
+
+    <div class="starting_at center print_footer">
+      <p>Starting at 290 Euro</p>
+    </div>
+  </div>
+
+{% endif %}
+
+</div>
 
 <div class="button_row center">
   <a href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's Google Biz package">

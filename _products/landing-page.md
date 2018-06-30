@@ -10,11 +10,14 @@ bestvalue: true #true or empty
 publish: # notyet or empty
 product:
   group: design
-  name: Amazing Landing
+  name: Compact Website
   type: "All-included package"
   subname: "Quality website template. Name, Hosting and SSL included."
   desc: "We load data, process everything and produce a spicy landing page ready to hit. The perfect digital brochure with zero maintenance cost!"
-  starting_at: 500
+  starting_at: "490"
+  starting_at_rp: "4.900.000"
+  starting_at_agent: "3.900.000"
+  agent_gets: "1.000.000"
   demo_url: https://amazing-single.junglestar.org/
   selling_points:
     sp01: Responsive landing page.

@@ -236,3 +236,7 @@ strong {
 .top_pad--big {
   padding-top: $spacing_unit-big;
 }
+
+.print_only {
+  display: none;
+}

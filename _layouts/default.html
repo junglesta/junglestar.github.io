@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
-  {% include head.html %}
+
+  {% if page.no_index %}
+    {% include head_no_index.html %}
+  {% else %}
+    {% include head.html %}
+  {% endif %}
 
   <body class="{% if page.title %}{{ page.title | slugify }}_page{% endif %} {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
 

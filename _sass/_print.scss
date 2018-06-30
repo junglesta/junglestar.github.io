@@ -1,0 +1,258 @@
+// not quite ready yet, but offer page does print decently enough...
+@include media("print") {
+  body,
+  html {
+    height: auto;
+    background-color: white!important;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .print_only {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .print_title {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .print_footer {
+      font-size: 13px;
+    }
+  }
+
+  .site_header {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .top_pad--big {
+    padding-top: 1rem;
+  }
+
+  .product_grid {
+    width: 100vw!important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 2px 0;
+
+    .card {
+      font-size: 13px;
+      background-color: transparent;
+      float: left;
+      min-width: auto;
+      max-width: 33vw!important;
+      margin: 2px 2px;
+      padding: 2px 2px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+
+      p {
+        margin-bottom: 3px;
+      }
+
+      & > * {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      &:hover {
+        -webkit-transform: none;
+        transform: none;
+        background-color: transparent;
+      }
+
+      h3 {
+        min-height: 0;
+        height: auto;
+      }
+    }
+
+    .selling_points {
+      font-size: 14px;
+    }
+  }
+
+  .product_text {
+    h2 {
+      padding: 0;
+    }
+  }
+
+  .checkmark:before {
+    width: 2px;
+    height: 2px;
+    border: solid limegreen;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    padding-right: 4px;
+    padding-bottom: 8px;
+    margin-right: 10px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.3;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .starting_at {
+    font-weight: bold;
+    &.agent_price {
+      color: $brand_color;
+    }
+    &.agent_gets {
+      color: limegreen;
+    }
+  }
+
+  .mean_title {
+    min-height: auto;
+  }
+
+  //hide stuff
+  .button_row,
+  .card:before,
+  .mean_icon,
+  .scrolltarget,
+  .site_title,
+  .starting_at a,
+  footer {
+    display: none!important;
+  }
+
+
+  //more general stuff for print
+
+  .offer_content {
+    clear: both;
+    padding-bottom: 0;
+    .wrapper {
+      padding: 0;
+    }
+  }
+
+  .google_my_business {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    margin: .5rem auto 0 auto;
+    padding: .5rem 0 0 0;
+    max-width: 90%;
+    font-size: 13px;
+    h3 {
+      padding: 0 .5rem;
+      font-size: 14px;
+    }
+    p {
+      margin-bottom: 3px;
+    }
+    br {
+      display: none;
+    }
+  }
+
+  .post_list {
+    display: block;
+    width: 100%!important;
+    clear: both;
+
+    & > li {
+      display: block;
+      float: left;
+      width: 25%;
+    }
+  }
+
+  .post_link_ico img {
+    width: 25%;
+  }
+
+  .mean_title {
+    min-height: auto;
+  }
+
+  svg.white_color {
+    stroke: black;
+  }
+
+  .mean_title.mean_title--first h1 {
+    color: black;
+  }
+
+  .card,
+  .post_link,
+  .post_list li,
+  a,
+  blockquote,
+  code,
+  figure,
+  hr,
+  li,
+  ol,
+  pre,
+  table,
+  tr,
+  ul {
+    page-break-inside: avoid!important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .page_break,
+  .page_break_before {
+    page-break-before: always;
+    page-break-after: always;
+  }
+}

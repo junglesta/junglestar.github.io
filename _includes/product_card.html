@@ -10,7 +10,7 @@
 
     <h3 class="center">{{product.product.subname}}</h3>
 
-    <p>{{product.product.desc}}</p>
+    <p class="center">{{product.product.desc}}</p>
 
     <div class="selling_points">
 
@@ -70,22 +70,43 @@
 
     </div>
 
+    {% if page.prices_rp %}
+
+      <div class="starting_at center">
+        <p>Starting at {{product.product.starting_at_rp }} Rp.
+          {% if product.product.demo_url %}
+          <a title="See {{product.name | upcase }} - {{product.product.name}} Demo" href="{{product.product.demo_url}}"> See Demo.</a>
+          {% endif %}
+        </p>
+      </div>
+
+      {% if page.show_agent_prices %}
+
+        <div class="starting_at center agent_price">
+          <p>Agent price {{product.product.starting_at_agent }} Rp.</p>
+        </div>
+
+        <div class="starting_at center agent_gets">
+          <p>Agent gets {{product.product.agent_gets }} Rp.</p>
+        </div>
+
+      {% endif %}
+
+    {% else %}
+
     <div class="starting_at center">
       <p>Starting at {{product.product.starting_at }} Euro.
         {% if product.product.demo_url %}
-        <a href="{{product.product.demo_url}}">See Demo.</a>
+        <a title="See {{product.name | upcase }} - {{product.product.name}} Demo" href="{{product.product.demo_url}}"> See Demo.</a>
         {% endif %}
       </p>
     </div>
 
-    <!-- <div class="button_row center">
-      <a href="{{ site.baseurl }}/offer/{{ product.name | slugify }}/">
-        <span class="button center">Learn more</span>
-      </a>
-    </div> -->
+    {% endif %}
+
 
     <div class="button_row center">
-      <a href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{ product.name | upcase }} package">
+      <a title="request more infos" href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{ product.name | upcase }} package">
         <span class="button center">Let's start talking!</span>
       </a>
     </div>

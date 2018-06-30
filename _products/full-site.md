@@ -14,7 +14,10 @@ product:
   type: "All-included package"
   subname: "Quality website template. Name, Hosting and SSL included."
   desc: "We load your look and data, process everything and produce a clean performant website ready to compete."
-  starting_at: 1000
+  starting_at: "990"
+  starting_at_rp: "9.900.000"
+  starting_at_agent: "7.900.000"
+  agent_gets: "2.000.000"
   demo_url: https://amazing-days.junglestar.org/
   selling_points:
     sp01: Responsive full website.
@@ -24,5 +27,5 @@ product:
     sp05: Domain name.
     sp06: Social media friendly.
     sp07: Data entry.
-    sp08: Collaborators editing system.
+    sp08: Editing system for collaborators.
 ---

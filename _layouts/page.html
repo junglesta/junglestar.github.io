@@ -3,36 +3,62 @@ layout: default
 ---
 
 {% if page.title contains "offer" %}
-<div class="section light_bg offer_content">
 
-  {% comment %}
-  scrolltarget div wrap is needed cos js will scroll to the vertical center of the div block
-  {% endcomment %}
-  <div class="scrolltarget">
-    {% include product_loop_title.html %}
+  <div class="print_only">
+
+   <div class="print_imperatif">Make life easy for your customers!</div>
+   <div class="print_title">Junglestar</div>
+   <div class="print_subtitle">Junglestar can make you a fast-loading website, crafted to out-perform your competitors.</div>
+
   </div>
 
-  {% include product_loop_group.html %}
+  <div class="section light_bg offer_content">
 
-</div>
+    {% comment %}
+    scrolltarget div wrap is needed cos js will scroll to the vertical center of the div block
+    {% endcomment %}
+    <div class="scrolltarget">
+      {% include product_loop_title.html %}
+    </div>
 
-<div class="offer_content light_bg">
+    {% include product_loop_group.html %}
 
-  {% include product_streetbiz.html %}
+  </div>
 
-</div>
+  <div class="offer_content light_bg google_my_business">
+
+    {% include product_streetbiz.html %}
+
+  </div>
+
+  <div class="print_only">
+    {% if page.no_index %}
+      {% if page.show_agent_prices %}
+        <div class="print_footer">See this offer online at: https://junglestar.org/offer-agent</div>
+      {% else %}
+        <div class="print_footer">See this offer online at: https://junglestar.org/offer-rp</div>
+      {% endif %}
+    {% else %}
+    <div class="print_footer">See this offer online at: https://junglestar.org/offer</div>
+    {% endif %}
+  </div>
+
 {% endif %}
 
 
 {% if page.title contains "about" %}
-<div class="page_content">
-  {% include about.html %}
-</div>
+
+  <div class="page_content">
+    {% include about.html %}
+  </div>
+
 {% endif %}
 
 
 {% if page.title contains "design" %}
-<div class="page_content">
-  {% include design.html %}
-</div>
+
+  <div class="page_content">
+    {% include design.html %}
+  </div>
+
 {% endif %}

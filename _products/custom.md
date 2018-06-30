@@ -11,10 +11,13 @@ publish: # notyet or empty
 product:
   group: design
   name: Awesome Design
-  type: "Customized to your needs"
-  subname: "Carefully Crafted Design."
-  desc: "We custom design, produce & develop a well thought user experiences for your brand. Starting by embracing your existing look, ideas and team."
-  starting_at: 5000
+  type: "All-included package"
+  subname: "A design customized to your needs. Name, Hosting and SSL included."
+  desc: "We craft a special design for your brand, produce & develop a well thought user experiences by embracing your existing look and brand identity."
+  starting_at: "3.990"
+  starting_at_rp: "14.900.000"
+  starting_at_agent: "11.900.000"
+  agent_gets: "3.000.000"
   demo_url: https://binocle.it/?ref=junglestar
   selling_points:
     sp01: Responsive full website.
@@ -23,8 +26,8 @@ product:
     sp04: Secure SLL/https.
     sp05: Domain name.
     sp06: Social media friendly.
-    sp07: Data entry and deploys.
-    sp08: Collaborators editing system.
+    sp07: Data entry.
+    sp08: Editing system for collaborators.
     sp09: Custom architecture.
     sp10: Custom functionalities.
     sp11: Your-Company look & feel!
