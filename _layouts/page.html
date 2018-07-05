@@ -23,6 +23,10 @@ layout: default
 
     {% include product_loop_group.html %}
 
+    {% if page.permalink contains "offer-agent" %}
+      {% include agent_selling_points.html %}
+    {% endif %}
+
   </div>
 
   <div class="offer_content light_bg google_my_business">

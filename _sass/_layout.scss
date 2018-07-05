@@ -306,3 +306,13 @@ hr {
 .text {
   padding-top: $spacing_unit/2;
 }
+
+.offer_content .agent_selling_points--subtitle {
+  color: $black;
+  padding-top: $spacing_unit/2;
+  padding-bottom: $spacing_unit/2;
+  margin-top: $spacing_unit/2;
+  margin-bottom: $spacing_unit/2;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+}

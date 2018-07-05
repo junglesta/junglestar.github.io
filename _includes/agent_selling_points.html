@@ -1,0 +1,46 @@
+{% comment %}
+this block appear only in agent page
+it sucks the front matter infos:
+
+selling_point_##:
+  title:
+  subtitle:
+  text:
+{% endcomment %}
+
+<div class="agent_selling_points top_pad--big center wrapper">
+
+  {% if page.selling_point_01 %}
+  <div class="selling_point top_pad--big">
+    <h1 class="agent_selling_points--title">{{ page.selling_point_01.title }}</h1>
+    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_01.subtitle }}</h3>
+    <p class="agent_selling_points--text">{{ page.selling_point_01.text }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.selling_point_02 %}
+  <div class="selling_point top_pad--big">
+    <h1 class="agent_selling_points--title">{{ page.selling_point_02.title }}</h1>
+    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_02.subtitle }}</h3>
+    <p class="agent_selling_points--text">{{ page.selling_point_02.text }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.selling_point_03 %}
+  <div class="selling_point top_pad--big">
+    <h1 class="agent_selling_points--title">{{ page.selling_point_03.title }}</h1>
+    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_03.subtitle }}</h3>
+    <p class="agent_selling_points--text">{{ page.selling_point_03.text }}</p>
+  </div>
+  {% endif %}
+
+
+  {% if page.selling_point_04 %}
+  <div class="selling_point top_pad--big">
+    <h1 class="agent_selling_points--title">{{ page.selling_point_04.title }}</h1>
+    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_04.subtitle }}</h3>
+    <p class="agent_selling_points--text">{{ page.selling_point_04.text }}</p>
+  </div>
+  {% endif %}
+
+</div>
