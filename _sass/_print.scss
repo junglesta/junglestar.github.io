@@ -10,6 +10,9 @@
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    p {
+      line-height: 1.35;
+    }
   }
 
   .print_only {
@@ -85,7 +88,10 @@
 
   .selling_points {
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.15;
+    .checkmark {
+      line-height: 1.25;
+    }
   }
 
   .product_text {
