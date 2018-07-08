@@ -212,9 +212,13 @@
     stroke: black;
   }
 
-  .mean_title.mean_title--first h1 {
-    color: black;
+  .mean_title.mean_title--first {
+    background-color: transparent;
+    h1 {
+     color: black;
+   }
   }
+
 
   .card,
   .post_link,
