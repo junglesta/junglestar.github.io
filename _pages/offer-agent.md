@@ -2,7 +2,7 @@
 layout: page
 title: "Junglestar offer agent"
 product_group: design
-description: "Junglestar is a small, flexible, one-stop-shop web agency. We craft information architecture, screen design, code and deploy. We offer Packed Solutions all-including and top quality affordable custom designs. We help companies and individuals organize their communication. We grow relationships with clients. We design, produce & develop well thought user experiences. From slide shows to offline-ready web apps"
+description: ""
 permalink: /offer-agent/
 prices_rp: true #true or empty
 show_agent_prices: true #true or empty
@@ -24,5 +24,5 @@ selling_point_03:
 selling_point_04:
   title: Beautiful art belongs to the museum.
   subtitle: To compete today we need performance.
-  text: After you get the performance, you better match user expectations. So, menu position, footer informations, navigation styles need to be where, and behave as, most users are used to. After that, there is room for creativity. But not really... we have to be concise and straight to the point. The attention span of our users is really short. This is why you better hire a pro web-designer rather than an artist. You better focus on what users need rather that what you like. Both our templates and the custom websites that we build are developed upon these principles... and results show. 
+  text: After you get the performance, you better match user expectations. So, menu position, footer informations, navigation styles need to be where, and behave as, most users are used to. After that, there is room for creativity. But not really... we have to be concise and straight to the point. The attention span of our users is really short. This is why you better hire a pro web-designer rather than an artist. You better focus on what users need rather that what you like. Both our templates and the custom websites that we build are developed upon these principles... and results show.
 ---
