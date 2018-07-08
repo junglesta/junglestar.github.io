@@ -63,8 +63,6 @@ plugins:
 
 collections:
   products:
-    output: true
-    permalink: /offer/:title/
   works:
     output: true
     permalink: /works/:title/
@@ -80,4 +78,4 @@ defaults:
       path: ""
       type: products
     values:
-      layout: product # change this to get the layout needed
+      layout: default # change this to get the layout needed

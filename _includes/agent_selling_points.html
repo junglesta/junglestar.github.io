@@ -8,37 +8,40 @@ selling_point_##:
   text:
 {% endcomment %}
 
-<div class="agent_selling_points top_pad--big center wrapper">
+<div class="agent_selling_points top_pad--big center wrapper page_break" >
+
+  <p class="agent_selling_points--intro first">{{ page.selling_point_intro1}}</p>
+  <p class="agent_selling_points--intro">{{ page.selling_point_intro2}}</p>
 
   {% if page.selling_point_01 %}
-  <div class="selling_point top_pad--big">
+  <div class="agent_selling_points_block top_pad--big">
     <h1 class="agent_selling_points--title">{{ page.selling_point_01.title }}</h1>
-    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_01.subtitle }}</h3>
+    <h2 class="agent_selling_points--subtitle">{{ page.selling_point_01.subtitle }}</h2>
     <p class="agent_selling_points--text">{{ page.selling_point_01.text }}</p>
   </div>
   {% endif %}
 
   {% if page.selling_point_02 %}
-  <div class="selling_point top_pad--big">
+  <div class="agent_selling_points_block top_pad--big">
     <h1 class="agent_selling_points--title">{{ page.selling_point_02.title }}</h1>
-    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_02.subtitle }}</h3>
+    <h2 class="agent_selling_points--subtitle">{{ page.selling_point_02.subtitle }}</h2>
     <p class="agent_selling_points--text">{{ page.selling_point_02.text }}</p>
   </div>
   {% endif %}
 
   {% if page.selling_point_03 %}
-  <div class="selling_point top_pad--big">
+  <div class="agent_selling_points_block top_pad--big">
     <h1 class="agent_selling_points--title">{{ page.selling_point_03.title }}</h1>
-    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_03.subtitle }}</h3>
+    <h2 class="agent_selling_points--subtitle">{{ page.selling_point_03.subtitle }}</h2>
     <p class="agent_selling_points--text">{{ page.selling_point_03.text }}</p>
   </div>
   {% endif %}
 
 
   {% if page.selling_point_04 %}
-  <div class="selling_point top_pad--big">
+  <div class="agent_selling_points_block top_pad--big">
     <h1 class="agent_selling_points--title">{{ page.selling_point_04.title }}</h1>
-    <h3 class="agent_selling_points--subtitle">{{ page.selling_point_04.subtitle }}</h3>
+    <h2 class="agent_selling_points--subtitle">{{ page.selling_point_04.subtitle }}</h2>
     <p class="agent_selling_points--text">{{ page.selling_point_04.text }}</p>
   </div>
   {% endif %}

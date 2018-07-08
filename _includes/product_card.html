@@ -2,67 +2,67 @@
 
   <div class="product_text">
 
-    <h1>{{product.name}}</h1>
+    <h1>{{english.product.name}}</h1>
 
-    <h2 class="center">{{product.product.name}}</h2>
+    <h2 class="center">{{product.english.product.name}}</h2>
 
-    <h4 class="center color_black">{{product.product.type}}</h4>
+    <h4 class="center color_black">{{product.english.product.type}}</h4>
 
-    <h3 class="center">{{product.product.subname}}</h3>
+    <h3 class="center">{{product.english.product.subname}}</h3>
 
-    <p class="center">{{product.product.desc}}</p>
+    <p class="center">{{product.english.product.desc}}</p>
 
     <div class="selling_points">
 
-      {% if product.product.selling_points.sp01 %}
+      {% if product.english.product.selling_points.sp01 %}
       <div class="center">GET:</div>
 
       <ul>
 
-        <li class="checkmark">{{product.product.selling_points.sp01}}</li>
+        <li class="checkmark">{{product.english.product.selling_points.sp01}}</li>
 
-        {% if product.product.selling_points.sp02 %}
-        <li class="checkmark">{{product.product.selling_points.sp02}}</li>
+        {% if product.english.product.selling_points.sp02 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp02}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp03 %}
-        <li class="checkmark">{{product.product.selling_points.sp03}}</li>
+        {% if product.english.product.selling_points.sp03 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp03}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp04 %}
-        <li class="checkmark">{{product.product.selling_points.sp04}}</li>
+        {% if product.english.product.selling_points.sp04 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp04}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp05 %}
-        <li class="checkmark">{{product.product.selling_points.sp05}}</li>
+        {% if product.english.product.selling_points.sp05 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp05}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp06 %}
-        <li class="checkmark">{{product.product.selling_points.sp06}}</li>
+        {% if product.english.product.selling_points.sp06 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp06}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp07 %}
-        <li class="checkmark">{{product.product.selling_points.sp07}}</li>
+        {% if product.english.product.selling_points.sp07 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp07}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp08 %}
-        <li class="checkmark">{{product.product.selling_points.sp08}}</li>
+        {% if product.english.product.selling_points.sp08 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp08}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp09 %}
-        <li class="checkmark">{{product.product.selling_points.sp09}}</li>
+        {% if product.english.product.selling_points.sp09 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp09}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp10 %}
-        <li class="checkmark">{{product.product.selling_points.sp10}}</li>
+        {% if product.english.product.selling_points.sp10 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp10}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp11 %}
-        <li class="checkmark">{{product.product.selling_points.sp11}}</li>
+        {% if product.english.product.selling_points.sp11 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp11}}</li>
         {% endif %}
 
-        {% if product.product.selling_points.sp12 %}
-        <li class="checkmark">{{product.product.selling_points.sp12}}</li>
+        {% if product.english.product.selling_points.sp12 %}
+        <li class="checkmark">{{product.english.product.selling_points.sp12}}</li>
         {% endif %}
 
       </ul>
@@ -73,9 +73,9 @@
     {% if page.prices_rp %}
 
       <div class="starting_at center">
-        <p>Starting at {{product.product.starting_at_rp }} Rp.
-          {% if product.product.demo_url %}
-          <a title="See {{product.name | upcase }} - {{product.product.name}} Demo" href="{{product.product.demo_url}}"> See Demo.</a>
+        <p>Starting at {{product.english.product.starting_at_rp }} Rp.
+          {% if product.english.product.demo_url %}
+          <a title="See {{product.english.name | upcase }} - {{product.english.product.name}} Demo" href="{{product.english.product.demo_url}}"> See Demo.</a>
           {% endif %}
         </p>
       </div>
@@ -83,11 +83,11 @@
       {% if page.show_agent_prices %}
 
         <div class="starting_at center agent_price">
-          <p>Agent price {{product.product.starting_at_agent }} Rp.</p>
+          <p>Agent price {{product.english.product.starting_at_agent }} Rp.</p>
         </div>
 
         <div class="starting_at center agent_gets">
-          <p>Agent gets {{product.product.agent_gets }} Rp.</p>
+          <p>Agent gets {{product.english.product.agent_gets }} Rp.</p>
         </div>
 
       {% endif %}
@@ -95,9 +95,9 @@
     {% else %}
 
     <div class="starting_at center">
-      <p>Starting at {{product.product.starting_at }} Euro.
-        {% if product.product.demo_url %}
-        <a title="See {{product.name | upcase }} - {{product.product.name}} Demo" href="{{product.product.demo_url}}"> See Demo.</a>
+      <p>Starting at {{product.english.product.starting_at }} Euro.
+        {% if product.english.product.demo_url %}
+        <a title="See {{english.product.name | upcase }} - {{product.english.product.name}} Demo" href="{{product.english.product.demo_url}}"> See Demo.</a>
         {% endif %}
       </p>
     </div>
@@ -106,7 +106,7 @@
 
 
     <div class="button_row center">
-      <a title="request more infos" href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{ product.name | upcase }} package">
+      <a title="request more infos" href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's {{ english.product.name | upcase }} package">
         <span class="button center">Let's start talking!</span>
       </a>
     </div>

@@ -307,12 +307,38 @@ hr {
   padding-top: $spacing_unit/2;
 }
 
-.offer_content .agent_selling_points--subtitle {
-  color: $black;
-  padding-top: $spacing_unit/2;
-  padding-bottom: $spacing_unit/2;
-  margin-top: $spacing_unit/2;
-  margin-bottom: $spacing_unit/2;
-  border-top: 1px solid $black;
-  border-bottom: 1px solid $black;
+.offer_content {
+  .agent_selling_points--subtitle {
+    color: $black;
+    padding-top: $spacing_unit/4;
+    padding-bottom: $spacing_unit/4;
+    margin-top: $spacing_unit/4;
+    margin-bottom: $spacing_unit/4;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .agent_selling_points--text {
+    font-size: 17.5px;
+    line-height: 1.2;
+  }
+  .agent_selling_points--intro {
+    color: $brand_color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    &.first {
+      border-bottom: 1px solid $brand_color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.google_my_business {
+  br {
+    display: none;
+    @include media("screen", ">minWidth") {
+      display: inline;
+    }
+  }
 }

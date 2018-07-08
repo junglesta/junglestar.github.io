@@ -2,30 +2,23 @@
 layout: default
 ---
 
-{% if page.title contains "offer" %}
+{% if page.title contains "offer" and page.language contains "english" %}
 
   <div class="print_only">
-
-   <div class="print_imperatif">Make life easy for your customers!</div>
-   <div class="print_title">Junglestar</div>
-   <div class="print_subtitle">Junglestar can make you a fast-loading website, crafted to out-perform your competitors.</div>
-
+   <div class="print_imperatif">{{ page.print_imperatif }}</div>
+   <div class="print_title">{{ page.print_title }}</div>
+   <div class="print_subtitle">{{ page.print_subtitle }}</div>
   </div>
 
   <div class="section light_bg offer_content">
-
     {% comment %}
-    scrolltarget div wrap is needed cos js will scroll to the vertical center of the div block
+    need scrolltarget div cos js will scroll to the vertical center of the div block
     {% endcomment %}
     <div class="scrolltarget">
       {% include product_loop_title.html %}
     </div>
 
     {% include product_loop_group.html %}
-
-    {% if page.permalink contains "offer-agent" %}
-      {% include agent_selling_points.html %}
-    {% endif %}
 
   </div>
 
@@ -36,18 +29,64 @@ layout: default
   </div>
 
   <div class="print_only">
-    {% if page.no_index %}
-      {% if page.show_agent_prices %}
-        <div class="print_footer">See this offer online at: https://junglestar.org/offer-agent</div>
-      {% else %}
-        <div class="print_footer">See this offer online at: https://junglestar.org/offer-rp</div>
-      {% endif %}
-    {% else %}
-    <div class="print_footer">See this offer online at: https://junglestar.org/offer</div>
-    {% endif %}
+    <div class="print_footer">{{ page.print_footer }} {{site.url}}{{page.url}}</div>
   </div>
 
+  {% if page.title contains "agent" %}
+    <div class="section light_bg offer_content">
+
+      {% include agent_selling_points.html %}
+
+    </div>
+  {% endif %}
+
 {% endif %}
+
+
+
+{% if page.title contains "offer" and page.language contains "indonesia" %}
+
+  <div class="print_only">
+   <div class="print_imperatif" title="{{ page.print_imperatif }}" >{{ page.print_imperatif_id }}</div>
+   <div class="print_title">{{ page.print_title }}</div>
+   <div class="print_subtitle" title="{{ page.print_subtitle }}" >{{ page.print_subtitle_id }}</div>
+  </div>
+
+  <div class="section light_bg offer_content">
+    {% comment %}
+    need scrolltarget div cos js will scroll to the vertical center of the div block
+    {% endcomment %}
+    <div class="scrolltarget">
+      {% include product_loop_title_id.html %}
+    </div>
+
+    {% include product_loop_group.html %}
+
+  </div>
+
+  <div class="offer_content light_bg google_my_business">
+
+    {% include product_streetbiz_id.html %}
+
+  </div>
+
+  <div class="print_only">
+    <div class="print_footer">{{ page.print_footer }} {{site.url}}{{page.url}}</div>
+  </div>
+
+  {% if page.title contains "agent" %}
+    <div class="section light_bg offer_content">
+
+      {% include agent_selling_points_id.html %}
+
+    </div>
+  {% endif %}
+
+{% endif %}
+
+
+
+
 
 
 {% if page.title contains "about" %}

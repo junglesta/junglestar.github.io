@@ -7,16 +7,27 @@ permalink: /offer-agent/
 prices_rp: true #true or empty
 show_agent_prices: true #true or empty
 question: Check our packages!
+question2: Is your website mobile hostile?
+answer1: We can help you fix that.
+answer2: We offer affordable packages for any budget!
 after:
+after_id:
 no_index: true #true or empty
+language: english
+print_imperatif: Make life easy for your customers!
+print_title: Junglestar
+print_subtitle: Junglestar can make you a fast-loading website, crafted to out-perform your competitors.
+print_footer: "See this offer online at:"
+selling_point_intro1: Investing in a cheap website will result more expensive!
+selling_point_intro2: Let's see the reasons why it's convenient to work with us.
 selling_point_01:
   title: Speed
   subtitle: A fast website is absolutely necessary today.
-  text: Why spend when i can have a Wordpress website done for cheap or even do it myself? Well, there are many reasons why you better invest in a fast website. Statistic shows that if your website loads slower than 5 seconds you're probably loosing from 30% to 45% of your visitors. Create a segment in you Google Analytics and see how many visitors stay less that 15 seconds (the average time for a WP site to became interactive).
+  text: Why spend when i can have a Wordpress website done for cheap or even do it myself? Well, there are many reasons why you better invest in a fast website. Statistic shows that if your website loads slower than 5 seconds you're probably loosing from 30% to 50% of your visitors. Create a segment in you Google Analytics and see how many visitors stay less that 15 seconds (the average time for a WP site to became interactive).
 selling_point_02:
   title: Security and SEO
   subtitle: Google ranks https sites higher.
-  text: Not only because local providers can, and do, inject scripts and ads into http traffic, but most importantly cos you will get a higher ranking when you have SSL properly installed and your site is served via https. All our packages include this feature. We use all the best practices to have each of your webpages showing up on social media complete with a large image a title and an short text. (Try copy and paste this page's URL into a WhatsApp chat for example...)
+  text: Not only because local providers can, and do, inject scripts and ads into http traffic, but most importantly cos you will get a higher ranking when you have SSL properly installed and your site is served via https. All our packages include https/SSL feature. We use all the best SEO practices to have each of your webpages showing up on social media complete with a large image, a title and a short text. (Try copy and paste this page's URL into a WhatsApp chat for example...)
 selling_point_03:
   title: Global CDN hosting
   subtitle: Forget about hosting bills and server problems and management.

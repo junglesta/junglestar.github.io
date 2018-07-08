@@ -1,7 +1,16 @@
 <div class="site_header flex flex_align_center js_scrollto01">
 
-  <div class="site_title btn {{ page.title }} ">
-    {{ page.question }} {{ page.after }}
-  </div>
+  {% if page.language contains "english" %}
+    <div class="site_title btn {{ page.title }} ">
+      {{ page.question }} {{ page.after }}
+    </div>
+  {% endif %}
+
+  {% if page.language contains "indonesia" %}
+    <div class="site_title btn {{ page.title }} ">
+      {{ page.question_id }} {{ page.after_id }}
+    </div>
+  {% endif %}
+
 
 </div>

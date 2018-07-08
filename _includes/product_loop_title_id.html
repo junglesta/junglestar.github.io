@@ -3,7 +3,7 @@
     <div class="mean_icon">
       {% include svg/desperate.svg %}
     </div>
-    <h1 class="center">{{ page.question2 }}</h1>
+    <h1 class="center" title="{{ page.question2 }}" >{{ page.question2_id }}</h1>
   </div>
 </div>
 
@@ -12,6 +12,6 @@
     <div class="mean_icon">
       {% include svg/jumping.svg %}
     </div>
-    <h3 class="center">{{ page.answer1 }} <br>{{ page.answer2 }}</h3>
+    <h3 class="center" title="{{ page.answer1 }} {{ page.answer2 }}" >{{ page.answer1_id }} <br>{{ page.answer2_id }}</h3>
   </div>
 </div>

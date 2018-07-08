@@ -1,13 +1,29 @@
 <div class="product_grid top_pad--big">
 
-{% for product in site.products reversed %}
+  {% if page.language contains "english" %}
+    {% for product in site.products reversed %}
 
-  {% unless product.publish=='notyet' %}
+      {% unless product.publish=='notyet' %}
+        {% unless product.type=='streetbiz' %}
+          {% include product_card.html %}
+        {% endunless %}
+      {% endunless %}
 
-    {% include product_card.html %}
+    {% endfor %}
+  {% endif %}
 
-  {% endunless %}
+  {% if page.language contains "indonesia" %}
+    {% for product in site.products reversed %}
 
-{% endfor %}
+      {% unless product.publish=='notyet' %}
+        {% unless product.type=='streetbiz' %}
+          {% include product_card_id.html %}
+        {% endunless %}
+      {% endunless %}
+
+    {% endfor %}
+  {% endif %}
+
+
 
 </div>

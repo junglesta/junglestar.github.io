@@ -1,0 +1,49 @@
+{% comment %}
+this block appear only in agent page
+it sucks the front matter infos:
+
+selling_point_##:
+  title:
+  subtitle:
+  text:
+{% endcomment %}
+
+<div class="agent_selling_points top_pad--big center wrapper page_break" >
+
+  <p class="agent_selling_points--intro first" title="{ page.selling_point_intro1}}" >{{ page.selling_point_intro1_id}}</p>
+  <p class="agent_selling_points--intro" title="{ page.selling_point_intro2}}" >{{ page.selling_point_intro2_id}}</p>
+
+  {% if page.selling_point_01 %}
+  <div class="agent_selling_points_block top_pad--big">
+    <h1 class="agent_selling_points--title" title="{{ page.selling_point_01.title }}" >{{ page.selling_point_01.title_id }}</h1>
+    <h2 class="agent_selling_points--subtitle" title="{{ page.selling_point_01.subtitle }}" >{{ page.selling_point_01.subtitle_id }}</h2>
+    <p class="agent_selling_points--text" title="{{ page.selling_point_01.text }}" >{{ page.selling_point_01.text_id }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.selling_point_02 %}
+  <div class="agent_selling_points_block top_pad--big">
+    <h1 class="agent_selling_points--title" title="{{ page.selling_point_02.title }}" >{{ page.selling_point_02.title_id }}</h1>
+    <h2 class="agent_selling_points--subtitle" title="{{ page.selling_point_02.subtitle }}" >{{ page.selling_point_02.subtitle_id }}</h2>
+    <p class="agent_selling_points--text" title="{{ page.selling_point_02.text }}" >{{ page.selling_point_02.text_id }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.selling_point_03 %}
+  <div class="agent_selling_points_block top_pad--big">
+    <h1 class="agent_selling_points--title" title="{{ page.selling_point_03.title }}" >{{ page.selling_point_03.title_id }}</h1>
+    <h2 class="agent_selling_points--subtitle" title="{{ page.selling_point_03.subtitle }}" >{{ page.selling_point_03.subtitle_id }}</h2>
+    <p class="agent_selling_points--text" title="{{ page.selling_point_03.text }}" >{{ page.selling_point_03.text_id }}</p>
+  </div>
+  {% endif %}
+
+
+  {% if page.selling_point_04 %}
+  <div class="agent_selling_points_block top_pad--big">
+    <h1 class="agent_selling_points--title" title="{{ page.selling_point_04.title }}" >{{ page.selling_point_04.title_id }}</h1>
+    <h2 class="agent_selling_points--subtitle" title="{{ page.selling_point_04.subtitle }}" >{{ page.selling_point_04.subtitle_id }}</h2>
+    <p class="agent_selling_points--text" title="{{ page.selling_point_04.text }}" >{{ page.selling_point_04.text_id }}</p>
+  </div>
+  {% endif %}
+
+</div>

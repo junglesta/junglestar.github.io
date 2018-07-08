@@ -53,8 +53,8 @@
       float: left;
       min-width: auto;
       max-width: 33vw!important;
-      margin: 2px 2px;
-      padding: 2px 2px;
+      margin: 2px;
+      padding: 2px;
       -webkit-box-shadow: none;
       box-shadow: none;
       border: 1px solid rgba(0, 0, 0, 0.24);
@@ -81,10 +81,11 @@
         height: auto;
       }
     }
+  }
 
-    .selling_points {
-      font-size: 14px;
-    }
+  .selling_points {
+    font-size: 14px;
+    line-height: 1;
   }
 
   .product_text {
@@ -132,9 +133,11 @@
 
   .starting_at {
     font-weight: bold;
+
     &.agent_price {
       color: $brand_color;
     }
+
     &.agent_gets {
       color: limegreen;
     }
@@ -143,7 +146,6 @@
   .mean_title {
     min-height: auto;
   }
-
   //hide stuff
   .button_row,
   .card:before,
@@ -154,13 +156,11 @@
   footer {
     display: none!important;
   }
-
-
   //more general stuff for print
-
   .offer_content {
     clear: both;
     padding-bottom: 0;
+
     .wrapper {
       padding: 0;
     }
@@ -169,17 +169,20 @@
   .google_my_business {
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.24);
-    margin: .5rem auto 0 auto;
-    padding: .5rem 0 0 0;
+    margin: 0.5rem auto 0;
+    padding: 0.5rem 0 0;
     max-width: 90%;
     font-size: 13px;
+
     h3 {
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
       font-size: 14px;
     }
+
     p {
       margin-bottom: 3px;
     }
+
     br {
       display: none;
     }
