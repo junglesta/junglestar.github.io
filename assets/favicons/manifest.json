@@ -1,5 +1,6 @@
 {
     "name": "Junglestar",
+    "short_name": "Junglestar",
     "icons": [
         {
             "src": "/assets/favicons/android-chrome-36x36.png?v=dragon",
