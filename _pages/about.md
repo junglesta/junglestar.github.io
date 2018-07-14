@@ -5,4 +5,5 @@ description: "Junglestar is a small, flexible, one-stop-shop web agency. We orga
 permalink: /about/
 question: Junglestar delivers
 after: "!"
+language: english
 ---

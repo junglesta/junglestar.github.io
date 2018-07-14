@@ -27,6 +27,13 @@ footer {
   margin: 0;
   text-align: center;
 
+  &.back_home {
+    margin-bottom: 2.5rem;
+    &:hover {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   span {
     display: block;
     line-height: 1;

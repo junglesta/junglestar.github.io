@@ -5,4 +5,5 @@ description: "Junglestar is a small, flexible, one-stop-shop web agency. We help
 permalink: /design/
 question: Junglestar Design
 after: "!"
+language: english
 ---
