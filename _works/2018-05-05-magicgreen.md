@@ -9,4 +9,4 @@ ico_name: magicgreen
 permalink: /works/magicgreen/
 ---
 
-A simple and secure news-browser web app.
+Online Magazine website with resources search and responsive images.
