@@ -15,7 +15,7 @@ english:
     name: Amazing Website
     type: "All-included package"
     subname: "Quality website template. Name, Hosting and SSL included."
-    desc: "We load your look and data, process everything and produce a clean performant website ready to compete."
+    desc: "We load your look and products data, process everything and produce a clean performant website ready to compete."
     starting_at: "990"
     starting_at_rp: "9.900.000"
     starting_at_agent: "7.900.000"

@@ -15,7 +15,7 @@ english:
     name: Compact Website
     type: "All-included package"
     subname: "Quality website template. Name, Hosting and SSL included."
-    desc: "We load data, process everything and produce a spicy landing page ready to hit. The perfect digital brochure with zero maintenance cost!"
+    desc: "We load your data, process everything and produce a spicy landing page ready to hit. The perfect digital brochure with zero maintenance cost!"
     starting_at: "490"
     starting_at_rp: "4.900.000"
     starting_at_agent: "3.900.000"
