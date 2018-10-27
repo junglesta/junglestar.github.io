@@ -1,0 +1,70 @@
+{% for product in site.products %}
+
+  {% unless product.publish=='notyet' %}
+    {% if product.type=='socialmedia' %}
+
+      <div class="mean_title mean_title--first">
+        <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+          <div class="mean_icon">
+            {% include svg/sources/social_share.svg %}
+          </div>
+          <h1 class="center">{{ product.english.header }}</h1>
+        </div>
+      </div>
+
+      <div class="mean_title">
+        <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+          <div class="mean_icon four_icon_group">
+            {% include svg/sources/instagram.svg %}
+            {% include svg/sources/pinterest.svg %}
+            {% include svg/sources/twitter.svg %}
+            {% include svg/sources/facebook.svg %}
+
+
+          </div>
+          <h2 class="center">{{ product.english.title }}</h2>
+          <h3 class="center">{{ product.english.paragraph1 }} <br>{{ product.english.paragraph2 }} <br>{{ product.english.paragraph3 }} <br>{{ product.english.paragraph4 }} <br>{{ product.english.paragraph5 }} <br>{{ product.english.paragraph6}} <br><strong>{{ product.english.paragraph7 }}</strong></h3>
+        </div>
+      </div>
+
+
+      <div class="print_only">
+
+        {% if page.prices_rp %}
+
+          <div class="starting_at center print_footer">
+            <p>Starting at 2.900.000 Rp.</p>
+          </div>
+
+          {% if page.show_agent_prices %}
+
+            <div class="starting_at center agent_price">
+              <p>Agent price 2.300.000 Rp.</p>
+            </div>
+
+            <div class="starting_at center agent_gets">
+              <p>Agent gets 600.000 Rp.</p>
+            </div>
+
+          {% endif %}
+
+        {% else %}
+
+          <div class="starting_at center print_footer">
+            <p>Starting at 290 Euro</p>
+          </div>
+
+        {% endif %}
+
+      </div>
+
+      <div class="button_row center">
+        <a href="mailto:{{site.email}}?subject=Send me more infos about Junglestar's Social Media Management package">
+          <span class="button center">Let's start talking!</span>
+        </a>
+      </div>
+
+    {% endif %}
+  {% endunless %}
+
+{% endfor %}

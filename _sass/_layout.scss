@@ -113,10 +113,26 @@
   .site_header & {
     padding-right: 0;
   }
-  // .icon--tools {
-  //   width: 20vw;
-  //   max-width: 240px;
-  // }
+  &.four_icon_group {
+    max-width: 80vw;
+    padding-right: 0;
+    display: flex;
+    width: 80vw;
+    @include media("screen", ">minWidth") {
+      width: 70vw;
+    }
+    @include media("screen", ">bp1Width") {
+      width: 60vw;
+    }
+    @include media("screen", ">maxWidth") {
+      width: 50vw;
+    }
+    svg {
+      padding: 4px;
+      max-height: 210px;
+    }
+
+  }
 }
 
 .icon_about {

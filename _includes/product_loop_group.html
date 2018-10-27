@@ -4,9 +4,9 @@
     {% for product in site.products reversed %}
 
       {% unless product.publish=='notyet' %}
-        {% unless product.type=='streetbiz' %}
+        {% unless product.type=='streetbiz' %}{% unless product.type=='socialmedia' %}
           {% include product_card.html %}
-        {% endunless %}
+        {% endunless %}{% endunless %}
       {% endunless %}
 
     {% endfor %}
@@ -16,9 +16,9 @@
     {% for product in site.products reversed %}
 
       {% unless product.publish=='notyet' %}
-        {% unless product.type=='streetbiz' %}
+        {% unless product.type=='streetbiz' %}{% unless product.type=='socialmedia' %}
           {% include product_card_id.html %}
-        {% endunless %}
+        {% endunless %}{% endunless %}
       {% endunless %}
 
     {% endfor %}
