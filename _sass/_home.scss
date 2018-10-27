@@ -78,7 +78,7 @@
   padding: $spacing_unit/8 $spacing_unit/8 $spacing_unit;
 
   img {
-    width: 100%;
+    width: 60%;
     @include media("screen", ">bp1Width") {
       max-width: 200px;
     }
