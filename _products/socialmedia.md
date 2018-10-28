@@ -4,7 +4,7 @@ name: Social Media Management
 type: socialmedia # streetbiz or empty
 english:
   header: Social media power for your brand?
-  title: We build your image using social engagement!
+  title: We build your image through social engagement!
   paragraph1: Leveraging Instagram, Facebook, Twitter and Pinterest
   paragraph2: We'll target and engage real followers.
   paragraph3: We'll build your brand,

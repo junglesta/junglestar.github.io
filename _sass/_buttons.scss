@@ -37,7 +37,7 @@
   box-shadow: $card_shadow;
   color: $brand_color;
   border: 2px solid $brand_color;
-  margin: 0 auto;
+  margin: $vertical_rhythm auto;
   font-weight: 800;
 
   &:focus,

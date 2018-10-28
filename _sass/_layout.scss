@@ -102,20 +102,23 @@
     background-color: black;
     h1 {color: white;}
   }
+  &.mean_title--second {
+    margin-top: $vertical_rhythm;
+  }
 }
 
 .mean_icon {//contains svg
   min-width: 120px;
   padding-top: 10px;
-  padding-right: 30px;
+  // padding-right: 30px;
   width: 20vw;
   max-width: 240px;
-  .site_header & {
-    padding-right: 0;
-  }
+  // .site_header & {
+  //   padding-right: 0;
+  // }
   &.four_icon_group {
     max-width: 80vw;
-    padding-right: 0;
+    // padding-right: 0;
     display: flex;
     width: 80vw;
     @include media("screen", ">minWidth") {

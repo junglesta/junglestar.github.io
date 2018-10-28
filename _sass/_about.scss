@@ -3,7 +3,7 @@
 .junglestar-design_page {
   .section {
     width: 100%;
-    padding: $spacing_unit;
+    padding: $spacing_unit $spacing_unit $spacing_unit*4 $spacing_unit;
     @include media("screen", ">minWidth") {
       padding: $spacing_unit $spacing_unit;
     }

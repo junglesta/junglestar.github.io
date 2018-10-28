@@ -89,6 +89,9 @@ layout: default
 
 {% if page.title contains "about" %}
 
+  {% comment %}
+  the need scrolltarget div is inside the elemente included, in the first section
+  {% endcomment %}
   <div class="page_content">
     {% include about.html %}
   </div>
@@ -97,8 +100,10 @@ layout: default
 
 
 {% if page.title contains "design" %}
-
-  <div class="page_content">
+  {% comment %}
+  the need scrolltarget div is inside the elemente included, in the first section
+  {% endcomment %}
+  <div class="page_content ">
     {% include design.html %}
   </div>
 
