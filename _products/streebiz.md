@@ -6,12 +6,12 @@ english:
   header: Want more customers finding your location?
   title: We make sure your business in on the map!
   paragraph1: Using Google My Business
-  paragraph2: we'll register all details about your shop
+  paragraph2: we'll register all details about Your shop
   paragraph3: phone number, working hours, products, location map,
   paragraph4: in a way that will get noticed on a Google search.
   paragraph5: This ultra convenient offer guarantees
-  paragraph6: that Your biz will be well listed on Google. It also
-  paragraph7: includes a one page website!
+  paragraph6: that You will be well listed on Google. It also
+  paragraph7: includes a one page website and a blog!
 indonesia:
   header: Ingin lebih banyak pelanggan menemukan lokasi Anda?
   title: Kami memastikan bisnis Anda ada di peta!
@@ -21,6 +21,6 @@ indonesia:
   paragraph4: dengan cara yang akan diperhatikan pada pencarian Google.
   paragraph5: Jaminan penawaran yang sangat mudah ini
   paragraph6: biz Anda akan terdaftar dengan baik di Google. Juga
-  paragraph7: termasuk satu halaman situs web!
+  paragraph7: termasuk satu halaman situs web dan blog!
 
 ---

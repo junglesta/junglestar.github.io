@@ -8,10 +8,10 @@ english:
   paragraph1: Leveraging Instagram, Facebook, Twitter and Pinterest
   paragraph2: We'll target and engage real followers.
   paragraph3: We'll build your brand,
-  paragraph4: authentically grow your audience base,
+  paragraph4: authentically grow your audience,
   paragraph5: direct traffic to your site,
   paragraph6: increase sales and customer satisfaction,
-  paragraph7: making use of the most advanced tools and strategies.
+  paragraph7: leveraging of the smartest tools and strategies.
 indonesia:
   header: Kekuatan media sosial untuk merek Anda?
   title: Kami membangun citra Anda menggunakan keterlibatan sosial!
