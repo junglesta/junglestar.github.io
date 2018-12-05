@@ -28,7 +28,7 @@
     margin: 0;
     padding-bottom: 4px;
     line-height: 1;
-    @include responsive-font(10vw, 50px, 150px, 50px);
+    @include responsive-font(10vw, 45px, 150px, 50px);
   }
 
   .desc {

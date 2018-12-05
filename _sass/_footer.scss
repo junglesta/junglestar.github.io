@@ -12,7 +12,7 @@ footer {
 }
 
 .action_title {
-  padding-top: $spacing_unit--static;
+  // padding-top: $spacing_unit--static;
   text-align: center;
   width: 100%;
 }
@@ -25,12 +25,15 @@ footer {
   border: 0 none;
   padding: 0;
   margin: 0;
+  margin-bottom: $spacing_unit--static*1.5;
   text-align: center;
 
   &.back_home {
-    margin-bottom: $spacing_unit--static;
+    margin-top: $spacing_unit--static*1.5;
+    margin-bottom: $spacing_unit--static*1.5;
     &:hover {
-      margin-bottom: $spacing_unit--static;
+      margin-top: $spacing_unit--static*1.5;
+      margin-bottom: $spacing_unit--static*1.5;
     }
   }
 
