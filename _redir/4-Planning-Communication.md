@@ -2,7 +2,7 @@
 layout: redirect
 title:  "Communication?"
 categories: news
-redir: http://revealing.junglestar.org/#/6
+redir: https://revealing.junglestar.org/#/6
 ---
 
 Planning

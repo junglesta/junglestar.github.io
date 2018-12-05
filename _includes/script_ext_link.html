@@ -13,7 +13,7 @@ can also be: links[i].hostname != 'subdomain.example.com'
     if (links[i].hostname != window.location.hostname) {
       links[i].target = '_blank';
       links[i].className += ' open_in_new_window';
-      // add rel="noopener" too, dude...
+      // add rel="noopener noreferrer" too, dude...
       links[i].rel += "noopener";
     }
   }
