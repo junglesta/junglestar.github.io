@@ -11,7 +11,7 @@ english:
   paragraph4: authentically grow your audience,
   paragraph5: direct traffic to your site,
   paragraph6: increase sales and customer satisfaction,
-  paragraph7: leveraging of the smartest tools and strategies.
+  paragraph7: leveraging the smartest tools and strategies.
 indonesia:
   header: Kekuatan media sosial untuk merek Anda?
   title: Kami membangun citra Anda menggunakan keterlibatan sosial!
@@ -20,7 +20,7 @@ indonesia:
   paragraph3: Kami akan membangun merek Anda,
   paragraph4: meningkatkan basis pemirsa Anda secara otentik,
   paragraph5: mengarahkan lalu lintas ke situs Anda,
-  paragraph6: tingkatkan penjualan dan kepuasan pelanggan,
-  paragraph7: memanfaatkan perangkat dan strategi paling canggih.
+  paragraph6: meningkatkan penjualan dan kepuasan pelanggan,
+  paragraph7: memanfaatkan alat dan strategi paling cerdas.
 
 ---
