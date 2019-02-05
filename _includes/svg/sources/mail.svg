@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>email</title>
+  <g shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd">
+    <path fill="white" d="M64,12H0v39h64V12z M59.605,14L32,31.81L4.395,14H59.605z M2,49V14.835L32,34.19l30-19.355V49H2z"/>
+  </g>
+</svg>
