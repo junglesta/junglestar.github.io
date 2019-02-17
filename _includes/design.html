@@ -67,6 +67,20 @@
   </div>
 
 
+  <div class="section">
+
+    <div class="mean_icon">
+      {% include svg/sources/about_jstar.svg %}
+    </div>
+
+    <h1 class="title">From plan to working product.</h1>
+
+    <div class="text">
+      {% capture text_block3 %}{% include text_blocks/design/plan-to-product.md %}{% endcapture %}
+      {{ text_block3 | markdownify }}
+    </div>
+
+  </div>
 
   <div class="section ">
 
@@ -85,6 +99,7 @@
 
   </div>
 
+
   <div class="section">
 
     <div class="mean_icon">
@@ -96,21 +111,6 @@
     <div class="text">
       {% capture text_block2 %}{% include text_blocks/design/pay_developer.md %}{% endcapture %}
       {{ text_block2 | markdownify }}
-    </div>
-
-  </div>
-
-  <div class="section">
-
-    <div class="mean_icon">
-      {% include svg/sources/about_jstar.svg %}
-    </div>
-
-    <h1 class="title">From plan to working product.</h1>
-
-    <div class="text">
-      {% capture text_block3 %}{% include text_blocks/design/plan-to-product.md %}{% endcapture %}
-      {{ text_block3 | markdownify }}
     </div>
 
   </div>
