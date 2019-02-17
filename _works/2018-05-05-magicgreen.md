@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "MAGIC GREEN<br>Online+Paper Magazine"
+title:  "MAGIC GREEN<br>Online Magazine"
 category: magazine
 tag: commissioned-work
 redir: https://magicgreen.org/?ref=junglestar

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "ORCHID SPA<br>Fast Simple Website"
+title:  "ORCHID SPA<br>Simple Fast Website"
 category: website
 tag: commissioned-work open-source
 redir: https://baliorchidspa.com/?ref=junglestar
