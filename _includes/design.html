@@ -1,20 +1,85 @@
 <div class="wrapper flex flex_rows flex_wrap">
-  
+
   {% comment %}
   need scrolltarget div cos js will scroll to the vertical center of the div block
   {% endcomment %}
+
+
   <div class="section scrolltarget">
+
+    <div class="mean_icon">
+      {% include svg/sources/about_new_idea.svg %}
+    </div>
+
+    <h1 class="title">Communication strategy</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/design/communcation_strategies.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <div class="mean_icon">
+      {% include svg/sources/about_jstar.svg %}
+    </div>
+
+    <h1 class="title">Content production</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/design/produce_content.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <div class="mean_icon">
+      {% include svg/sources/about_jstar.svg %}
+    </div>
+
+    <h1 class="title">Content management</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/design/manage_content.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+
+  <div class="section">
+
+    <div class="mean_icon">
+      {% include svg/sources/about_guidance.svg %}
+    </div>
+
+    <h1 class="title">Social Media Management</h1>
+
+    <div class="text">
+      {% capture text_block2 %}{% include text_blocks/design/social_media_management.md %}{% endcapture %}
+      {{ text_block2 | markdownify }}
+    </div>
+
+  </div>
+
+
+
+  <div class="section ">
 
 
     <div class="mean_icon">
       {% include svg/sources/about_today_tools.svg %}
     </div>
 
-    <h1 class="title">Crafted for the Phones Era</h1>
+    <h1 class="title">Build for the Phone Era</h1>
 
 
     <div class="text">
-      {% capture text_block1 %}{% include text_blocks/phone_era.md %}{% endcapture %}
+      {% capture text_block1 %}{% include text_blocks/design/phone_era.md %}{% endcapture %}
       {{ text_block1 | markdownify }}
     </div>
 
@@ -23,13 +88,13 @@
   <div class="section">
 
     <div class="mean_icon">
-      {% include svg/sources/about_guidance.svg %}
+      {% include svg/sources/about_jstar.svg %}
     </div>
 
     <h1 class="title">Today you don't buy software</h1>
 
     <div class="text">
-      {% capture text_block2 %}{% include text_blocks/pay_developer.md %}{% endcapture %}
+      {% capture text_block2 %}{% include text_blocks/design/pay_developer.md %}{% endcapture %}
       {{ text_block2 | markdownify }}
     </div>
 
@@ -44,7 +109,7 @@
     <h1 class="title">From plan to working product.</h1>
 
     <div class="text">
-      {% capture text_block3 %}{% include text_blocks/how.md %}{% endcapture %}
+      {% capture text_block3 %}{% include text_blocks/design/plan-to-product.md %}{% endcapture %}
       {{ text_block3 | markdownify }}
     </div>
 
@@ -59,7 +124,7 @@
     <h1 class="title">Open source technology</h1>
 
     <div class="text">
-      {% capture text_block4 %}{% include text_blocks/tech.md %}{% endcapture %}
+      {% capture text_block4 %}{% include text_blocks/design/tech.md %}{% endcapture %}
       {{ text_block4 | markdownify }}
     </div>
 
