@@ -5,8 +5,8 @@ type: streetbiz # streetbiz or empty
 english:
   header: Want more customers finding your location?
   title: We make sure your business is on the map!
-  paragraph1: Using Google My Business
-  paragraph2: we'll register all details about Your shop&semi;
+  paragraph1: Using Google My Business,
+  paragraph2: we'll submit to Google all your important details,
   paragraph3: phone number, working hours, products, location,
   paragraph4: in a way that will get noticed on a Google search.
   paragraph5: This ultra convenient offer guarantees
