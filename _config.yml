@@ -1,5 +1,5 @@
 # The current release
-version: v0.7.1
+version: v0.8.0
 
 # Site settings
 title: Junglestar
@@ -10,11 +10,6 @@ url: "https://junglestar.org" # the base hostname & protocol for your site
 twitter_username: rokmatwit
 github_username: toybreaker
 
-# Conversion
-markdown: kramdown
-kramdown:
- input: GFM
- hard_wrap: false
 permalink: /:title/
 
 # Exclude these files from your production _site
@@ -26,9 +21,6 @@ exclude:
  - package.json
  - DS_Store
  - Icon
- - node_modules
- - uploads
- - rakefile
  - ["vendor"]
 
 # the following exclude is necessary to make Travis CI work:
@@ -67,6 +59,12 @@ collections:
     output: true
     permalink: /works/:title/
   pages:
+    output: true
+    permalink: /:title/
+  about:
+    output: true
+    permalink: /:title/
+  design:
     output: true
     permalink: /:title/
   redir:

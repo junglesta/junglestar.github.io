@@ -23,7 +23,7 @@ english:
     demo_url: https://amazing-days.junglestar.org/
     selling_points:
       sp01: Responsive full website.
-      sp02: SEO optimized.
+      sp02: SEO optimised.
       sp03: Hosting on global CDN.
       sp04: Secure SLL/https.
       sp05: Domain name.
@@ -44,7 +44,7 @@ indonesia:
     demo_url: https://amazing-days.junglestar.org/
     selling_points:
       sp01: Responsive full website.
-      sp02: SEO optimized.
+      sp02: SEO optimised.
       sp03: Hosting di CDN global.
       sp04: Secure SLL/https.
       sp05: Nama domain.

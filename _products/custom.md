@@ -14,7 +14,7 @@ english:
     group: design
     name: Awesome Design
     type: "All-included package"
-    subname: "A design customized to your needs. Name, Hosting and SSL included."
+    subname: "A design customised to your needs. Name, Hosting and SSL included."
     desc: "We craft a special design for your brand, produce & develop a well thought user experiences by embracing your existing look and brand identity."
     starting_at: "3.990"
     starting_at_rp: "14.900.000"
@@ -23,7 +23,7 @@ english:
     demo_url: https://binocle.it/?ref=junglestar
     selling_points:
       sp01: Responsive full website.
-      sp02: SEO optimized.
+      sp02: SEO optimised.
       sp03: Hosting on global CDN.
       sp04: Secure SLL/https.
       sp05: Domain name.
