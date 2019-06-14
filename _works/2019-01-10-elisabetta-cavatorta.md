@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "ELISABETTA CAVATORTA<br>Portfolio"
+title:  "ELISABETTA CAVATORTA<br>Stylist Portfolio"
 category: website
 tag: commissioned-work
 redir: https://elisabettacavatorta.com/?ref=junglestar

@@ -3,7 +3,17 @@
     <div class="mean_icon">
       {% include svg/sources/desperate.svg %}
     </div>
+
     <h1 class="center">{{ page.question2 }}</h1>
+
+
+    {%comment%}
+
+    new code using slogan.yml  - not yet working!
+    {% assign slogan = site.data.slogans.slogan1 %}
+    <h1 class="center">{{ slogan.question }}</h1>
+
+    {%endcomment%}
   </div>
 </div>
 

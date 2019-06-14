@@ -1,0 +1,23 @@
+slogan1:
+  context: offer
+  question: 'Check our packages!'
+  answer: 'We can help you fix that.'
+  after: ""
+
+slogan2:
+  context: offer
+  question: 'Is your website mobile hostile?'
+  answer: 'We offer affordable packages for any budget!'
+  after: ""
+
+slogan3:
+  context: about
+  question: 'Junglestar delivers'
+  answer: ""
+  after: '!'
+
+slogan4:
+  context: design
+  question: 'Check our packages!'
+  answer: ""
+  after: ""

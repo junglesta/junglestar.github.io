@@ -6,10 +6,10 @@ description: "Junglestar is a small, flexible, one-stop-shop web agency. We craf
 permalink: /offer/
 prices_rp: #true or empty
 show_agent_prices: #true or empty
-question: Check our packages!
-question2: Is your website mobile hostile?
-answer1: We can help you fix that.
-answer2: We offer affordable packages for any budget!
+question: Check our packages! #moving this to slogans.csv
+question2: Is your website mobile hostile? #moving this to slogans.csv
+answer1: We can help you fix that. #moving this to slogans.csv
+answer2: We offer affordable packages for any budget! #moving this to slogans.csv
 after:
 after_id:
 no_index: #true or empty
