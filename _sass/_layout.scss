@@ -100,7 +100,7 @@
   flex-direction: column;
   &.mean_title--first {
     background-color: black;
-    h1 {color: white;}
+    h1, h2, h3 {color: white;}
   }
   &.mean_title--second {
     margin-top: $vertical_rhythm;

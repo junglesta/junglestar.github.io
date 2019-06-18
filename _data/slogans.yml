@@ -1,23 +1,13 @@
+---
 slogan1:
   context: offer
-  question: 'Check our packages!'
-  answer: 'We can help you fix that.'
-  after: ""
-
+  question: "Is your website looking bad on phones?"
+  sub_question: "Need to zoom-in to read the text and menus?"
+  answer: "We can help you fix that."
+  sub_answer: "We offer affordable packages for any budget!"
 slogan2:
-  context: offer
-  question: 'Is your website mobile hostile?'
-  answer: 'We offer affordable packages for any budget!'
-  after: ""
-
-slogan3:
   context: about
-  question: 'Junglestar delivers'
-  answer: ""
-  after: '!'
-
-slogan4:
+  question: "Junglestar delivers"
+slogan3:
   context: design
-  question: 'Check our packages!'
-  answer: ""
-  after: ""
+  question: "Check our packages!"

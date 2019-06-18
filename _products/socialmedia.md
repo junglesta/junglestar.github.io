@@ -1,7 +1,7 @@
 ---
 #this page has no standalone output, it just get sucked into the offer page
 name: Social Media Management
-type: socialmedia # streetbiz or empty
+type: socialmedia  #streetbiz, socialmedia or empty
 english:
   header: Social media power for your brand?
   title: We build your image through social engagement!

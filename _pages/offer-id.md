@@ -1,17 +1,17 @@
 ---
 layout: page
 title: "Junglestar offer Indonesia"
+subtitle: "Check our packages!"
 product_group: design
-description: ""
+description: "" #because noindex!
 permalink: /offer-id/
 prices_rp: true #true or empty
 show_agent_prices: #true or empty
-question: Check our packages!
-question2: Is your website mobile hostile?
-answer1: We can help you fix that.
-answer2: We offer affordable packages for any budget!
-after:
-after_id:
+slogan: slogan2
+# question: Check our packages! #moving this to slogans.csv
+# question2: Is your website mobile hostile? #moving this to slogans.csv
+# answer1: We can help you fix that. #moving this to slogans.csv
+# answer2: We offer affordable packages for any budget! #moving this to slogans.csv
 no_index: true #true or empty
 language: english
 print_imperatif: Make life easy for your customers!

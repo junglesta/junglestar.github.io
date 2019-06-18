@@ -1,13 +1,14 @@
 ---
 layout: page
 title: "Junglestar offer agent Indonesia"
+subtitle_id: "Check our packages!"
 product_group: design
 description: ""
 permalink: /offer-agent-id/
 prices_rp: true #true or empty
 show_agent_prices: true #true or empty
 question: Check our packages! #moving this to slogans.csv
-question_id: Periksa paket kami! 
+question_id: Periksa paket kami!
 question2: Is your website mobile hostile? #moving this to slogans.csv
 question2_id: Apakah situs web Anda bermusuhan seluler?
 answer1: We can help you fix that.

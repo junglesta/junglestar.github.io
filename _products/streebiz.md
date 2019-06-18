@@ -1,7 +1,7 @@
 ---
 #this page has no standalone output, it just get sucked into the offer page
 name: Google My Business
-type: streetbiz # streetbiz or empty
+type: streetbiz  #streetbiz, socialmedia or empty
 english:
   header: Want more customers finding your location?
   title: We make sure your business is on the map!
