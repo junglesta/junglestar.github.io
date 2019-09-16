@@ -3,6 +3,7 @@ layout: page
 title: "Junglestar offer agent"
 product_group: design
 description: ""
+footer_listed: #true or empty
 permalink: /offer-agent/
 prices_rp: true #true or empty
 show_agent_prices: true #true or empty

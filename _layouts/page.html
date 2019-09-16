@@ -11,10 +11,11 @@ layout: default
    <div class="print_subtitle">{{ page.print_subtitle }}</div>
   </div>
 
-  <div class="section light_bg offer_content">
+  <div class=" light_bg offer_content">
     {% comment %}
     need scrolltarget div cos js will scroll to the vertical center of the div block
     {% endcomment %}
+
     <div class="scrolltarget">
       {% include product_loop_title.html %}
     </div>
@@ -59,7 +60,7 @@ layout: default
    <div class="print_subtitle" title="{{ page.print_subtitle }}" >{{ page.print_subtitle_id }}</div>
   </div>
 
-  <div class="section light_bg offer_content">
+  <div class=" light_bg offer_content">
     {% comment %}
     need scrolltarget div cos js will scroll to the vertical center of the div block
     {% endcomment %}
@@ -82,35 +83,11 @@ layout: default
   </div>
 
   {% if page.title contains "agent" %}
-    <div class="section light_bg offer_content">
+    <div class=" light_bg offer_content">
 
       {% include agent_selling_points_id.html %}
 
     </div>
   {% endif %}
-
-{% endif %}
-
-
-
-{% if page.title contains "about" %}
-
-  {% comment %}
-  the need scrolltarget div is inside the elemente included, in the first section
-  {% endcomment %}
-  <div class="page_content">
-    {% include about.html %}
-  </div>
-
-{% endif %}
-
-
-{% if page.title contains "design" %}
-  {% comment %}
-  the needed scrolltarget div is inside the element included, in the first section
-  {% endcomment %}
-  <div class="page_content ">
-    {% include design.html %}
-  </div>
 
 {% endif %}

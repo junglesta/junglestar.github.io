@@ -7,7 +7,7 @@
     {% include head.html %}
   {% endif %}
 
-  <body class="{% if page.title %}{{ page.title | slugify }}_page{% endif %} {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
+  <body class="{% if page.title %}{{ page.title | slugify }}{% endif %} page {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
 
     <span id="top"></span>
 

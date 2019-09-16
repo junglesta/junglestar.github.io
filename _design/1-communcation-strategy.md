@@ -7,8 +7,7 @@ header: "Communication strategy"
 subheader: "Develop your brand voice"
 svgicon: "icn--new_idea"
 ---
-
-We create **communication strategies**. Help your company define a meaningful **brand discourse**.
+We design and develop **communication strategies**. We can help your company define a meaningful **brand discourse**.
 
 Focusing on your offer and your audience, we will create an integrated **content publishing strategy** for your chosen media channels.
 

@@ -1,5 +1,5 @@
 # The current release
-version: v0.9.0
+version: 0.11.0
 
 # Site settings
 title: Junglestar
@@ -54,22 +54,20 @@ plugins:
 # bundle exec htmlproofer ./_site --disable-external
 
 collections:
-  products:
-  works:
-    output: true
-    permalink: /works/:title/
-  pages:
-    output: true
-    permalink: /:title/
-  about:
-    output: true
-    permalink: /:title/
-  design:
-    output: true
-    permalink: /:title/
-  redir:
-    output: true
-    permalink: /:title/
+ offer:
+  output: true
+  permalink: /:title/
+ products:
+ works:
+  output: true
+  permalink: /works/:title/
+ content:
+ services:
+  output: true
+  permalink: /:title/
+ about:
+ design:
+
 
 defaults:
   - scope:

@@ -4,6 +4,7 @@ title: "Junglestar offer Indonesia"
 subtitle: "Check our packages!"
 product_group: design
 description: "" #because noindex!
+footer_listed: #true or empty
 permalink: /offer-id/
 prices_rp: true #true or empty
 show_agent_prices: #true or empty

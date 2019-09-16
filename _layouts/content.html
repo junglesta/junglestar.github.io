@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="page_content">
+
+  <div class="wrapper flex flex_rows flex_wrap ">
+
+    {% comment %}
+    need scrolltarget div cos js will scroll to the vertical center of the div block
+    {% endcomment %}
+
+    <div class="scrolltarget"></div>
+
+    {% for section in site.content %}
+      <div class="section">
+
+        {% capture section_icon %}{{ section.svgicon }}{% endcapture %}
+
+        <div class="mean_icon">{% include svg/use.html id=section_icon class="brand_color outlined"%}</div>
+
+        <h1 class="header_title">{{ section.header }}</h1>
+
+        <h3 class="color_black">{{ section.subheader }}</h3>
+
+        <div class="text">{{ section.content | markdownify }}</div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+
+</div>

@@ -9,43 +9,36 @@ footer {
     font-size: 1rem;
     color: white;
   }
+
+  svg {
+    display: block;
+    height: 100px;
+  }
 }
 
 .action_title {
-  // padding-top: $spacing_unit--static;
   text-align: center;
   width: 100%;
+  color: transparentize($white, .4);
+  margin-bottom: $spacing_unit--static/2;
 }
 
 .action_button {
   text-align: center;
   display: block;
-  width: 100px;
-  height: 100px;
   border: 0 none;
   padding: 0;
   margin: 0;
-  margin-bottom: $spacing_unit--static*1.5;
+  margin-bottom: $spacing_unit--static/2;
   text-align: center;
 
-  &.back_home {
-    margin-top: $spacing_unit--static*1.5;
-    margin-bottom: $spacing_unit--static*1.5;
-    &:hover {
-      margin-top: $spacing_unit--static*1.5;
-      margin-bottom: $spacing_unit--static*1.5;
-    }
-  }
 
   span {
     display: block;
     line-height: 1;
     padding: 0;
     margin: 0;
-    color: white;
   }
-
-  // .revealed {}
 
   .reveal_on_hover {
     display: none;
@@ -54,7 +47,6 @@ footer {
   &:hover {
     text-decoration: none;
     outline: 0 none;
-    //margin: 0;
     background-color: transparent;
     opacity: 0.85;
 
@@ -65,5 +57,32 @@ footer {
     .revealed {
       display: none;
     }
+  }
+}
+
+.footer_icon {
+  padding-top: $spacing_unit*2;
+}
+
+.back_home {
+  // a
+  color: white;
+  text-align: center;
+}
+
+
+.footer_block {
+  display: flex;
+  margin: 0 auto;
+  max-width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_block_pages {
+  margin-bottom: $spacing_unit*2;
+  a {
+    display: block;
+
   }
 }

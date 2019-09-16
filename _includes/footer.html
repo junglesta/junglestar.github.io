@@ -6,21 +6,77 @@
 
   </a>
 
-  <a title="send us an email" class="action_button mail" href="mailto:{{ site.email }}">
+  <div class="footer_block">
 
-    <span class="action_title revealed">get in touch</span>
+    <div class="action_title revealed">Junglestar</div>
 
-    <span class="action_title reveal_on_hover">send email</span>
+    <div class="footer_block_pages">
+      {% for item in site.services %}
+        {% if item.footer_listed %}
 
-    {% include svg/use.html id="icn--email" class="email" %}
+          {% if page.url contains item.url %}
+            {% unless item.publish == "notyet" %}
+            <a class="menu_item active center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
+              <span class="">{{ item.title }}</span>
+            </a>
+            {% endunless %}
+          {% else %}
+            {% unless item.publish == "notyet" %}
+            <a class="menu_item center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
+              <span class="page_title">{{ item.title }}</span>
+            </a>
+            {% endunless %}
+          {% endif %}
 
-  </a>
+        {% endif %}
+      {% endfor %}
 
-  <div class="flex_item qr white">
 
-    <div class="action_title">phone link</div>
+      {% for item in site.offer %}
+        {% if item.footer_listed %}
 
-    {% include svg/use.html id="icn--qr" class="qr" %} 
+          {% if page.url contains item.url %}
+            {% unless item.publish == "notyet" %}
+            <a class="menu_item active center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
+              <span class="">{{ item.title }}</span>
+            </a>
+            {% endunless %}
+          {% else %}
+            {% unless item.publish == "notyet" %}
+            <a class="menu_item center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
+              <span class="page_title">{{ item.title }}</span>
+            </a>
+            {% endunless %}
+          {% endif %}
+
+        {% endif %}
+      {% endfor %}
+
+
+
+    </div>
+
+    <div class="footer_block_contacts">
+
+      <a title="send us an email" class="action_button mail" href="mailto:{{ site.email }}">
+
+        <span class="action_title revealed">get in touch</span>
+
+        <span class="action_title reveal_on_hover">send email</span>
+
+        {% include svg/use.html id="icn--email" class="email" %}
+
+      </a>
+
+      <div class="flex_item qr white">
+
+        <div class="action_title">phone link</div>
+
+        {% include svg/use.html id="icn--qr" class="qr" %}
+
+      </div>
+
+    </div>
 
   </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "EAT SLEEP SKATE<br>Accomodation+Skatepark website"
+title:  "EAT SLEEP SKATE<br>Accomodation+Skatepark"
 category: website
 tag: commissioned-work open-source
 redir: https://essbali.com/?ref=junglestar

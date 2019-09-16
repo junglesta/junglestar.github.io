@@ -42,17 +42,13 @@
         </div>
       </div>
 
-      {% comment %}
-        {% unless work.link == 'local' %}target="_blank" rel="noopener noreferrer"{% endunless %}
-      {% endcomment %}
-
       <div class="home_content">
 
         <ul class="post_list page_break">
 
           {% for work in site.works reversed %}
           <li class="{{ work.tag }} {{ work.category }}">
-            <a class="post_link" href="{{ work.url | prepend: site.baseurl }}" {% unless work.link == 'local' %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+            <a class="post_link" href="{{ work.url | prepend: site.baseurl }}"  target="_blank" rel="noopener noreferrer" >
               {% if work.ico_url %}
               <div class="post_link_ico {{work.ico_name}}">
                 <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
