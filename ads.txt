@@ -1,1 +1,1 @@
-google.com, pub-1809774097858208, DIRECT, f08c47fec0942fa0, subdomain=magicgreen.junglestar.org 
+google.com, pub-1809774097858208, DIRECT, f08c47fec0942fa0
