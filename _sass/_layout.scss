@@ -1,3 +1,8 @@
+.main {
+  position: relative;
+  z-index: 1;
+}
+
 .wrapper {
   padding-left: $spacing_unit-big;
   padding-right: $spacing_unit-big;
@@ -39,6 +44,7 @@
 }
 
 .site_header {
+  background-color: $brand_color;
   position: relative;
   z-index: 1;
   top: 0; // 2kill line in mobiles
@@ -67,7 +73,7 @@
 
 .light_bg,
 .page_content.light_bg {
-  background-color: transparentize(white, .25);
+  background-color: rgba(195, 218, 241, 1);
 }
 
 .dark_bg,
@@ -81,7 +87,7 @@
 
 .site_title {
   font-size: 2rem;
-  line-height: 2.2;
+  line-height: 1.6  ;
   letter-spacing: -1px;
   margin-bottom: 0;
   text-align: center;
@@ -110,15 +116,12 @@
 .mean_icon {//contains svg
   min-width: 120px;
   padding-top: 10px;
-  // padding-right: 30px;
   width: 20vw;
   max-width: 240px;
-  // .site_header & {
-  //   padding-right: 0;
-  // }
+
   &.four_icon_group {
     max-width: 80vw;
-    // padding-right: 0;
+
     display: flex;
     width: 80vw;
     @include media("screen", ">minWidth") {
@@ -147,6 +150,7 @@
   //junglestar logo
   content: "";
   position: relative;
+  margin-bottom: $vertical_rhythm/2;
   cursor: pointer;
   top: 0;
   display: block;
@@ -162,10 +166,6 @@
 .cover__title .btn:before {
   left: calc(100% - 100px);
 }
-
-// .footer_icon:before {
-//   left: calc(50% - 30px);
-// }
 
 .site_nav {
   text-align: center;

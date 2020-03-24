@@ -1,10 +1,10 @@
 # The current release
-version: 0.11.1
+version: 0.2.0
 
 # Site settings
 title: Junglestar
 email: info@junglestar.org
-description: "It's a jungle out there. DIY is not enough. How customers get to know you? Junglestar is a small, flexible web agency. We take care of information architecture, screen design, code and deploy. We offer all-included packed solutions. Or top quality custom designs at a competitive price."
+description: "It's a jungle out there. DIY is not enough. Junglestar is a small, flexible web agency. We design, code, deploy. We offer top quality solutions at resonable prices." # 160 char max
 baseurl: "" #"/clean" # the subpath of your site, e.g. /blog/
 url: "https://junglestar.org" # the base hostname & protocol for your site
 twitter_username: rokmatwit

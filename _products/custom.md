@@ -3,7 +3,7 @@
 name: custom
 title: amazing custom design
 type: #streetbiz, socialmedia or empty
-description: "Junglestar is a small, flexible, web agency. We do information architecture, screen design, code and deploy. We offer top quality custom designed websites at competitive prices. We design, produce and develop well thought user experiences. We grow relationships with clients."
+description: "We are a small, flexible, web agency. We offer top quality custom designed websites at reasonable prices. We grow relationships with clients."
 permalink: /offer/custom/
 question: "&quot;Yes I want this,<br>that and also...&quot;"
 bestseller: #true or empty (bestseller+bestvalue=cannot)

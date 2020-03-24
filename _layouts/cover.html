@@ -5,85 +5,89 @@
 
   <body class="home">
 
-    <span id="top"></span>
+    <div class="main">
 
-    {% include svg/defs.html %}
+      <span id="top"></span>
 
-    <div class="cover js_scrollto01">
+      {% include svg/defs.html %}
 
-      <div class="wrapper wrapper--slim flex flex_cols flex_align_center full_height flex_justify_center">
+      <div class="cover js_scrollto01">
 
-        {% include hi.html %}
+        <div class="wrapper wrapper--slim flex flex_cols flex_align_center full_height flex_justify_center">
 
-        <div class="cover__title">
+          {% include hi.html %}
 
-          <div class="btn">
-            <div class="name"><h1>{{ site.title }}</h1></div>
-            <div class="desc">Make life easy for your customers!</div>
+          <div class="cover__title">
+
+            <div class="btn">
+              <div class="name"><h1>{{ site.title }}</h1></div>
+              <div class="desc">Make life easy for your customers!</div>
+            </div>
+
           </div>
 
         </div>
 
       </div>
 
-    </div>
+      <header class="site_header dark_bg">
 
-    <header class="site_header dark_bg">
+        {% include intro.html %}
 
-      {% include intro.html %}
+      </header>
 
-    </header>
+      <div class="page_content">
 
-    <div class="page_content">
-
-      <div class="mean_title">
-        <div class="wrapper wrapper--slim">
-          <h1 class="center">See what we deliver!</h1>
+        <div class="mean_title">
+          <div class="wrapper wrapper--slim">
+            <h1 class="center">See what we deliver!</h1>
+          </div>
         </div>
+
+        <div class="home_content">
+
+          <ul class="post_list page_break">
+
+            {% for work in site.works reversed %}
+            <li class="{{ work.tag }} {{ work.category }}">
+              <a class="post_link" href="{{ work.url | prepend: site.baseurl }}"  target="_blank" rel="noopener noreferrer" >
+                {% if work.ico_url %}
+                <div class="post_link_ico {{work.ico_name}}">
+                  <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
+                </div>
+                {% endif %}
+                <span class="post_link_text" ></span>{{ work.title }}
+                <div class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</div>
+              </a>
+            </li>
+            {% endfor %}
+
+          </ul>
+
+        </div>
+
       </div>
 
-      <div class="home_content">
 
-        <ul class="post_list page_break">
+      <div class="offer_content light_bg page_break social_media_management">
 
-          {% for work in site.works reversed %}
-          <li class="{{ work.tag }} {{ work.category }}">
-            <a class="post_link" href="{{ work.url | prepend: site.baseurl }}"  target="_blank" rel="noopener noreferrer" >
-              {% if work.ico_url %}
-              <div class="post_link_ico {{work.ico_name}}">
-                <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
-              </div>
-              {% endif %}
-              <span class="post_link_text" ></span>{{ work.title }}
-              <div class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</div>
-            </a>
-          </li>
-          {% endfor %}
-
-        </ul>
+        {% include product_social_media_management.html %}
 
       </div>
 
-    </div>
+      <div class="offer_content light_bg page_break websites_offers">
 
+        {% include product_loop_title.html %}
 
-    <div class="offer_content light_bg page_break social_media_management">
+        {% include product_loop_group.html %}
 
-      {% include product_social_media_management.html %}
+      </div>
 
-    </div>
+      <div class="offer_content light_bg page_break google_my_business">
 
-    <div class="offer_content light_bg page_break websites_offers">
+        {% include product_streetbiz.html %}
 
-      {% include product_loop_title.html %}
-
-      {% include product_loop_group.html %}
-
-    </div>
-
-    <div class="offer_content light_bg page_break google_my_business">
-
-      {% include product_streetbiz.html %}
+      </div>
 
     </div>
 

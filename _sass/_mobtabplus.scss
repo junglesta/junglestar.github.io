@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+}
+
+
+.mobtab_plus {
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  position: absolute;
+  bottom: 28px;
+  right: 18px;
+  font-size: 18px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}

@@ -9,7 +9,7 @@ layout: default
     {% comment %}
     need scrolltarget div cos js will scroll to the vertical center of the div block
     {% endcomment %}
-    
+
     <div class="scrolltarget"></div>
 
     {% for section in site.design %}
@@ -22,6 +22,8 @@ layout: default
       <h1 class="header_title">{{ section.header }}</h1>
 
       <h3 class="color_black">{{ section.subheader }}</h3>
+
+      <div class="mobtab_plus"> ✕ </div>
 
       <div class="text">{{ section.content | markdownify }}</div>
 

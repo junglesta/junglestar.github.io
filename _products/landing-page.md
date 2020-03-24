@@ -3,7 +3,7 @@
 name: landing page
 title: amazing landing page
 type: #streetbiz, socialmedia or empty
-description: "Junglestar is a small, flexible, web agency. We do information architecture, screen design, code and deploy. We offer landing page websites at a competitive price. We help companies and individuals organize their communication. We grow relationships with clients. We design, produce & develop well thought user experiences."
+description: "Junglestar is a small, flexible, web agency. We deal with information architecture, screen design, code and deploy. We offer landing page websites at a competitive prices."
 permalink: /offer/landing-page/
 question: "&quot;Need website.<br>How much?&quot;"
 bestseller:  #true or empty (bestseller+bestvalue=cannot)

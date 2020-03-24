@@ -9,13 +9,19 @@
 
   <body class="{% if page.title %}{{ page.title | slugify }}{% endif %} page {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
 
-    <span id="top"></span>
+    <div class="main">
 
-    {% include svg/defs.html %}
 
-    {% include header.html %}
+      <span id="top"></span>
 
-    {{ content }}
+      {% include svg/defs.html %}
+
+      {% include header.html %}
+
+      {{ content }}
+
+
+    </div>
 
     {% include footer.html %}
 

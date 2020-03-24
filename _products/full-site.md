@@ -3,7 +3,7 @@
 name: full site
 title: amazing full site
 type: #streetbiz, socialmedia or empty
-description: "Junglestar is a small, flexible, web agency. We do information architecture, screen design, code and deploy. Packed solutions all-included. We help companies and individuals organize their communication. We grow relationships with clients. We design, produce & develop well thought user experiences."
+description: "We are a small, flexible, web agency. We craft information architecture, screen design, write code and deploy it. We offer full website solutions all-included."
 permalink: /offer/full-site/
 question: "&quot;I need a website and<br>I have questions...&quot;"
 bestseller: true #true or empty (bestseller+bestvalue=cannot)
