@@ -13,7 +13,7 @@ answer1: We can help you fix that.
 answer2: We offer affordable packages for any budget!
 after:
 after_id:
-no_index: true #true or empty
+sitemap: false
 language: english
 print_imperatif: Make life easy for your customers!
 print_title: Junglestar

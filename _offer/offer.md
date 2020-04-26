@@ -9,7 +9,6 @@ permalink: /offer/
 prices_rp: #true or empty
 show_agent_prices: #true or empty
 slogan: slogan1
-no_index: #true or empty
 language: english
 print_imperatif: Make life easy for your customers!
 print_title: Junglestar

@@ -13,7 +13,7 @@ slogan: slogan2
 # question2: Is your website mobile hostile? #moving this to slogans.csv
 # answer1: We can help you fix that. #moving this to slogans.csv
 # answer2: We offer affordable packages for any budget! #moving this to slogans.csv
-no_index: true #true or empty
+sitemap: false
 language: english
 print_imperatif: Make life easy for your customers!
 print_title: Junglestar

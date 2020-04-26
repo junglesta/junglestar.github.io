@@ -19,7 +19,7 @@ answer2_id: Kami menawarkan paket terjangkau untuk semua anggaran!
 after:
 after_id:
 language: indonesia
-no_index: true #true or empty
+sitemap: false
 print_imperatif: Make life easy for your customers!
 print_imperatif_id: Buat hidup mudah bagi pelanggan Anda!
 print_title: Junglestar
