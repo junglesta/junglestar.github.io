@@ -53,7 +53,7 @@
               <a class="post_link" href="{{ work.url | prepend: site.baseurl }}"  target="_blank" rel="noopener noreferrer" >
                 {% if work.ico_url %}
                 <div class="post_link_ico {{work.ico_name}}">
-                  <img class="" src="{{work.ico_url}}" alt="{{work.title}}" />
+                  <img loading="lazy" class="" src="{{work.ico_url}}" alt="{{work.title}}" />
                 </div>
                 {% endif %}
                 <span class="post_link_text" ></span>{{ work.title }}
