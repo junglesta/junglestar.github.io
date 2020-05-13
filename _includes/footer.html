@@ -1,6 +1,6 @@
 <footer class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center">
 
-  <a title="back home" href="/" class="footer_icon action_button back_home">
+  <a title="go back to the homepage" href="/" class="footer_icon action_button back_home">
 
     {% include svg/use.html id="icn--logo_white" class="logo" %}
 
@@ -10,7 +10,7 @@
 
     <div class="action_title revealed">Junglestar</div>
 
-    <div class="footer_block_pages">
+    <div class="footer_block_pages" role="menu">
       {% for item in site.services %}
         {% if item.footer_listed %}
 

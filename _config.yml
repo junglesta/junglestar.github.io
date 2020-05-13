@@ -1,5 +1,5 @@
 # The current release
-version: 0.5.1
+version: 0.6.0
 
 # Site settings
 title: Junglestar
@@ -11,6 +11,12 @@ twitter_username: rokmatwit
 github_username: toybreaker
 
 permalink: /:title/
+
+# Setup
+sass:
+  sass_dir: _sass
+  style: :compressed
+  # style: :expanded
 
 # Exclude these files from your production _site
 exclude:
