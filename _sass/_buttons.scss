@@ -45,6 +45,8 @@
     opacity: 1;
     cursor: pointer;
     background-color: $button_focus_bg;
+    -webkit-transform: translateY(0.15em);
+    transform: translateY(0.15em);
   }
 
   &:active {
