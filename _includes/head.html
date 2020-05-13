@@ -7,8 +7,9 @@
 
   <title>{{ page.title }}</title>
 
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="version" content="{{ site.version }}">
 
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
   <noscript id="deferred-styles">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300&display=swap">
@@ -43,7 +44,5 @@
   {% include open_graph.html %}
 
   <meta name="google-site-verification" content="{{site.google.verify}}" />
-
-  <meta name="version" content="{{ site.version }}">
 
 </head>

@@ -23,7 +23,8 @@
 }
 
 .button {
-  //a
+  //span inside the <a>
+  font-size: 120%;
   background-color: $white;
   display: inline-block;
   width: auto;
@@ -31,8 +32,7 @@
   margin-right: $vertical_rhythm--small/2;
   margin-bottom: $vertical_rhythm--small/2;
   border-radius: 4px;
-  padding: 0 10px;
-  opacity: 0.9;
+  padding: 5px 15px;
   -webkit-box-shadow: $card_shadow;
   box-shadow: $card_shadow;
   color: $brand_color;
@@ -42,7 +42,6 @@
 
   &:focus,
   &:hover {
-    opacity: 1;
     cursor: pointer;
     background-color: $button_focus_bg;
     -webkit-transform: translateY(0.15em);
