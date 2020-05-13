@@ -9,4 +9,4 @@ ico_name: kaosguerrilla
 permalink: /works/kaosguerrilla/
 ---
 
-Online Magazine website with resources search and responsive images.
+Online Store using Shopify platform.
