@@ -1,5 +1,5 @@
 # The current release
-version: 0.6.2
+version: 0.6.3
 
 # Site settings
 title: Junglestar
@@ -27,7 +27,6 @@ exclude:
  - package.json
  - DS_Store
  - Icon
- - ["vendor"]
 
 # the following exclude is necessary to make Travis CI work:
 # https://github.com/jekyll/jekyll/issues/5267
@@ -54,7 +53,6 @@ plugins:
  - jekyll-seo-tag
  - jekyll-redirect-from
  - jekyll-sitemap
-
 
 #Use html-proofer with this terminal command:
 # bundle exec htmlproofer ./_site --disable-external
