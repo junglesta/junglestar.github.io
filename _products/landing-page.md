@@ -23,13 +23,13 @@ english:
     demo_url: https://amazing-single.junglestar.org/
     selling_points:
       sp01: Responsive landing page.
-      sp02: Designed for phones and desktops.
+      sp02: Designed for phones... and desktops.
       sp03: Social media friendly.
       sp04: SEO optimised.
       sp05: Domain name.
       sp06: Hosting on global CDN.
       sp07: Secure SLL/https.
-      sp08: Data entry.
+      sp08: Sustainable Web Design to help fight Climate Change.
 indonesia:
   product:
     group: design

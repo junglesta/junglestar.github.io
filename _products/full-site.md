@@ -23,14 +23,14 @@ english:
     demo_url: https://amazing-days.junglestar.org/
     selling_points:
       sp01: Responsive full website.
-      sp02: Designed for phones and desktops.
-      sp03: Social media friendly.
-      sp04: SEO optimised.
-      sp05: Domain name.
-      sp06: Hosting on global CDN.
-      sp07: Secure SLL/https.
-      sp08: Data entry.
-      sp09: Editing system for collaborators.
+      sp02: Social media friendly.
+      sp03: SEO optimised.
+      sp04: Domain name.
+      sp05: Hosting on global CDN.
+      sp06: Secure SLL/https.
+      sp07: Data entry.
+      sp08: Editing system for collaborators.
+      sp09: Sustainable Web Design to help fight Climate Change.
 indonesia:
   product:
     group: design

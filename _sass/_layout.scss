@@ -24,6 +24,11 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  &.wrapper--vert_pad {
+    padding-top: $spacing_unit-big;
+    padding-bottom: $spacing_unit-big;
+  }
 }
 
 .intro {

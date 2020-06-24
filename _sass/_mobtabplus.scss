@@ -4,6 +4,9 @@
 
 
 .mobtab_plus {
+  //temp
+  display: none;
+  //endtemp
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
@@ -16,6 +19,4 @@
   width: 15px;
   height: 15px;
 
-  // temp
-   display: none;
 }

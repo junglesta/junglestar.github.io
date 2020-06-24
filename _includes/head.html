@@ -16,17 +16,17 @@
   </noscript>
 
   <script type="text/javascript">
-      // Load CSS
-      var loadDeferredStyles = function() {
-          var addStylesNode = document.getElementById("deferred-styles");
-          var replacement = document.createElement("div");
-          replacement.innerHTML = addStylesNode.textContent;
-          document.body.appendChild(replacement)
-          addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    // load css
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
   </script>
 
@@ -44,5 +44,25 @@
   {% include open_graph.html %}
 
   <meta name="google-site-verification" content="{{site.google.verify}}" />
+
+  {% if page.layout contains 'design' %}
+
+    {% include script_sal.html %}
+    {% include script_sal_css.html %}
+
+  {% endif %}
+
+  {% if page.layout contains 'content' %}
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // INITIALIZE AOS
+      AOS.init();
+    </script>
+    {% comment %} {% include script_scrollreveal.html %}{% endcomment %}
+
+  {% endif %}
 
 </head>
