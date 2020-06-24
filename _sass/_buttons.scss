@@ -38,7 +38,7 @@
   color: $brand_color;
   border: 2px solid $brand_color;
   margin: $vertical_rhythm auto;
-  font-weight: 800;
+  font-weight: 700; //400;600;700
 
   &:focus,
   &:hover {
@@ -81,7 +81,7 @@
   .book_now & {
     background-color: $button_book;
     color: $white;
-    font-weight: 500;
+    font-weight: 400; //400;600;700
 
     .menu & {
       margin-left: $vertical_rhythm--small/2;
