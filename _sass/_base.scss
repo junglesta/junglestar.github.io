@@ -32,7 +32,7 @@ html {
 
 body {
   line-height: $base-line-height;
-  font-weight: 400; //400;600;700 //400;600;700
+  font-weight: 400; //wght@400;600 
   color: $text_color;
   -webkit-text-size-adjust: 100%;
   position: relative;
@@ -100,12 +100,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700; //400;600;700
+  font-weight: 600; //wght@400;600
   @include media("screen", ">minWidth") {
-    font-weight: 400; //400;600;700
+    font-weight: 400; //wght@400;600
   }
   @include media("screen", ">maxWidth") {
-    font-weight: 400; //400;600;700
+    font-weight: 400; //wght@400;600
   }
 }
 
@@ -196,7 +196,7 @@ svg {
 }
 
 strong {
-  font-weight: 700; //400;600;700
+  font-weight: 600; //wght@400;600
 }
 
 //Quick fade on target to attract user attention

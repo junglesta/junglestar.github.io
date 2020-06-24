@@ -72,7 +72,6 @@
 
   .header_title {
     color: lighten($brand-color, 40);
-    font-weight: 700; //400;600;700
   }
 }
 
@@ -313,7 +312,7 @@ hr {
     margin-top: $spacing_unit/4;
     margin-bottom: $spacing_unit/4;
     line-height: 1;
-    font-weight: 700; //400;600;700
+    font-weight: 600; //wght@400;600
   }
   .agent_selling_points--text {
     font-size: 17.5px;
@@ -322,7 +321,7 @@ hr {
   .agent_selling_points--intro {
     color: $brand_color;
     text-transform: uppercase;
-    font-weight: 700; //400;600;700
+    font-weight: 600; //wght@400;600
     font-size: 20px;
     &.first {
       border-bottom: 1px solid $brand_color;

@@ -10,7 +10,7 @@ figure {
   right: 0;
   padding: 0 5px;
   text-transform: capitalize;
-  font-weight: 400; //400;600;700
+  font-weight: 400; //wght@400;600
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
@@ -79,7 +79,7 @@ figure {
 blockquote p {
   font-size: 1.25rem;
   line-height: 1.25;
-  font-weight: 400; //400;600;700
+  font-weight: 400; //wght@400;600
   padding-left: $vertical_rhythm--small;
   @include media("screen", ">minWidth") {
     max-width: 400px!important;
@@ -94,7 +94,7 @@ blockquote p {
 
   em {
     font-size: 80%;
-    font-weight: 400; //400;600;700
+    font-weight: 400; //wght@400;600
   }
 }
 
@@ -113,7 +113,7 @@ blockquote p {
   line-height: 34px;
   text-align: right;
   text-transform: uppercase;
-  font-weight: 700; //400;600;700
+  font-weight: 600; //wght@400;600
   padding-left: $vertical_rhythm--small;
   padding-right: $vertical_rhythm--small;
   color: transparentize($black, .85);
