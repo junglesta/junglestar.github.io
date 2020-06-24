@@ -5,12 +5,12 @@ type: socialmedia  #streetbiz, socialmedia or empty
 english:
   header: Social media power for your brand?
   title: We build your image through social engagement!
-  paragraph1: Leveraging Instagram, Facebook, Twitter and Pinterest
+  paragraph1: Instagram, Facebook, Twitter, Pinterest...
   paragraph2: We'll target and engage real followers.
   paragraph3: We'll build your brand,
-  paragraph4: authentically grow your audience,
-  paragraph5: direct traffic to your site,
-  paragraph6: increase sales and customer satisfaction,
+  paragraph4: authentically growing your audience,
+  paragraph5: directing traffic to your site,
+  paragraph6: increasing sales and customer satisfaction,
   paragraph7: leveraging the smartest tools and strategies.
 indonesia:
   header: Kekuatan media sosial untuk merek Anda?
