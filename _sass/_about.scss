@@ -8,7 +8,8 @@
       padding: $spacing_unit $spacing_unit;
     }
     @include media("screen", ">bp1Width") {
-      //width: 50%;
+      max-width: 900px;
+      margin: 0 auto;
     }
     @include media("screen", ">maxWidth") {
       padding: $spacing_unit $spacing_unit;
