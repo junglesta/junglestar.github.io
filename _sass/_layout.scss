@@ -71,7 +71,8 @@
   }
 
   .header_title {
-    color: $brand-color;
+    color: lighten($brand-color, 40);
+    font-weight: 900;
   }
 }
 
