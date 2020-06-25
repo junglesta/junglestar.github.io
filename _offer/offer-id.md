@@ -11,7 +11,7 @@ show_agent_prices: #true or empty
 slogan: slogan2
 # question: Check our packages! #moving this to slogans.csv
 # question2: Is your website mobile hostile? #moving this to slogans.csv
-# answer1: We can help you fix that. #moving this to slogans.csv
+# answer1: We can fix that. #moving this to slogans.csv
 # answer2: We offer affordable packages for any budget! #moving this to slogans.csv
 sitemap: false
 language: english

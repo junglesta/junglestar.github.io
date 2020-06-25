@@ -12,7 +12,7 @@ question: Check our Sustainable Web Design packages! #moving this to slogans.csv
 question_id: Periksa paket kami!
 question2: Is your website mobile hostile? #moving this to slogans.csv
 question2_id: Apakah situs web Anda bermusuhan seluler?
-answer1: We can help you fix that.
+answer1: We can fix that.
 answer1_id: Kami dapat membantu Anda memperbaikinya.
 answer2: We offer affordable packages for any budget!
 answer2_id: Kami menawarkan paket terjangkau untuk semua anggaran!

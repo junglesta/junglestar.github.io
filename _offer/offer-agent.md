@@ -9,7 +9,7 @@ prices_rp: true #true or empty
 show_agent_prices: true #true or empty
 question: Check our Sustainable Web Design packages!
 question2: Is your website mobile hostile?
-answer1: We can help you fix that.
+answer1: We can fix that.
 answer2: We offer affordable packages for any budget!
 after:
 after_id:
