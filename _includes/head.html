@@ -35,9 +35,6 @@
   </script>
 
 
-
-
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   {% capture inline_css %}
@@ -53,45 +50,4 @@
 
 
 
-  {% include scroll-script.html %}
-
-
-  <script type="text/javascript">
-
-    window.onload = function() {
-    	lax.setup() // init
-
-    	const updateLax = () => {
-    		lax.update(window.scrollY)
-    		window.requestAnimationFrame(updateLax)
-    	}
-
-    	window.requestAnimationFrame(updateLax)
-    }
-
-  </script>
-
-
-
-{% comment %}
-  {% if page.layout contains 'design' %}
-
-    {% include script_sal.html %}
-    {% include script_sal_css.html %}
-
-  {% endif %}
-
-  {% if page.layout contains 'content' %}
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-      // INITIALIZE AOS
-      AOS.init();
-    </script>
-    {% comment %} {% include script_scrollreveal.html %}{% endcomment %}
-
-  {% endif %}
-{% endcomment %}
 </head>
