@@ -12,4 +12,4 @@ We can **manage content**, sync creation on a timeline, take care of delivering 
 
 Providing an **organized approach** for social medias or blog is essential to grow your audience and to keep customer interested and returning.
 
-It takes time, skills and organisation. We offer **Content Management** service so you can focus on your business, while we take care of implementing the plan.  
+It takes time, skills and organisation. We offer **[Content Management](https://en.wikipedia.org/wiki/Content_management)** service so you can focus on your business, while we take care of implementing the plan.  

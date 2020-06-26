@@ -7,7 +7,7 @@ header: "Building for the Phone Era"
 subheader: "Fast, phone-friendly and easy to use."
 svgicon: "icn--today_tools"
 ---
-Today more than 60% of internet traffic originates from mobile devices.
+Today more than [60% of internet traffic](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/asia) originates from mobile devices.
 
 Phone in hand and on the go, users expect your website to be fast, phone-friendly and easy to use. No digging for infos. Streamlined and straight to the point.
 

@@ -10,7 +10,7 @@ svgicon: "icn--who"
 
 The **Creative Process** can indeed be overwhelming. The **Adjacent Possible** is not easy to spot. Are you having difficulties figuring it all out on your own? We can help. We offer **Guidance**.
 
-We have been managing creative processes in the marketing communication field for more than 25 years.
+We have been managing creative processes in the [marketing communication](https://en.wikipedia.org/wiki/Marketing_communications) field for more than 25 years.
 
 We can show you shortcuts and the best path to take. We have been **helping** small companies for many years.
 

@@ -8,7 +8,7 @@ subheader: "We pick the best and newest..."
 svgicon: "icn--open_source"
 ---
 
-We make use of the best and newest **Open Source** technology and services:
+We make use of the best and newest **[Open Source](https://en.wikipedia.org/wiki/Open-source_software)** technologies and services:
 
 {:.tech_logos}
 ![paypal](/assets/svg/paypal.svg){:.tech_logo}{:.paypal}
