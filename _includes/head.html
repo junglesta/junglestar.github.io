@@ -36,6 +36,8 @@
 
 
 
+
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   {% capture inline_css %}
@@ -49,6 +51,29 @@
 
   <meta name="google-site-verification" content="{{site.google.verify}}" />
 
+
+
+  {% include scroll-script.html %}
+
+
+  <script type="text/javascript">
+
+    window.onload = function() {
+    	lax.setup() // init
+
+    	const updateLax = () => {
+    		lax.update(window.scrollY)
+    		window.requestAnimationFrame(updateLax)
+    	}
+
+    	window.requestAnimationFrame(updateLax)
+    }
+
+  </script>
+
+
+
+{% comment %}
   {% if page.layout contains 'design' %}
 
     {% include script_sal.html %}
@@ -68,5 +93,5 @@
     {% comment %} {% include script_scrollreveal.html %}{% endcomment %}
 
   {% endif %}
-
+{% endcomment %}
 </head>
