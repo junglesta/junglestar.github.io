@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f1e23e88-7158-47cd-b272-6ebbc9e953c4/deploy-status)](https://app.netlify.com/sites/junglestar/deploys)
 
-### [junglestar.org](http://junglestar.org)
+### [junglestar.org](https://junglestar.org)
 
-![Alt text](/assets/jpg/screen.jpg)
+![junglestar.org](/assets/jpg/screen.jpg)
 
 ## thanks
 - 3 Black SVG Graphics designed by [David Terzano](http://work-it.it)
