@@ -1,6 +1,9 @@
 We make use of the best and latest **Open Source** technology and services:
 
 {:.tech_logos}
+![vuejs]({{ site.baseurl }}/assets/svg/vuejs.svg){:.tech_logo}{:.vuejs}
+![11ty]({{ site.baseurl }}/assets/svg/11ty.svg){:.tech_logo}{:.11ty}
+![gridsome]({{ site.baseurl }}/assets/svg/gridsome.svg){:.tech_logo}{:.gridsome}
 ![paypal]({{ site.baseurl }}/assets/svg/paypal.svg){:.tech_logo}{:.paypal}
 ![shopify]({{ site.baseurl }}/assets/svg/shopify.svg){:.tech_logo}{:.shopify}
 ![github]({{ site.baseurl }}/assets/svg/github.svg){:.tech_logo}{:.github}

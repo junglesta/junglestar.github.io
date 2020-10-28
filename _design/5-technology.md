@@ -11,6 +11,9 @@ svgicon: "icn--open_source"
 We make use of the best and newest **[Open Source](https://en.wikipedia.org/wiki/Open-source_software)** technologies and services:
 
 {:.tech_logos}
+![vuejs](/assets/svg/vuejs.svg){:.tech_logo}{:.vuejs}
+![11ty](/assets/svg/11ty.svg){:.tech_logo}{:.11ty}
+![gridsome](/assets/svg/gridsome.svg){:.tech_logo}{:.gridsome}
 ![paypal](/assets/svg/paypal.svg){:.tech_logo}{:.paypal}
 ![shopify](/assets/svg/shopify.svg){:.tech_logo}{:.shopify}
 ![github](/assets/svg/github.svg){:.tech_logo}{:.github}
