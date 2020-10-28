@@ -4,10 +4,7 @@
 }
 
 .wrapper {
-  padding-left: $spacing_unit-big;
-  padding-right: $spacing_unit-big;
-  padding-top: $spacing_unit-big;
-  padding-bottom: $spacing_unit-big;
+  padding: $spacing_unit-big;
   @include media("screen", ">minWidth") {
     padding-left: $spacing_unit-big;
     padding-right: $spacing_unit-big;
@@ -20,6 +17,7 @@
     padding-left: $spacing_unit*2;
     padding-right: $spacing_unit*2;
   }
+
   &.wrapper--slim {
     padding-top: 0;
     padding-bottom: 0;
@@ -67,14 +65,13 @@
 
   small {
     display: inline-block;
-    margin-top: 0.25rem;
+    margin-top: .25rem;
   }
 
   .header_title {
     color: lighten($brand-color, 40);
   }
 }
-
 
 .light_bg,
 .page_content.light_bg {
@@ -92,15 +89,13 @@
 
 .site_title {
   font-size: 2rem;
-  line-height: 1.6  ;
+  line-height: 1.6;
   letter-spacing: -1px;
   margin-bottom: 0;
   text-align: center;
   width: 100%;
   color: white;
 }
-
-
 
 .mean_title {
   color: $brand_color;
@@ -109,16 +104,24 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   &.mean_title--first {
     background-color: black;
-    h1, h2, h3 {color: white;}
+
+    h1,
+    h2,
+    h3 {
+      color: white;
+    }
   }
+
   &.mean_title--second {
     margin-top: $vertical_rhythm;
   }
 }
 
-.mean_icon {//contains svg
+.mean_icon {
+  //contains svg
   min-width: 120px;
   padding-top: 10px;
   width: 20vw;
@@ -138,6 +141,7 @@
     @include media("screen", ">maxWidth") {
       width: 50vw;
     }
+
     svg {
       padding: 4px;
       max-height: 210px;
@@ -146,9 +150,7 @@
   }
 }
 
-.icon_about {
-
-}
+.icon_about {}
 
 // .footer_icon:before,
 .site_title:before {
@@ -204,7 +206,6 @@ hr {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-
 .post_list .commissioned-work {
   background-color: lighten($brand-color, 55);
 }
@@ -229,7 +230,20 @@ hr {
 .tech_logo {
   //svgs
   max-height: 80px;
-  padding: 0.5rem;
+  padding: .5rem;
+
+  &.11ty {
+    width: 80px;
+    fill: grey;
+  }
+
+  &.vuejs {
+    width: 80px;
+  }
+
+  &.gridsome {
+    width: 150px;
+  }
 
   &.node {
     max-width: 150px;
@@ -257,7 +271,7 @@ hr {
 
   &.ruby {
     max-width: 70px;
-    opacity: 0.5;
+    opacity: .5;
   }
 
   &.shopify {
@@ -270,6 +284,10 @@ hr {
 
   &.yeoman {
     max-width: 100px;
+  }
+
+  &.handlebars {
+    width: 100px;
   }
 }
 
@@ -299,7 +317,6 @@ hr {
   cursor: pointer;
 }
 
-
 .text {
   padding-top: $spacing_unit/2;
 }
@@ -314,22 +331,24 @@ hr {
     line-height: 1;
     font-weight: 600; //wght@400;600
   }
+
   .agent_selling_points--text {
     font-size: 17.5px;
     line-height: 1.2;
   }
+
   .agent_selling_points--intro {
     color: $brand_color;
     text-transform: uppercase;
     font-weight: 600; //wght@400;600
     font-size: 20px;
+
     &.first {
       border-bottom: 1px solid $brand_color;
       margin-bottom: 0;
     }
   }
 }
-
 
 .google_my_business {
   br {
