@@ -1,22 +1,22 @@
 # The current release
-version: 0.8.0
+version:           0.8.1
 
 # Site settings
-title: Junglestar
-email: info@junglestar.org
-description: "It's a jungle out there. DIY is not enough. Junglestar is a small, flexible web agency. We design, code, deploy. We offer top quality solutions at resonable prices." # 160 char max
-baseurl: "" #"/clean" # the subpath of your site, e.g. /blog/
-url: "https://junglestar.org" # the base hostname & protocol for your site
-twitter_username: rokmatwit
-github_username: toybreaker
+title:             Junglestar
+email:             info@junglestar.org
+description:       "It's a jungle out there. DIY is not enough. Junglestar is a small, flexible web agency. We design, code, deploy. We offer top quality solutions at resonable prices." # 160 char max
+baseurl:           "" #"/clean" # the subpath of your site, e.g. /blog/
+url:               "https://junglestar.org" # the base hostname & protocol for your site
+twitter_username:  rokmatwit
+github_username:   toybreaker
 
-permalink: /:title/
+permalink:         /:title/
 
 # Setup
 sass:
-  sass_dir: _sass
-  style: :compressed
-  # style: :expanded
+  sass_dir:        _sass
+  style:           :compressed
+  # style:         :expanded
 
 # Exclude these files from your production _site
 exclude:
@@ -31,22 +31,22 @@ exclude:
 # the following exclude is necessary to make Travis CI work:
 # https://github.com/jekyll/jekyll/issues/5267
 # https://github.com/jekyll/jekyll/issues/2938
-# exclude: ["vendor"]
+# exclude:         ["vendor"]
 
 owner:
- name: Junglestar
- avatar_url: #
- email: rokmabox@gmail.com
- link: https://junglestar.org
+ name:             Junglestar
+ avatar_url:       #
+ email:            rokmabox@gmail.com
+ link:             https://junglestar.org
  disqus-shortname:
- twitter: #
- facebook: #
- github: junglesta
+ twitter:          #
+ facebook:         #
+ github:           junglesta
 
 google:
-  plus: #username
-  analytics: UA-49653244-1
-  verify: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
+  plus:            #username
+  analytics:       UA-49653244-1
+  verify:          Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
 plugins:
  - html-proofer
@@ -59,23 +59,23 @@ plugins:
 
 collections:
  offer:
-  output: true
-  permalink: /:title/
+  output:          true
+  permalink:       /:title/
  products:
  works:
-  output: true
-  permalink: /works/:title/
+  output:          true
+  permalink:       /works/:title/
  content:
  services:
-  output: true
-  permalink: /:title/
+  output:          true
+  permalink:       /:title/
  about:
  design:
 
 
 defaults:
   - scope:
-      path: ""
-      type: products
+      path:        ""
+      type:        products
     values:
-      layout: default # change this to get the layout needed
+      layout:      default # change this to get the layout needed
