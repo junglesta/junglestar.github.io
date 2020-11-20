@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f1e23e88-7158-47cd-b272-6ebbc9e953c4/deploy-status)](https://app.netlify.com/sites/junglestar/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db2b418a-ca16-460a-9bf3-e82dc4cea661/deploy-status)](https://app.netlify.com/sites/junglestar/deploys)
 
 ### [junglestar.org](https://junglestar.org)
 

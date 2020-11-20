@@ -36,12 +36,14 @@
       flex-direction: row;
     }
   }
+
   &.flex_row_bp1_col {
     flex-direction: row;
     @include media("screen", ">bp1Width") {
       flex-direction: column;
     }
   }
+
   &.flex_col_bp1_row {
     flex-direction: row;
     @include media("screen", ">bp1Width") {
@@ -55,10 +57,9 @@
       flex-direction: row;
     }
   }
-  &.flex_self_star {
+
+  &.flex_align_self_start {
     align-self: flex-start;
   }
-
-
 
 }

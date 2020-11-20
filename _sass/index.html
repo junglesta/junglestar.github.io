@@ -1,0 +1,38 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{page.lang}}{% else %}{{site.lang}}{% endif %}" prefix="og: http://ogp.me/ns#">
+
+  {% include partials/head.html %}
+
+  <!--layouts/home-->
+  <body class="index {{title | slug}}">
+
+    {% include partials/svg/defs.html %}
+
+    {% include partials/header.html %}
+
+    <div class="bungkus group">
+
+      {% include partials/slideshow_home.html %}
+
+      <div class="container" role="main">
+
+        {% include partials/post_loop_home.html %}
+
+      </div>
+
+    </div>
+
+
+
+    {% include partials/footer.html %}
+
+    {% include scripts/script_ext_link.html %}
+
+    {% include scripts/script_append_to_copy_action.html %}
+
+  </body>
+
+</html>
