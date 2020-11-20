@@ -71,20 +71,22 @@
 
 .to_design {}
 
-.blasting_brands svg {
-  width: auto;
-  height: 60vh;
-  margin-left: -44%;
-}
+@include media("screen", "<minWidth") {
+  .blasting_brands svg {
+    width: auto;
+    height: 60vh;
+    margin-left: -44%;
+  }
 
-.superstitions svg {
-  width: auto;
-  height: 60vh;
-  margin-left: -38%;
-}
+  .superstitions svg {
+    width: auto;
+    height: 60vh;
+    margin-left: -38%;
+  }
 
-.crazy_claims svg {
-  width: auto;
-  height: 60vh;
-  margin-left: -100%;
+  .crazy_claims svg {
+    width: auto;
+    height: 60vh;
+    margin-left: -100%;
+  }
 }
