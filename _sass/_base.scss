@@ -1,4 +1,5 @@
 // Reset some basic elements
+
 blockquote,
 body,
 dd,
@@ -32,7 +33,7 @@ html {
 
 body {
   line-height: $base-line-height;
-  font-weight: 400; //wght@400;600 
+  font-weight: 400; //wght@400;600
   color: $text_color;
   -webkit-text-size-adjust: 100%;
   position: relative;
@@ -88,8 +89,8 @@ ul {
 }
 
 li {
-  > ol,
-  > ul {
+  > ul,
+  > ol {
     margin-bottom: 0;
   }
 }
@@ -117,6 +118,13 @@ a {
   padding-bottom: 2px;
 }
 
+a:not(.action_button)[target="_blank"]:after {
+  content: "↗";
+  font-size: 80%;
+  display: inline;
+  color: current;
+}
+
 blockquote {
   color: $grey_color;
   border-left: 4px solid $grey_color-light;
@@ -134,7 +142,7 @@ pre {
   font-family: 'Open Sans', sans-serif;
   max-width: 540px;
   display: block;
-  font-size: 0.875em;
+  font-size: .875em;
   font-family: Consolas;
   color: $grey_color-dark;
   line-height: 1.3em;
@@ -144,8 +152,8 @@ pre {
 
 code {
   background: #fafafd;
-  padding: 0.063em;
-  border: 0.063em solid #dedede;
+  padding: .063em;
+  border: .063em solid #dedede;
 }
 
 // Clearfix use it like: @extend %clearfix;
@@ -188,7 +196,6 @@ svg {
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -226,9 +233,6 @@ strong {
 .center {
   text-align: center;
 }
-
-
-
 
 .top_pad {
   padding-top: $spacing_unit;

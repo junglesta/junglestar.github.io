@@ -9,33 +9,37 @@
 
   <meta name="version" content="{{ site.version }}">
 
+  {% if page.sitemap == false %}
+    <meta name="robots" content="noindex,nofollow,nosnippet">
+  {% endif %}
+
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-  <noscript id="deferred-styles">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap"> -->
+  {% comment %}
+  <!-- https://fonts.gstatic.com is the font file origin -->
+  <!-- It may not have the same origin as the CSS file (https://fonts.googleapis.com) -->
+  {% endcomment %}
 
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+ 
+  {% comment %}
+  <!-- We use the full link to the CSS file in the rest of the tags -->
+  {% endcomment %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" />
+ 
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+        media="print" onload="this.media='all'" />
+ 
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" />
   </noscript>
-
-  <script type="text/javascript">
-    // load css
-    var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-  </script>
-
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   {% capture inline_css %}
     {% include main.scss %}
@@ -48,5 +52,6 @@
 
   <meta name="google-site-verification" content="{{site.google.verify}}" />
 
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 </head>

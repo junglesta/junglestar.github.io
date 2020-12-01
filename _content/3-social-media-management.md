@@ -13,6 +13,8 @@ Today, brands leverage social media channels to grow their audience and drive in
 
 Defining a **[media strategy](https://en.wikipedia.org/wiki/Media_strategy)** and manage it properly is paramount.
 
-Automation can help. To deliver **continuative broadcasting** of news, memes, promos and special offers we use selected tools and services. Streamlining the steps for today marketing strategies.
+Automation can help. To deliver **continuative broadcasting** of news, memes, promos and special offers we use selected tools and services.
 
-We offer **Social media management** service so you can focus on your business, while  the plan get executed.  
+Streamlining the steps for today marketing strategies.
+
+We offer **Social media management** service so you can focus on your business, while  the plan get executed.
