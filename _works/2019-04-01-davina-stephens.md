@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title:  "DAVINA STEPHENS<br>Painter Portfolio"
+title:  "DAVINA STEPHENS<br>Artist Portfolio"
 category: website
 tag: commissioned-work
 redir: https://davinastephens.com/?ref=junglestar
